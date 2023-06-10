@@ -1,6 +1,6 @@
 <!DOCTYPE html> 
 <html lang='en-US' xml:lang='en-US'> 
-<head><title>0 Contents</title> 
+<head><title>The language of set theory</title> 
 <meta charset='utf-8' /> 
 <meta content='TeX4ht (https://tug.org/tex4ht/)' name='generator' /> 
 <meta content='width=device-width,initial-scale=1' name='viewport' /> 
@@ -8,9 +8,9 @@
 <meta content='OER.tex' name='src' /> 
 <script>window.MathJax = { loader: { load: ['[tex]/color', '[tex]/ams', 'xypic'], source: { xypic: 'https://cdn.jsdelivr.net/gh/sonoisa/XyJax-v3/build/xypic.js' } }, chtml: { matchFontHeight: false }, tex: { tags: "ams", packages: ['base', 'newcommand', 'color', 'ams' , 'xypic', 'boldsymbol', 'verb'], } }</script> 
  <script async='async' id='MathJax-script' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js' type='text/javascript'></script>  
- <script> window.MathJax = { tex: { tags: "ams", processEscapes: true, processEnvironments: true, packages: [\OT1\textquoteright base\OT1\textquoteright , \OT1\textquoteright color\OT1\textquoteright , \OT1\textquoteright ams\OT1\textquoteright , \OT1\textquoteright boldsymbol\OT1\textquoteright , \OT1\textquoteright newcommand\OT1\textquoteright , \OT1\textquoteright verb\OT1\textquoteright , 'xypic'] }, loader: { load: [\OT1\textquoteright [tex]/color\OT1\textquoteright , \OT1\textquoteright [tex]/ams\OT1\textquoteright , \OT1\textquoteright [tex]/boldsymbol\OT1\textquoteright , \OT1\textquoteright [tex]/newcommand\OT1\textquoteright , \OT1\textquoteright [tex]/verb\OT1\textquoteright ] } }; </script> 
+ <script> window.MathJax = { tex: { tags: "ams", processEscapes: true, processEnvironments: true, packages: [’base’, ’color’, ’ams’, ’boldsymbol’, ’newcommand’, ’verb’, 'xypic'], }, loader: { load: [’[tex]/color’, ’[tex]/ams’, ’[tex]/boldsymbol’, ’[tex]/newcommand’, ’[tex]/verb’] } }; </script> 
 </head><body>
- <div class='verbatiminput'>
+<!-- l. 2 --><p class='noindent'>
   \(
 \newcommand{\Ab}{\mbox{$\mathtt{Ab}$}\xspace}
 \newcommand{\AbCl}{\mbox{$\mathtt{AbCl}$}\xspace}
@@ -22,6 +22,8 @@ f}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\AlCRing}{\mbox{$\mathtt{Arch}$-\text{{\em
 l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\Alex}{\mbox{$\mathtt{Alex}$}\xspace}
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\Alg}[1]{\mbox{${#1}$-$\mathtt{Alg}$}\xspace}
 \newcommand{\arcat}[1]{\mbox{$#1^{\cdot \rightarrow \cdot}$}\xspace}
 \newcommand{\Arrpair}{\mbox{$\downarrow\downarrow$}\xspace}
@@ -31,8 +33,6 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\Ban}[1]{\mbox{$\mathtt{Ban}_{#1}$}\xspace}
 \newcommand{\BLat}{\mbox{$\mathtt{BLat}$}\xspace}
 \newcommand{\BDLat}{\mbox{$\mathtt{BDLat}$}\xspace}
-                                                                                                                                                                                                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\BDPos}{\mbox{$\mathtt{BDPos}$}\xspace}
 \newcommand{\Bi}[1]{\mbox{$\mathrm{Bi}(#1)$}\xspace}
 \newcommand{\Bim}[1]{\mbox{$\mathtt{Bim}(#1)$}\xspace}
@@ -73,6 +73,8 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\CohFrm}{\mbox{$\mathtt{CohFrm}$}\xspace}
 \newcommand{\Comm}[1]{\mbox{$\mathtt{Comm}[#1]$}\xspace}
 \newcommand{\ComAlg}[1]{\mbox{$\mathtt{ComAlg}[#1]$}\xspace}
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\ComIntAlg}[2]{\mbox{$\mathtt{Comm}#1[#2]$}\xspace}
 \newcommand{\conn}[1]{\mbox{$\pi_0\,{#1}$}\xspace}
 \newcommand{\Comp}[1]{\mbox{$\mathtt{K}[#1]$}\xspace}
@@ -85,8 +87,6 @@ l}}-$\mathtt{CRing}$}\xspace}
     \Arr{#1}{#2}{#3})$}\xspace}      %%%%% #1: functor, #2, #3: dom, cod of
 %%%%% #1, #4: object from #3
 \newcommand{\ConeOpp}[4]{\mbox{$\mathtt{Cone}(\Arr{#1}{#2}{#3}, #4
-                                                                                                                                                                                                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                                                                                                                                                                                                           
     \in #3_{0})$}\xspace}  %%%%% #1: functor, #2, #3: dom, cod of #1, #4: object
     %%%%% from #3
 \newcommand{\conset}[1]{\mbox{$\mathtt{Cstr}[#1]$}\xspace}
@@ -124,6 +124,8 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\DiffGrMod}[1]{\mbox{$\mathtt{DiffGrad}$-$#1$-$\mathtt{Mod}$}\xspace}
 \newcommand{\disc}[1]{\mbox{$\mathfrak{D}{#1}$}\xspace}
 \newcommand{\DiscMSet}[1]{\mbox{$\mathtt{Dis}$-$#1$-$\mathtt{Set}$}\xspace}
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\DisFib}[1]{\mbox{$\mathtt{DisFib}[#1]$}\xspace}
 \newcommand{\DisOpFib}[1]{\mbox{$\mathtt{DisOpFib}[#1]$}\xspace}
 \newcommand{\DLat}{\mbox{$\mathtt{DLat}$}\xspace}
@@ -139,8 +141,6 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\Eq}[1]{\mbox{$\mathtt{Eq}[#1]$}\xspace}
 \newcommand{\Equiv}[1]{\mbox{$\mathtt{Eq}(#1)$}\xspace}
 \newcommand{\ExpMor}[1]{\mbox{$\mathtt{Exp}[{#1}]$}\xspace}
-                                                                                                                                                                                                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\ExpMorS}[1]{\mbox{$\mathtt{ExpS}[{#1}]$}\xspace}
 \newcommand{\Exs}[1]{\mbox{$\mathfrak{Ex}\left[#1\right]$}\xspace}
 \newcommand{\ExtEpi}[1]{\mbox{$\mathtt{ExtEpi}(#1)$}\xspace}
@@ -175,6 +175,8 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\FrmReal}{\mbox{$\CAL{L}(\Bb{R})$}\xspace}
 \newcommand{\FrmSpat}{\mbox{$\mathtt{SpatFrm}$}\xspace}
 \newcommand{\frtop}[1]{\mbox{$\mho(#1)$}\xspace}
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\fs}[1]{\mbox{$\mathtt{FS}[#1]$}\xspace}
 \newcommand{\Grpd}{\mbox{$\mathtt{Grpd}$}\xspace}
 \newcommand{\Grp}{\mbox{$\mathtt{Grp}$}\xspace}
@@ -193,8 +195,6 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\hcat}[1]{\mbox{$\mathfrak{Ho}[#1]$}\xspace}
 \newcommand{\HeytAlg}{\mbox{$\mathtt{HeytAlg}$}\xspace}
 \newcommand{\hTop}{\mbox{$\mathcal{h}\mathtt{Top}$}\xspace}
-                                                                                                                                                                                                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\Idl}[1]{\mbox{$\mathtt{Idl}[#1]$}\xspace}
 \newcommand{\Idllt}[1]{\mbox{$\mathtt{Idl}_{l}[#1]$}\xspace}
 \newcommand{\Idlrt}[1]{\mbox{$\mathtt{Idl}_{r}[#1]$}\xspace}
@@ -226,6 +226,8 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\KRegLoc}{\mbox{$\mathtt{KRegLoc}$}\xspace}
 \newcommand{\KHaus}{\mbox{$\mathtt{KHaus}$}\xspace}
 \newcommand{\KL}[2]{\mbox{${#1}_{{#2}}$}\xspace}
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\cKL}[2]{\mbox{$_{{#2}}{#1}$}\xspace}
 \newcommand{\KPOSp}{\mbox{$\mathtt{KPOSp}$}\xspace}
 \newcommand{\kappaFrm}{\mbox{$\kappa\mathtt{Frm}$}\xspace}
@@ -247,8 +249,6 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\LocHaus}{\mbox{$\mathtt{LocHaus}$}\xspace}
 \newcommand{\LocSpat}{\mbox{$\mathtt{LocSpat}$}\xspace}
 \newcommand{\loopcat}[1]{\mbox{$\mathcal{L}\,#1\,$}\xspace}
-                                                                                                                                                                                                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\lCRing}{\mbox{\text{{\em l}-}$\mathtt{CRing}$}\xspace}
 \newcommand{\Magma}{\mbox{$\mathtt{Mag}$}\xspace}
 \newcommand{\meas}[2]{\mbox{$\mathtt{meas}(#1, #2)$}\xspace}
@@ -277,6 +277,8 @@ l}}-$\mathtt{CRing}$}\xspace}
 %%%%%%  NNNNNNNNNNNNNNNNNNNNNNNNNN     %%%%%%%
 \newcommand{\NHD}[1]{\mbox{$\mathtt{Nbd}[#1]$}\xspace} % the category
 % of intenal neighbourhod spaces
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\nhd}[1]{\mbox{$\mathtt{nbd}[#1]$}\xspace} % neighbourhood structures
 \newcommand{\NorMon}[1]{\mbox{$\mathtt{NorMon[#1]}$}\xspace}
 \newcommand{\NorSub}[1]{\mbox{$\mathtt{NorSub}[#1]$}\xspace}
@@ -301,8 +303,6 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\parpair}{\mbox{$\mathtt{parpair}$}\xspace}
 \newcommand{\pair}[1]{\mbox{$\mathtt{Graph}[#1]$}\xspace}
 \newcommand{\paircd}[1]{\mbox{$\mathtt{GraphCd}[#1]$}\xspace}
-                                                                                                                                                                                                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\pairSt}{\mbox{$\mathtt{pairSt}$}\xspace}
 \newcommand{\prtn}[1]{\mbox{$\mathtt{Part}[#1]$}\xspace}
 \newcommand{\pathsp}[1]{\mbox{$\mathtt{Path}[{#1}]$}\xspace}
@@ -328,6 +328,8 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\Prof}{\mbox{$\mathtt{Prof}$}\xspace}
 \newcommand{\Pros}{\mbox{$\mathtt{Pros}$}\xspace}
 \newcommand{\pre}[1]{\mbox{$\mathtt{pre}[#1]$}\xspace}
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\pse}[1]{\mbox{$\mathtt{pse}[#1]$}\xspace}
 \newcommand{\PSE}[1]{\mbox{$\mathtt{Pse}[#1]$}\xspace}
 \newcommand{\pSet}{\mbox{$\mathtt{pSet}$}\xspace}
@@ -355,8 +357,6 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\RegEpi}[1]{\mbox{$\mathtt{RegEpi}(#1)$}\xspace}
 \newcommand{\RSTGrph}[1]{\mbox{$\mathtt{RSTGrph}(#1)$}\xspace}
 \newcommand{\RegIdl}[1]{\mbox{$\underline{\mathrm{RegIdl}}[#1]$}\xspace}
-                                                                                                                                                                                                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\RegMon}[1]{\mbox{$\mathtt{RegMon}(#1)$}\xspace}
 \newcommand{\RegFrm}{\mbox{$\mathtt{RegFrm}$}\xspace}
 \newcommand{\RegLoc}{\mbox{$\mathtt{RegLoc}$}\xspace}
@@ -379,6 +379,8 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\Sch}{\mbox{$\mathtt{Sch}$}\xspace}
 \newcommand{\Sec}[1]{\mbox{$\mathrm{Sect}(#1)$}\xspace}
 \newcommand{\SemGrp}{\mbox{$\mathtt{SemGrp}$}\xspace}
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\SemLat}[1]{\mbox{${#1}{\text -}\mathtt{SemLat}$}\xspace}
 \newcommand{\SemMod}[1]{\mbox{$#1$-$\mathtt{SemMod}$}\xspace}
 \newcommand{\Ses}[1]{\mbox{$\mathtt{Ses}\left[#1\right]$}\xspace}
@@ -409,8 +411,6 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\StSp}{\mbox{$\mathtt{StSp}$}\xspace}
 \newcommand{\StrEpi}[1]{\mbox{$\mathtt{StrEpi}(#1)$}\xspace}
 \newcommand{\StrMon}[1]{\mbox{$\mathtt{StrMon}(#1)$}\xspace}
-                                                                                                                                                                                                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\StrMonCat}{\mbox{$\mathtt{StMonCat}$}\xspace}
 \newcommand{\struct}[1]{\mbox{$#1$-$\mathtt{FRL}$}\xspace}
 \newcommand{\sub}[1]{\mbox{$\mathtt{Sub}(#1)$}\xspace}
@@ -430,6 +430,8 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\tnhd}[1]{\mbox{$\mathtt{top}[#1]$}\xspace}
 \newcommand{\Top}{\mbox{$\mathtt{Top}$}\xspace}
 \newcommand{\TopAb}{\mbox{$\mathtt{TopAb}$}\xspace}
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\TopGrp}{\mbox{$\mathtt{TopGrp}$}\xspace}
 \newcommand{\TopMon}{\mbox{$\mathtt{TopMon}$}\xspace}
 \newcommand{\TopSob}{\mbox{$\mathtt{TopSob}$}\xspace}
@@ -463,8 +465,6 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\wNHD}[1]{\mbox{$\mathtt{wNbd}[#1]$}\xspace} % category of
 % internal weak neighbourhood spaces
 \newcommand{\wnhd}[1]{\mbox{$\mathtt{wnbd}[#1]$}\xspace} % weak
-                                                                                                                                                                                                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                                                                                                                                                                                                           
 % neighbourhood structures
 
 %%%%%%  ZZZZZZZZZZZZZZZZZZZZZZZZZZ     %%%%%%
@@ -481,6 +481,8 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\adjt}[2]{\mbox{$ {#1} \dashv {#2}$}}
 \newcommand{\Adjt}[2]{\mbox{$
     \left[
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
       {#1} \dashv {#2}
     \right]$}} % for adjoint factorisation
 \newcommand{\adjteq}[2]{\mbox{$ {#1} \dashv\vdash {#2}$}}
@@ -517,8 +519,6 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\arrpGrFib}[8]{\mbox{$\xymatrix{ {#5} \ar@{-&amp;gt;}[dd]_{#3} &amp;
 {#7} \ar@{-&amp;gt;}[dd]^{#4} \\ {} \ar@&amp;lt;1ex&amp;gt;[r]^{#1} \ar@&amp;lt;-1ex&amp;gt;[r]_{#2} &amp; \\
 {#6} &amp; {#8} }$}}
-                                                                                                                                                                                                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\Arrsq}[3]{\mbox{$#2 \overset{#1}{\rightsquigarrow} #3$}}
 \newcommand{\arrtype}[4]{\mbox{$#2 \xrightarrow[\mathrm{#4}]{#1} #3$}}
 \newcommand{\ass}[3]{\mbox{$\Lbag #1, #2, #3 \Rbag$}}  % uses stmaryrd
@@ -532,6 +532,8 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\ballc}[2]{\mbox{$\bar{\mathtt{B}}(#1; #2)$}}
 \newcommand{\BAR}[1]{\mbox{$\overline{#1}$}}
 \newcommand{\Bb}[1]{\mbox{${\mathbb #1}$}}
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\bel}[2]{\mbox{$#1 \bigtriangledown #2$}}
 \newcommand{\bil}[3]{\mbox{$\mathtt{Bil}(#1, #2; #3)$}}
 \newcommand{\bim}[5]{\mbox{$\xymatrixcolsep{#5}\xymatrix{ {#2 \times #3} \ar@{~&amp;gt;}[r]^-{#1} &amp; {#4} }$}\xspace} %#5 is the unit measure
@@ -571,8 +573,6 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\cochclx}[2]{\mbox{$\left({#1}^{\bullet}, {#2}^{\bullet}\right)$}\xspace}
 \newcommand{\cod}[1]{\mbox{$\mathtt{cod}\,#1$}\xspace}
 \newcommand{\cofch}[1]{\mbox{$\mathrm{ch}_{\mathrm{cof}}\/#1$}}
-                                                                                                                                                                                                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\cof}[2]{\mbox{$\mathtt{cofinal}: {#1} \subseteq {#2}$}\xspace}
 \newcommand{\coint}[2]{\mbox{$[#1, #2\rrangle$}}
 \newcommand{\conjugate}[1]{\mbox{$\overline{{#1}}$}\xspace}
@@ -583,6 +583,8 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\chbasis}[2]{\mbox{$\mathbf{P}_{{#1} \rightarrow
 {#2}}$}\xspace}
 \newcommand{\chbasisint}[3]{\mbox{${#1}_{{#2} \leftrightarrow
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 {#3}}$}\xspace}
 \newcommand{\chbasismul}[3]{\mbox{${#1}_{{#2}
 \mathbin{\rotatebox[origin=c]{-180}{$\mapsto$}} ({#2} \times {#3}) }$}\xspace}
@@ -625,8 +627,6 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\coz}[1]{\mbox{$\mathrm{coz}(#1)$}\xspace}
 \newcommand{\CPrm}[1]{\mbox{$\mathtt{CPrm}[#1]$}\xspace}
 \newcommand{\cprt}[1]{\framebox[1.1\width][c]{$\,#1\,$}\,}
-                                                                                                                                                                                                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\cpyrt}[1]{\mbox{$\xy*++{#1}*\cir&amp;lt;6pt&amp;gt;{}\endxy$}}
 \newcommand{\CReg}[1]{\mbox{$\mathfrak{CReg}#1$}}
 \newcommand{\creg}[1]{\mbox{$\underline{creg}[#1]$}\xspace}
@@ -634,6 +634,8 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\cur}[1]{\mbox{${\mathfrak C}{\mathfrak r}{\mathfrak v}(#1)$}}
 \newcommand{\cutfill}[2]{\mbox{${#2}_- \cdots {#1} \cdots {#2}_+$}}
 \newcommand{\cxc}[1]{\mbox{$\mathbf{C}({#1}, \mathbb{C})$}\xspace}
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\cx}[1]{\mbox{$\mathsf{C}[{#1}]$}\xspace}
 \newcommand{\cxy}[2]{\mbox{$\mathbf{C}({#1}, {#2})$}\xspace}
 
@@ -679,12 +681,12 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\elnum}[1]{\mbox{$\mid #1 \mid$}}
 \newcommand{\elmatint}[3]{\mbox{$\mathbf{E}^{{#3}}_{{#1}
 \leftrightarrow {#2}}$}\xspace}
-                                                                                                                                                                                                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\elmatmul}[3]{\mbox{$\mathbf{E}^{{#3}}_{{#1}
 \mathbin{\rotatebox[origin=c]{-180}{$\mapsto$}} ({#1} \times {#2})
 }$}\xspace}
 \newcommand{\elmatsum}[3]{\mbox{$\mathbf{E}^{{#3}}_{{#2}
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 \mathbin{\rotatebox[origin=c]{-180}{$\mapsto$}} ({#1} + {#2}) }$}\xspace}
 \newcommand{\epi}[3]{\mbox{$\xymatrix@!{ {#2} \ar@{-&amp;gt;&amp;gt;}[r]^{#1} &amp; {#3} }$}}
 \newcommand{\eqcl}[2]{\mbox{$\left[\frac{#1}{#2}\right]$}}
@@ -733,9 +735,9 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\galstr}[8]{\mbox{$\Bigl\langle\Bigl\langle\xymatrix{ {#3}
 \ar@/^1.56ex/[r]^{#1} \ar@{}[r]|{\bot} &amp; {#4} \ar@/^1.56ex/[l]^{#2} };
 #5, #6; #7, #8\Bigr\rangle\Bigr\rangle$}}
-                                                                                                                                                                                                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\gen}[1]{\mbox{$
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
     \bigl[
     #1\/
     \bigr]$}}
@@ -785,10 +787,10 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\imgfil}[2]{\mbox{$\overrightarrow{#1}{#2}$}\xspace}
 \newcommand{\Imgfil}[2]{\mbox{$\overset{\sqcap}{#1}{#2}$}\xspace}
 \newcommand{\imply}[2]{\mbox{$#1 \longrightarrow #2$}}
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\implyl}[2]{\mbox{$#1 \Longleftarrow #2$}}
 \newcommand{\implyr}[2]{\mbox{
-                                                                                                                                                                                                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                                                                                                                                                                                                           
     $\left(
       #1 \Longrightarrow #2
     \right)$}\xspace}
@@ -836,13 +838,13 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\lcm}{\mbox{$\mathrm{lcm}$}}
 \newcommand{\least}[1]{\mbox{$\uparrow_{\text{\hspace{-1.44ex}$\circ$}}#1$}\xspace}
 \newcommand{\Lem}{Lemma\,\,}
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\length}[1]{\mbox{$\mathrm{len}\,{#1}$}\xspace}
 \newcommand{\levset}[3]{\mbox{$
     \left[
       {#1} {#3} {#2}
     \right]$}}
-                                                                                                                                                                                                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\Lim}[2]{\mbox{\bf{#1lim} $#2$}}
 \newcommand{\limit}[2]{\mbox{${\underleftarrow{\mathtt{lim}}}_{{#2}}\, #1$}}
 \newcommand{\lin}[3]{\mbox{$\int_{{#1}} {#2}\,\text{d}{#3}$}}
@@ -887,6 +889,8 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\mtbf}[1]{\mbox{$\mathbf{#1}$}\xspace}
 \newcommand{\mxc}[1]{\mbox{$\mathbf{M}({#1}, \mathbb{C})$}\xspace}
 \newcommand{\mx}[1]{\mbox{$\mathbf{M}({#1}, \mathbb{R})$}\xspace}
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\mxy}[2]{\mbox{$\mathbf{M}({#1}, {#2})$}\xspace}
 
 %%%%%% NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN %%%%%%
@@ -895,8 +899,6 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\Nattrn}[5]{\mbox{$\xymatrixcolsep{1.2cm}\xymatrix{ {#4} \ar@&amp;lt;2ex&amp;gt;[r]^-{#2}="u" \ar@&amp;lt;-2ex&amp;gt;[r]_-{#3}="l" &amp; {#5} \ar@{-&amp;gt;} &amp;lt;0pt,-2pt&amp;gt;+"u";&amp;lt;0pt,2pt&amp;gt;+"l"^{#1}}$}\xspace}
 \newcommand{\NattrnGrFib}[9]{$\xymatrix@!C=12ex{ {#6} \ar@{-&amp;gt;}[dd]_{#4} &amp; {#8} \ar@{-&amp;gt;}[dd]^{#5} \\ {} \rtwocell^{#3}_{#2}{!\,\,\,#1} &amp; {} \\ {#7} &amp; {@9} }$}
 \newcommand{\nattrn}[3]{\mbox{$\xymatrix{ {#2} \ar@2{-&amp;gt;}[r]^{#1} &amp; {#3} }$}\xspace}
-                                                                                                                                                                                                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\nbd}[2]{\mbox{${\mathcal N}^{#1}_{#2}$}\xspace}
 \newcommand{\ncluster}[3]{\mbox{${#1} \underset{{#3}}{\not\rightsquigarrow} {#2}$}\xspace}
 \newcommand{\nconv}[3]{\mbox{${#1} \underset{{#3}}{\not\rightarrow} {#2}$}\xspace}
@@ -938,6 +940,8 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\parderg}[3]{\mbox{$\frac{\partial^{|#3|} #1}{\partial #2^{#3}}$}}
 \newcommand{\pardergd}[3]{\mbox{$\dfrac{\partial^{|#3|} #1}{\partial #2^{#3}}$}}
 \newcommand{\pardergt}[3]{\mbox{$\tfrac{\partial^{|#3|} #1}{\partial #2^{#3}}$}}
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\pardertwo}[3]{\mbox{$\frac{\partial^{2} #1}{\partial #2 \partial #3}$}}
 \newcommand{\pardertwod}[3]{\mbox{$\dfrac{\partial^{2} #1}{\partial #2 \partial #3}$}}
 \newcommand{\pardertwot}[3]{\mbox{$\tfrac{\partial^{2} #1}{\partial #2 \partial #3}$}}
@@ -949,8 +953,6 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\placeholder}[1]{\mbox{$\bigl({#1}\bigr)$}\xspace}
 \newcommand{\poly}[2]{\mbox{$#1[#2]$}\xspace}
 \newcommand{\polyto}[3]{\mbox{${#1}_{#3}(#2)$}\xspace}
-                                                                                                                                                                                                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\polyfrac}[2]{\mbox{$#1(#2)$}}
 \newcommand{\polyn}[3]{\mbox{$#1[#2_{1}, #2_{2}, \dots, #2_{#3}]$}}
 \newcommand{\polynfrac}[3]{\mbox{$#1(#2_{1}, #2_{2}, \dots, #2_{#3})$}}
@@ -989,6 +991,8 @@ l}}-$\mathtt{CRing}$}\xspace}
       {{#6}} \ar[r]^-{p_2} \ar[d]_{p_1}
       \ar@{}[dr]|(0.096){\text{\LARGE{$\lrcorner$}}} &amp; {{#2}}
       \ar[d]^{{#4}} \\
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
          {{#1}} \ar[r]_-{{#5}} &amp; {{#3}}
 }$
 }\xspace} %%% the last entry is the pullback object
@@ -1003,8 +1007,6 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\pulbint}[7]{\mbox{$\xymatrix@!{ {#1 \cap #3} \ar@{ &amp;gt;-&amp;gt;}[r]^{#7} \ar@{ &amp;gt;-&amp;gt;}[d]_{#6} \ar@{ &amp;gt;-&amp;gt;}[dr]|{#4 \cap #5} &amp; {#1} \ar@{ &amp;gt;-&amp;gt;}[d]^{#4} \\ {#3} \ar@{ &amp;gt;-&amp;gt;}[r]_{#5} &amp; {#2} }$}}
 \newcommand{\Pulbmon}[8]{\mbox{$\xymatrix@!{ {#4 = {#7}^{\leftarrow}(#1)} \ar@{-&amp;gt;}[r]^{#8} \ar@{ &amp;gt;-&amp;gt;}[d]_{#7} &amp; {#1} \ar@{ &amp;gt;-&amp;gt;}[d]^{#5} \\ {#3} \ar@{-&amp;gt;}[r]_{#6} &amp; {#2} }$}}
 \newcommand{\pulbmon}[8]{\mbox{$\xymatrix@!{ {#4} \ar@{-&amp;gt;}[r]^{#8} \ar@{
-                                                                                                                                                                                                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                                                                                                                                                                                                           
 &amp;gt;-&amp;gt;}[d]_{#7} \ar@{}[dr]|{\text{pullback}} &amp; {#1} \ar@{ &amp;gt;-&amp;gt;}[d]^{#5} \\
 {#3} \ar@{-&amp;gt;}[r]_{#6} &amp; {#2} }$}}
 \newcommand{\pushob}[3]{\mbox{${#1} +_{{#3}} {#2}$}}
@@ -1040,6 +1042,8 @@ l}}-$\mathtt{CRing}$}\xspace}
     }$}\xspace} % 6: the spacing limit
 \newcommand{\rel}[5]{$\xymatrix{ &amp; {#3} \ar@{-&amp;gt;}[dl]_{#1}
 \ar@{-&amp;gt;}[dr]^{#2} &amp; \\ {#4} &amp; &amp; {#5} }$}
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\relon}[6]{\mbox{$\xymatrix@!C=#6ex{ {#4} \ar@/^2ex/[r]^{#1}
 \ar@/_2ex/[r]_{#2} \ar@{&amp;lt;-}[r]|{#3} &amp; {#5} }$}\xspace}
 \newcommand{\Relon}[2]{\mbox{$\xymatrix{ {#1} \ar@/^1ex/[r]
@@ -1057,8 +1061,6 @@ l}}-$\mathtt{CRing}$}\xspace}
 %%%%%% SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS %%%%%%
 
 \newcommand{\scf}[2]{\mbox{$[{#1}_0; {#1}_1, {#1}_2, \dots,
-                                                                                                                                                                                                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                                                                                                                                                                                                           
 {#1}_{#2}]$}}
 \newcommand{\SCR}[1]{\mbox{${\mathscr #1}$}}
 \newcommand{\sdrmorphism}[1]{\mbox{${#1}_{\mathtt{sdr}}$}\xspace}
@@ -1091,6 +1093,8 @@ l}}-$\mathtt{CRing}$}\xspace}
 node[below] at (0,0.36) {${#1}$};}\xspace}
 \newcommand{\splwedge}[1]{
 \tikz[baseline=-1mm,scale=0.6]{\draw[-] (-0.72,0)--(0,0.72)--(0.72,0)
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 node[below] at (0,0.36) {${#1}$};}\xspace}
 \newcommand{\stbasis}[1]{\mbox{$\mathbf{u}^{(#1)}$}\xspace}
 \newcommand{\strike}[1]{#1\hspace{-1ex}/}
@@ -1111,8 +1115,6 @@ node[below] at (0,0.36) {${#1}$};}\xspace}
 \ar@&amp;lt;-0.6ex&amp;gt;[r]_-{{#5}} \ar@{&amp;lt;-}@&amp;lt;0.6ex&amp;gt;[r]^-{{#3}_{#4}} &amp; {#4
 } \ar@(ur,dr)@2{-}}$}\xspace}
 \newcommand{\Talghomd}[8]{\mbox{$\xymatrixcolsep{1.8cm}\xymatrixrowsep{1.56cm}
-                                                                                                                                                                                                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                                                                                                                                                                                                           
 \xymatrix{
 {{#1}^2({#4})} \ar@&amp;lt;0.6ex&amp;gt;[r]^-{{#2}_{#4}} \ar@&amp;lt;-0.6ex&amp;gt;[r]_-{{#1}#5} &amp; {#1(#4)}
 \ar@&amp;lt;-0.6ex&amp;gt;[r]_-{{#5}} \ar@{&amp;lt;-}@&amp;lt;0.6ex&amp;gt;[r]^-{{#3}_{#4}}
@@ -1142,6 +1144,8 @@ node[below] at (0,0.36) {${#1}$};}\xspace}
 
 \newcommand{\ubds}[1]{\mbox{${#1}^{\text{\bsifamily u}}$}}
 \newcommand{\ulbds}[1]{\mbox{${#1}^{\text{\bsifamily ul}}$}}
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\um}[2]{the universal morphism from ${#1}$ to ${#2}$ exists}
 \newcommand{\umf}[4]{\mbox{$\xymatrix{ {#1} \ar[r]^-{#3} &amp; {#2(#4)}  }$}\xspace}
 \newcommand{\umo}[4]{\mbox{$\xymatrix{ {#2(#4)} \ar[r]^-{#3} &amp; {#1}  }$}\xspace}
@@ -1165,8 +1169,6 @@ node[below] at (0,0.36) {${#1}$};}\xspace}
 %%%%%%  ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ    %%%%%%
 
 \newcommand{\zeroa}[2]{\mbox{$_{#1}\mathtt{0}_{#2}$}}
-                                                                                                                                                                                                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\zeroaf}[1]{\mbox{$_{#1}\mathtt{0}$}}
 \newcommand{\zeroat}[1]{\mbox{$\mathtt{0}_{#1}$}}
 \newcommand{\ZerOne}[2]{\mbox{$\bigl(\mathtt{0}_{{#1}, {#2}},\mathtt{1}_{#1}\bigr)$}\xspace}
@@ -1177,16 +1179,114 @@ node[below] at (0,0.36) {${#1}$};}\xspace}
 \newcommand\xymatrixcolsep[1]{}
 \newcommand\xymatrixrowsep[1]{}
   \)
- </div> <!-- l. 206 --><div class='crosslinks'><p class='noindent'>[<a href='OERse2.html'>next</a>] [<a href='#tailOERse1.html'>tail</a>] [<a href='OER.html#OERse1.html'>up</a>] </p></div>
- <h3 class='sectionHead' id='contents'><a id='x2-1000'></a>Contents</h3>
- <div class='tableofcontents'><span class='sectionToc'><a href='#contents'>Contents</a></span><br /><span class='sectionToc'> 1.  <a href='OERse2.html#axiomatic-set-theory'>Axiomatic Set Theory</a></span><br /><span class='subsectionToc'>   1.1.  <a href='OERsu1.html#the-language-of-set-theory'>The language of set theory</a></span><br /><span class='subsectionToc'>   1.2.  <a href='OERsu2.html#first-set-of-axioms'>First
-set   of   axioms</a></span><br /><span class='subsubsectionToc'>     1.2.1.  <a href='OERsu3.html#deciding-on-equality'>Deciding   on   equality</a></span><br /><span class='subsubsectionToc'>     1.2.2.  <a href='OERsu4.html#building-sets'>Building
-sets</a></span><br /><span class='subsubsectionToc'>     1.2.3.  <a href='OERsu5.html#pairing'>Pairing</a></span><br /><span class='subsubsectionToc'>     1.2.4.  <a href='OERsu6.html#subsets'>Subsets</a></span><br /><span class='subsubsectionToc'>     1.2.5.  <a href='OERsu7.html#collating-sets'>Collating sets</a></span><br /><span class='sectionToc'> 2.  <a href='OERse3.html#relations-and-functions'>Relations
-and functions</a></span><br /><span class='subsectionToc'>   2.1.  <a href='OERsu8.html#calculus-of-relations'>Calculus of relations</a></span><br /><span class='sectionToc'><a href='OERse4.html#references'>References</a></span><br />
+
+</p>
+<!-- l. 2 --><div class='crosslinks'><p class='noindent'>[<a href='OERse2.html'>next</a>] [<a href='#tailOERse1.html'>tail</a>] [<a href='OERch1.html#OERse1.html'>up</a>] </p></div>
+ <h3 class='sectionHead' id='the-language-of-set-theory'><span class='titlemark'>1.1   </span> <a id='x4-30001.1'></a>The language of set theory</h3>
+<!-- l. 5 --><p class='noindent'>In the language of <span class='cmti-12'>Axiomatic Set Theory </span>(\(\mathcal {AST}\) in short), every <span class='cmti-12'>variable </span>is called a <span class='cmti-12'>set</span>; apart from sets there are two other symbols: “=”, called <span class='cmti-12'>equality </span>and “\(\in \)”, called <span class='cmti-12'>membership </span>— if \(x = y\) then we shall say \(x\) <span class='cmti-12'>is equal to</span> \(y\), while \(x \in y\) shall be called \(x\) <span class='cmti-12'>is an element of</span> \(y\) or \(x\) <span class='cmti-12'>is a member of</span> \(y\) or \(x\) <span class='cmti-12'>belongs to</span> \(y\); the negations \(x \neq y\) or \(x \notin y\) are also phrased similarly.
+</p>
+ <div class='newtheorem'>
+<!-- l. 7 --><p class='noindent'><span class='head'>
+<span class='cmbx-12'>Definition.</span>  </span> The <span class='cmti-12'>well formed formulae </span>for \(\mathcal {AST}\) are:
+      </p><dl class='enumerate-enumitem'><dt class='enumerate-enumitem'>
+  (a) </dt><dd class='enumerate-enumitem'><a id='x4-30011'></a> each set is a <span class='cmti-12'>well formed formula</span>;
+      </dd><dt class='enumerate-enumitem'>
+ (b) </dt><dd class='enumerate-enumitem'><a id='x4-30022'></a> \(x = y\) and \(x \in y\) are <span class='cmti-12'>well formed formula</span>;
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+      </dd><dt class='enumerate-enumitem'>
+  (c) </dt><dd class='enumerate-enumitem'><a id='x4-30033'></a> if \(\phi , \psi \) are well formed formulae then so also are \(\neg \phi \)<a href='#Hfootnote.\theHHfootnote'><span class='footnote-mark'><a href='#fn1x2' id='fn1x2-bk'><sup class='textsuperscript'>1</sup></a></span></a><a id='x4-3004f1'></a>,
+      \(\phi \LOR \psi \), \(\phi \LAND \psi \), \(\phi \Rightarrow \psi \)<a href='#Hfootnote.\theHHfootnote'><span class='footnote-mark'><a href='#fn2x2' id='fn2x2-bk'><sup class='textsuperscript'>2</sup></a></span></a><a id='x4-3006f2'></a>;
+      </dd><dt class='enumerate-enumitem'>
+ (d) </dt><dd class='enumerate-enumitem'><a id='x4-30084'></a> if \(\phi (x)\) is a <span class='cmti-12'>well formed formula </span>in which \(x\) appears as a free variable then so also are \(\exists x \phi (x)\)<a href='#Hfootnote.\theHHfootnote'><span class='footnote-mark'><a href='#fn3x2' id='fn3x2-bk'><sup class='textsuperscript'>3</sup></a></span></a><a id='x4-3009f3'></a>
+      and \(\forall x\phi (x)\)<a href='#Hfootnote.\theHHfootnote'><span class='footnote-mark'><a href='#fn4x2' id='fn4x2-bk'><sup class='textsuperscript'>4</sup></a></span></a><a id='x4-3011f4'></a>
+      are <span class='cmti-12'>well formed formulae</span>;
+      </dd><dt class='enumerate-enumitem'>
+  (e) </dt><dd class='enumerate-enumitem'><a id='x4-30135'></a> a <span class='cmti-12'>well formed formula </span>is one which is obtained on finitely many applications of the rules in <a href='#x4-30011'>(a)<!-- tex4ht:ref: item:each-set-is-wff  --></a>-<a href='#x4-30084'>(d)<!-- tex4ht:ref: item:wff-with-existential-quantifier  --></a>.</dd></dl>
+                                                                                                                                                                                                                                                                                                                                                                                                                           \(\Diamond \)
  </div>
+<!-- l. 27 --><p class='indent'>
+</p>
+ <div class='newtheorem'>
+<!-- l. 29 --><p class='noindent'><span class='head'>
+<a id='x4-3014r1'></a>
+<span class='cmbx-12'>Remark 1.1.</span>  </span>Some remarks about terms from mathematical logic.
+      </p><dl class='enumerate-enumitem'><dt class='enumerate-enumitem'>
+  (a) </dt><dd class='enumerate-enumitem'>Every occurrence of a variable \(x\) in a well formed formula of the form \(\exists x\phi (x)\) or \(\forall x\phi (x)\) is a <span class='cmti-12'>bound variable</span>; else it is said to be <span class='cmti-12'>free</span>.
+      <!-- l. 35 --><p class='noindent'>Thus for instance in \(\exists x (x \leq y \Rightarrow \forall z( z \leq y \Rightarrow z = x))\), \(x\) is bound by \(\exists x\) and is said to be under its scope, \(z\) is bound by \(\forall z\) and is under its scope, while the variable \(y\) is free; in \(\exists y \exists x (x \leq y \Rightarrow \forall z( z \leq y \Rightarrow z = x))\) no variable is free.
+      </p></dd><dt class='enumerate-enumitem'>
+ (b) </dt><dd class='enumerate-enumitem'>Well formed formulae with no free variable is called a <span class='cmti-12'>sentence</span>.
+      </dd><dt class='enumerate-enumitem'>
+  (c) </dt><dd class='enumerate-enumitem'>Given a well formed formula \(\phi (x)\) involving a free variable \(x\), the formula obtained on replacing each free occurrence of \(x\) by \(y\) is denoted by \(\phi (\divs {y}{x})\), and is said to be obtained by <span class='cmti-12'>substitution from</span> \(\phi (x)\).
+      </dd><dt class='enumerate-enumitem'>
+ (d) </dt><dd class='enumerate-enumitem'><a id='eq:substitution'></a>The predicate \(=\) of equality satisfy some rules: \begin {align}  \label {eq:reflexivity} x = x &amp; \text { (reflexivity)} \\ \label {eq:symmetry} x = y \Rightarrow y = x &amp; \text { (symmetry)} \\ \label {eq:transitivity} x = y \LAND y = z \Rightarrow x = z &amp; \text { (transitivity)} \\ \label{eq:substitution} x = y \LAND \phi (x) \Rightarrow \phi (\divs {y}{x}) &amp; \text { (substitution principle)}  \end {align}
+      <!-- l. 53 --><p class='noindent'>The statement in \eqref{eq:substitution} says: the truth value (see immediately below) of a well formed formula \(\phi (x)\) does not change on substituting any free occurrence of \(x\) by a \(y\), whenever \(x = y\).
+      </p></dd><dt class='enumerate-enumitem'>
+  (e) </dt><dd class='enumerate-enumitem'>Truth values <span class='cmtt-12'>T, F</span>, often called <span class='cmss-12'>true, false </span>are assigned to sentences. The rules of classical logic dictates the following truth valuations, given the truth values \(v(\phi ), v(\psi )\) of sentences \(\phi , \psi \):
+           <dl class='enumerate-enumitem'><dt class='enumerate-enumitem'>
+       (i) </dt><dd class='enumerate-enumitem'><a id='x4-30201'></a> \(v(\neg \phi ) = \mathsf {T}\) if and only if \(v(\phi ) = \mathsf {F}\).
+           </dd><dt class='enumerate-enumitem'>
+      (ii) </dt><dd class='enumerate-enumitem'><a id='x4-30212'></a> \(v(\phi \LOR \psi ) = \mathsf {T}\) if and only if \(v(\phi ) = \mathsf {T}\) or \(v(\psi ) = \mathsf {T}\).
+           </dd><dt class='enumerate-enumitem'>
+      (iii) </dt><dd class='enumerate-enumitem'><a id='x4-30223'></a> \(v(\phi \LAND \psi ) = \mathsf {T}\) if and only if \(v(\phi ) = \mathsf {T}\) and \(v(\psi ) = \mathsf {T}\).
+           </dd><dt class='enumerate-enumitem'>
+      (iv) </dt><dd class='enumerate-enumitem'><a id='x4-30234'></a> \(v(\phi \Rightarrow \psi ) = \mathsf {F}\) if and only if \(v(\phi ) = \mathsf {T}\) and \(v(\psi ) = \mathsf {F}\).
+           </dd><dt class='enumerate-enumitem'>
+      (v) </dt><dd class='enumerate-enumitem'><a id='x4-30245'></a> \(v(\phi \Leftrightarrow \psi ) = \mathsf {T}\) if and only if \(v(\phi ) = \mathsf {T} = v(\psi )\) or \(v(\phi ) = \mathsf {F} = v(\psi )\).</dd></dl>
                                                                                                                                                                                                                                                                                                                                                                                                                            
                                                                                                                                                                                                                                                                                                                                                                                                                            
- <!-- l. 1 --><div class='crosslinks'><p class='noindent'>[<a href='OERse2.html'>next</a>] [<a href='OERse1.html'>front</a>] [<a href='OER.html#OERse1.html'>up</a>] </p></div>
-<!-- l. 1 --><p class='indent'> <a id='tailOERse1.html'></a> </p> 
+      </dd><dt class='enumerate-enumitem'>
+  (f) </dt><dd class='enumerate-enumitem'>Tabulating truth values is often easier; for instance Table <a href='#-truth-table-for-implication-'>1.1<!-- tex4ht:ref: tab:implication-truth-table  --></a> shows the truth valuation for implication. Given the sentences \(\phi , \psi \) the implication \(\phi \Rightarrow \psi \) is a third sentence, \(\phi \) is often called the <span class='cmti-12'>hypothesis</span>, \(\psi \) is called the <span class='cmti-12'>consequent </span>of the implication sentence.
+      <!-- l. 77 --><p class='noindent'>The last two rows of Table <a href='#-truth-table-for-implication-'>1.1<!-- tex4ht:ref: tab:implication-truth-table  --></a> show that an implication sentence is true if the hypothesis is false, irrespective of the truth value of the consequent. This is often referred to as the <span class='cmti-12'>vacuous implication </span>and is often a matter of controversy giving rise to alternative logics — <a href='https://math.stackexchange.com/questions/4394547/formal-definition-of-vacuous-implication'>read the first answer on this page by Tankut Beygu</a> for a perspective, as well as the web page on <a href='https://en.wikipedia.org/wiki/Relevance_logic'><span class='cmti-12'>Relevance logic</span></a> as to how the controversy mentioned above gives rise to different kind of logic. Another interesting read
+      could as well be <a href='https://plato.stanford.edu/entries/logic-relevance/'>a deeper look into relevance logic</a><a href='#Hfootnote.\theHHfootnote'><span class='footnote-mark'><a href='#fn5x2' id='fn5x2-bk'><sup class='textsuperscript'>5</sup></a></span></a><a id='x4-3026f5'></a>.
+      </p><!-- l. 79 --><p class='noindent'>However, in this series, since we have accepted to use Classical Boolean logic, this rule shall be taken without any further ado. A word of caution: every implication statement brings along its cases of vacuous implications, and shall be utilised greatly in the sequel.
+</p>
+      <div class='table'>
+      <!-- l. 82 --><p class='noindent'></p><figure class='float' id='-truth-table-for-implication-'><!-- tex4ht:inline --><div class='tabular'> <table class='tabular' id='TBL-2'><colgroup id='TBL-2-1g'><col id='TBL-2-1' /><col id='TBL-2-2' /><col id='TBL-2-3' /></colgroup><tr id='TBL-2-1-' style='vertical-align:baseline;'><td class='td11' id='TBL-2-1-1' style='white-space:nowrap; text-align:center;'> \(v(\phi )\) </td><td class='td11' id='TBL-2-1-2' style='white-space:nowrap; text-align:center;'>  \(v(\psi )\)  </td><td class='td11' id='TBL-2-1-3' style='white-space:nowrap; text-align:center;'>  \(v(\phi \Rightarrow \psi )\)  </td></tr><tr class='hline' style='border-top:1px solid #000'><td></td><td></td><td></td></tr><tr id='TBL-2-2-' style='vertical-align:baseline;'><td class='td11' id='TBL-2-2-1' style='white-space:nowrap; text-align:center;'> <span class='cmss-12'>T </span></td> <td class='td11' id='TBL-2-2-2' style='white-space:nowrap; text-align:center;'> <span class='cmss-12'>T </span></td> <td class='td11' id='TBL-2-2-3' style='white-space:nowrap; text-align:center;'> <span class='cmss-12'>T</span></td>
+</tr><tr id='TBL-2-3-' style='vertical-align:baseline;'><td class='td11' id='TBL-2-3-1' style='white-space:nowrap; text-align:center;'> <span class='cmss-12'>T  </span></td><td class='td11' id='TBL-2-3-2' style='white-space:nowrap; text-align:center;'> <span class='cmss-12'>F  </span></td><td class='td11' id='TBL-2-3-3' style='white-space:nowrap; text-align:center;'> <span class='cmss-12'>F  </span></td></tr><tr id='TBL-2-4-' style='vertical-align:baseline;'><td class='td11' id='TBL-2-4-1' style='white-space:nowrap; text-align:center;'> <span class='cmss-12'>F </span></td> <td class='td11' id='TBL-2-4-2' style='white-space:nowrap; text-align:center;'> <span class='cmss-12'>T </span></td> <td class='td11' id='TBL-2-4-3' style='white-space:nowrap; text-align:center;'> <span class='cmss-12'>T</span></td>
+</tr><tr id='TBL-2-5-' style='vertical-align:baseline;'><td class='td11' id='TBL-2-5-1' style='white-space:nowrap; text-align:center;'> <span class='cmss-12'>F  </span></td><td class='td11' id='TBL-2-5-2' style='white-space:nowrap; text-align:center;'> <span class='cmss-12'>F  </span></td><td class='td11' id='TBL-2-5-3' style='white-space:nowrap; text-align:center;'> <span class='cmss-12'>T  </span></td></tr><tr class='hline' style='border-top:1px solid #000'><td></td><td></td><td></td></tr></table>                                                                                                                                                                                                                                                                                                                                              </div>
+      <a id='x4-3028r1'></a>
+<figcaption class='caption'><span class='id'>Table 1.1: </span><span class='content'>Truth table for implication
+</span></figcaption><!-- tex4ht:label?: x4-3028r1  -->
+      </figure>
+      </div>
+      </dd><dt class='enumerate-enumitem'>
+  (g) </dt><dd class='enumerate-enumitem'>The sentence \(\phi \Leftrightarrow \psi \) is often read as \(\phi \) <span class='cmti-12'>if and only if</span> \(\psi \) and is actually the sentence \(\phi \Rightarrow \psi \LAND \psi \Rightarrow \phi \), which explains the rule in <a href='#x4-30245'>(v)<!-- tex4ht:ref: item:truth-valuation-for-biimplication  --></a>.</dd></dl>
+ </div>
+<!-- l. 96 --><p class='indent'>
+</p><!-- l. 98 --><p class='indent'> A sentence which always has the truth value <span class='cmss-12'>T </span>is often called a <span class='cmti-12'>tautology</span>.
+</p>
+ <div class='newtheorem'>
+<!-- l. 101 --><p class='noindent'><span class='head'>
+<span class='cmbx-12'>Proposition.</span>  </span> <span class='cmti-12'>Given the sentences</span> \(\phi , \psi , \xi \) <span class='cmti-12'>the following statements are true: </span><a id='eq:modus-ponens'></a>\begin {align}  \label {eq:double-negation-is-assertion} v(\neg \neg \phi \Leftrightarrow \phi ) = \mathsf {T} \\\label {eq:excluded-middle} v(\phi \LOR \neg \phi ) = \mathsf {T} \\ \label {eq:contradiction} v(\phi \LAND \neg \phi ) = \mathsf {F} \\ \label {eq:implication-alt} v \bigl ( (\phi \Rightarrow \psi ) \Leftrightarrow (\neg \psi \Rightarrow \neg \phi ) \Leftrightarrow (\neg \phi \LOR \psi ) \bigr ) = \mathsf {T} \\ \label {eq:or-is-associative} v \bigl ( (\phi \LOR (\psi \LOR \xi )) \Leftrightarrow ((\phi \LOR \psi ) \LOR \xi ) \bigr ) = \mathsf {T} \\ \label {eq:and-is-associative} v \bigl ( (\phi \LAND (\psi \LAND \xi )) \Leftrightarrow ((\phi \LAND \psi ) \LAND \xi ) \bigr ) = \mathsf {T} \\ \label {eq:truth-values-identities} v(\phi ) = \mathsf {T} \Rightarrow \bigl ( v(\phi \LAND \mathsf {T}) = \mathsf {T} = v(\phi \LOR \mathsf {F}) \bigr ) \\ \label {eq:or-by-and} v \bigl ( \neg (\phi \LAND \psi )\Leftrightarrow (\neg \phi \LOR \neg \psi ) \bigr ) = \mathsf {T} \\ \label {eq:and-by-or} v \bigl ( \neg (\phi \LOR \psi )\Leftrightarrow (\neg \phi \LAND \neg \psi ) \bigr ) = \mathsf {T} \\ \label {eq:and-distributes-over-or} v \bigl ( \phi \LAND (\psi \LOR \xi ) \Leftrightarrow ((\phi \LAND \psi ) \LOR (\phi \LAND \xi )) \bigr ) = \mathsf {T} \\ \label {eq:or-distributes-over-and} v \bigl ( \phi \LOR (\psi \LAND \xi ) \Leftrightarrow ((\phi \LOR \psi ) \LAND (\phi \LOR \xi )) \bigr ) = \mathsf {T} \\ \label{eq:modus-ponens} v \bigl ( (\phi \LAND (\phi \Rightarrow \psi )) \Rightarrow \psi \bigr ) = \mathsf {T} \\  \end {align}
+                                                                                                                                                                                                                                                                                                                                                                                                                        <span class='cmti-12'>///</span>
+</p>
+ </div>
+<!-- l. 158 --><p class='indent'>
+</p>
+ <div class='newtheorem'>
+<!-- l. 160 --><p class='noindent'><span class='head'>
+<a id='x4-3030r2'></a>
+<span class='cmbx-12'>Remark 1.2.</span>  </span> Equation \eqref{eq:modus-ponens} provide the only rule of deduction for the logic, called <span class='cmti-12'>modus ponens </span>— given a true sentence \(\phi \) and an implication \(\phi \Rightarrow \psi \) we shall derive \(\psi \), and call this a <span class='cmti-12'>proof  </span>of \(\psi \).
+</p><!-- l. 164 --><p class='indent'> Every proof is actually an exercise of this form, where the sentences \(\phi , \phi \Rightarrow \psi \) are either one of the axioms of the theory, or has been proved in finite number of steps from axioms using this rule.
+</p>
+ </div>
+<!-- l. 165 --><p class='indent'>
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+</p><!-- l. 167 --><p class='indent'> This sets up our machinery and albeit a rigourous and free from ambiguities. The basic axioms are some sentences that are chosen, depending on the theory at hand; obviously, any change in the axioms is expected to change the theory — although some times a given theory can have different axiomatic presentations, and this is a task in itself to be proved. The process of reaching at a particular axiomatic description of a
+theory is often preceded by centuries worth of observations. Once an axiomatic presentation is agreed upon, the truths of the theory are precise logical deductions from the axioms, i.e., manipulations of tautological paths from the chosen well formed formulae of axioms to the true sentences. This is basically the axiomatic approach in mathematics and explains the quotation on page
+<a href='OERch1.html#axiomatic-set-theory'>76<!-- tex4ht:ref: quote:russell-on-mathematics  --></a>.
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+</p>
+ <div class='footnotes'><a id='x4-3005x1'></a>
+<!-- l. 18 --><p class='noindent'><span class='footnote-mark'><a href='#fn1x2-bk' id='fn1x2'><sup class='textsuperscript'>1</sup></a></span><span class='cmr-10'>Read: </span><span class='cmti-10'>not</span> \(\phi \) <span class='cmr-10'>or </span><span class='cmti-10'>negation of</span> \(\phi \)<span class='cmr-10'>.</span></p><a id='x4-3007x2'></a>
+<!-- l. 18 --><p class='noindent'><span class='footnote-mark'><a href='#fn2x2-bk' id='fn2x2'><sup class='textsuperscript'>2</sup></a></span><span class='cmr-10'>Read:</span> \(\phi \) <span class='cmti-10'>implies</span> \(\psi \)<span class='cmr-10'>, or </span><span class='cmti-10'>if</span> \(\phi \) <span class='cmti-10'>then</span> \(\psi \)<span class='cmr-10'>.</span></p><a id='x4-3010x3'></a>
+<!-- l. 21 --><p class='noindent'><span class='footnote-mark'><a href='#fn3x2-bk' id='fn3x2'><sup class='textsuperscript'>3</sup></a></span><span class='cmr-10'>Read: </span><span class='cmti-10'>there exists a</span> \(x\) <span class='cmti-10'>such that</span> \(\phi (x)\)<span class='cmr-10'>.</span></p><a id='x4-3012x4'></a>
+<!-- l. 21 --><p class='noindent'><span class='footnote-mark'><a href='#fn4x2-bk' id='fn4x2'><sup class='textsuperscript'>4</sup></a></span><span class='cmr-10'>Read: </span><span class='cmti-10'>for all</span> \(x\) <span class='cmti-10'>such that</span> \(\phi (x)\)<span class='cmr-10'>.</span></p><a id='x4-3027x5'></a>
+<!-- l. 77 --><p class='noindent'><span class='footnote-mark'><a href='#fn5x2-bk' id='fn5x2'><sup class='textsuperscript'>5</sup></a></span><span class='cmr-10'>Using vacuous implication observe, irrespective of the well formed formulae</span> \(\phi , \psi , \chi \)<span class='cmr-10'>, the formulae</span> \(\phi \Rightarrow (\psi \Rightarrow \chi ), \neg \phi \Rightarrow (\phi \Rightarrow \chi ), (\phi \Rightarrow \psi ) \LOR (\psi \Rightarrow \chi )\) <span class='cmr-10'>are all true! No doubt this is quite problematic and hence the vent to alternate classes of logic.</span></p>                                                                                                                                                                                                                                                                                                                                                                                                             </div> <!-- l. 2 --><div class='crosslinks'><p class='noindent'>[<a href='OERse2.html'>next</a>] [<a href='OERse1.html'>front</a>] [<a href='OERch1.html#OERse1.html'>up</a>]
+</p></div>
+<!-- l. 2 --><p class='indent'> <a id='tailOERse1.html'></a> </p> 
 </body> 
 </html>

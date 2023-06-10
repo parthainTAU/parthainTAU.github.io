@@ -1,6 +1,6 @@
 <!DOCTYPE html> 
 <html lang='en-US' xml:lang='en-US'> 
-<head><title>Deciding on equality</title> 
+<head><title>Pairing</title> 
 <meta charset='utf-8' /> 
 <meta content='TeX4ht (https://tug.org/tex4ht/)' name='generator' /> 
 <meta content='width=device-width,initial-scale=1' name='viewport' /> 
@@ -8,9 +8,9 @@
 <meta content='OER.tex' name='src' /> 
 <script>window.MathJax = { loader: { load: ['[tex]/color', '[tex]/ams', 'xypic'], source: { xypic: 'https://cdn.jsdelivr.net/gh/sonoisa/XyJax-v3/build/xypic.js' } }, chtml: { matchFontHeight: false }, tex: { tags: "ams", packages: ['base', 'newcommand', 'color', 'ams' , 'xypic', 'boldsymbol', 'verb'], } }</script> 
  <script async='async' id='MathJax-script' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js' type='text/javascript'></script>  
- <script> window.MathJax = { tex: { tags: "ams", processEscapes: true, processEnvironments: true, packages: [\OT1\textquoteright base\OT1\textquoteright , \OT1\textquoteright color\OT1\textquoteright , \OT1\textquoteright ams\OT1\textquoteright , \OT1\textquoteright boldsymbol\OT1\textquoteright , \OT1\textquoteright newcommand\OT1\textquoteright , \OT1\textquoteright verb\OT1\textquoteright , 'xypic'] }, loader: { load: [\OT1\textquoteright [tex]/color\OT1\textquoteright , \OT1\textquoteright [tex]/ams\OT1\textquoteright , \OT1\textquoteright [tex]/boldsymbol\OT1\textquoteright , \OT1\textquoteright [tex]/newcommand\OT1\textquoteright , \OT1\textquoteright [tex]/verb\OT1\textquoteright ] } }; </script> 
+ <script> window.MathJax = { tex: { tags: "ams", processEscapes: true, processEnvironments: true, packages: [’base’, ’color’, ’ams’, ’boldsymbol’, ’newcommand’, ’verb’, 'xypic'], }, loader: { load: [’[tex]/color’, ’[tex]/ams’, ’[tex]/boldsymbol’, ’[tex]/newcommand’, ’[tex]/verb’] } }; </script> 
 </head><body>
- <div class='verbatiminput'>
+<!-- l. 2 --><p class='noindent'>
   \(
 \newcommand{\Ab}{\mbox{$\mathtt{Ab}$}\xspace}
 \newcommand{\AbCl}{\mbox{$\mathtt{AbCl}$}\xspace}
@@ -51,11 +51,11 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\Cat}{\mbox{$\mathtt{Cat}$}\xspace}
 \newcommand{\Catv}[1]{\mbox{$\mathtt{Cat}_{\mathrm{objects} \in {#1}}$}\xspace}
 \newcommand{\CDLat}{\mbox{$\mathtt{CDLat}$}\xspace}
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\CenMor}[1]{\mbox{$\mathfrak{C}\,#1$}\xspace}
 \newcommand{\cenmor}[3]{\mbox{$\mathfrak{C}{#1}(#2,
 #3)$}\xspace}
-                                                                                                                                                                                                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\CGrp}{\mbox{$\mathtt{CGrp}$}\xspace}
 \newcommand{\CGTop}{\mbox{$\mathtt{CGTop}$}\xspace}
 \newcommand{\ChComp}[1]{\mbox{$\mathtt{Ch}[#1]$}\xspace}
@@ -102,14 +102,14 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\CRg}{\mbox{$\mathtt{Crg}$}\xspace}
 \newcommand{\CRig}{\mbox{$\mathtt{CRig}$}\xspace}
 \newcommand{\CRing}{\mbox{$\mathtt{CRing}$}\xspace}
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\CRingz}[1]{\mbox{${#1}_{z\text{-ideal}}$}\xspace}
 \newcommand{\CRng}{\mbox{$\mathtt{CRng}$}\xspace}
 \newcommand{\CSemGrp}{\mbox{$\mathtt{CSemGrp}$}\xspace}
 \newcommand{\CSemLat}[1]{\mbox{${#1}$-$\mathtt{CSemLat}$}\xspace}
 \newcommand{\CstarAlg}{\mbox{$C^*$-$\mathtt{Alg}$}\xspace}
 \newcommand{\cstr}[1]{\mbox{${#1}_{\mathtt{cstr}}$}\xspace}
-                                                                                                                                                                                                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\CTopGrp}{\mbox{$\mathtt{ComTopGrp}$}\xspace}
 \newcommand{\CUMagma}{\mbox{$\mathtt{CUMag}$}\xspace}
 \newcommand{\CUnif}{\mbox{$\mathtt{CUnif}$}\xspace}
@@ -153,6 +153,8 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\Filb}[1]{\mbox{$\mathtt{Filb}\,#1$}\xspace}
 \newcommand{\Filfg}[1]{\mbox{$\mathtt{Fil}_{\mathtt{fg}}#1$}\xspace}
 \newcommand{\Filu}[1]{\mbox{$\mathtt{UFil}\,#1$}\xspace}
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\FinAb}{\mbox{$\mathtt{FinAb}$}\xspace}
 \newcommand{\FinOrd}{\mbox{$\mathtt{FinOrd}$}\xspace}
 \newcommand{\FinPrOrd}{\mbox{$\mathtt{FinPrOrd}$}\xspace}
@@ -162,8 +164,6 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\FitLoc}{\mbox{$\mathtt{FitLoc}$}\xspace}
 \newcommand{\fix}[1]{\mbox{$\mathtt{Fix}(#1)$}\xspace}
 \newcommand{\Flat}[2]{\mbox{$\mathtt{Flat}(#1, #2)$}\xspace}
-                                                                                                                                                                                                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\Fld}{\mbox{$\mathtt{Fld}$}\xspace}
 \newcommand{\fp}[1]{\mbox{$#1_{\mathtt{fp}}$}\xspace}
 \newcommand{\fpr}[1]{\mbox{$#1_{\mathtt{fpr}}$}\xspace}
@@ -204,6 +204,8 @@ l}}-$\mathtt{CRing}$}\xspace}
 %%% inducing the monad #1
 \newcommand{\ind}[1]{\mbox{$\mathtt{Ind}\,#1$}\xspace}
 \newcommand{\intcat}[1]{\mbox{${#1}$-$\mathtt{Int}$}} %%% interval wrt bifunctor
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\Int}[2]{\mbox{$#1[#2]$}\xspace}
 \newcommand{\IntDom}{\mbox{$\mathtt{IntDom}$}\xspace}
 \newcommand{\IntFunCat}[3]{\mbox{$\llfloor{#2}^{#1}\rrfloor_{#3}$}\xspace} %uses stmaryrd
@@ -216,8 +218,6 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\Iso}[1]{\mbox{$\mathtt{Iso}(#1)$}\xspace}
 \newcommand{\Iter}[2]{\mbox{$\mathtt{It}_{{#1}}[{#2}]$}\xspace} %%% #1 functor, #2 base category
 \newcommand{\KCReg}[1]{\mbox{$\mathtt{KCReg}#1$}\xspace}
-                                                                                                                                                                                                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\KCRegFrm}{\mbox{$\mathtt{KCRegFrm}$}\xspace}
 \newcommand{\ken}[1]{\mbox{$\mathtt{Kar}\left[{#1}\right]$}\xspace}
 \newcommand{\KFrm}{\mbox{$\mathtt{KFrm}$}\xspace}
@@ -255,6 +255,8 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\Met}{\mbox{$\mathtt{Met}$}\xspace}
 \newcommand{\MetContr}{\mbox{$\mathtt{Met}_{\mathrm contraction}$}\xspace}
 \newcommand{\MetUC}{\mbox{$\mathtt{Met}_{\mathrm unif}$}\xspace}
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\Mod}[1]{\mbox{${#1}$-$\mathtt{Mod}$}\xspace}
 \newcommand{\Modlt}[1]{\mbox{${#1}$-$\mathtt{Mod}_{l}$}\xspace}
 \newcommand{\Modrt}[1]{\mbox{${#1}$-$\mathtt{Mod}_{r}$}\xspace}
@@ -270,8 +272,6 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\Mor}[1]{\mbox{$\mathrm{Mor}(#1)$}\xspace}
 \newcommand{\MSet}[1]{\mbox{$#1$-$\mathtt{Set}$}\xspace}
 \newcommand{\MSetl}[1]{\mbox{$#1$-$\mathtt{Set}_{\mathsrm{l}}$}\xspace}
-                                                                                                                                                                                                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\MSetr}[1]{\mbox{$#1$-$\mathtt{Set}_{\mathrm{r}}$}\xspace}
 
 %%%%%%  NNNNNNNNNNNNNNNNNNNNNNNNNN     %%%%%%%
@@ -306,6 +306,8 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\pathsp}[1]{\mbox{$\mathtt{Path}[{#1}]$}\xspace}
 \newcommand{\perm}[1]{\mbox{$\mathtt{Perm}#1$}\xspace}
 \newcommand{\PerTop}{\mbox{$\mathtt{PerTop}$}\xspace}
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\pCGTop}{\mbox{$\mathtt{CGTop}_{\star}$}\xspace}
 \newcommand{\pfs}[1]{\mbox{$\mathtt{Pfs}[#1]$}\xspace}
 \newcommand{\pit}[2]{\mbox{$\mathtt{Pit}_{{#1}}[{#2}]$}\xspace}
@@ -324,8 +326,6 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\PreOrd}{\mbox{$\mathtt{PreOrd}$}\xspace}
 \newcommand{\Pries}{\mbox{$\mathtt{Pries}$}\xspace}
 \newcommand{\Prof}{\mbox{$\mathtt{Prof}$}\xspace}
-                                                                                                                                                                                                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\Pros}{\mbox{$\mathtt{Pros}$}\xspace}
 \newcommand{\pre}[1]{\mbox{$\mathtt{pre}[#1]$}\xspace}
 \newcommand{\pse}[1]{\mbox{$\mathtt{pse}[#1]$}\xspace}
@@ -357,6 +357,8 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\RegIdl}[1]{\mbox{$\underline{\mathrm{RegIdl}}[#1]$}\xspace}
 \newcommand{\RegMon}[1]{\mbox{$\mathtt{RegMon}(#1)$}\xspace}
 \newcommand{\RegFrm}{\mbox{$\mathtt{RegFrm}$}\xspace}
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\RegLoc}{\mbox{$\mathtt{RegLoc}$}\xspace}
 \newcommand{\RegQuo}[1]{\mbox{$\mathfral{RegQuo}(#1)$}\xspace}
 \newcommand{\RegsFrm}{\mbox{$\mathtt{Reg}\sigma\mathtt{Frm}$}\xspace}
@@ -378,8 +380,6 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\Sec}[1]{\mbox{$\mathrm{Sect}(#1)$}\xspace}
 \newcommand{\SemGrp}{\mbox{$\mathtt{SemGrp}$}\xspace}
 \newcommand{\SemLat}[1]{\mbox{${#1}{\text -}\mathtt{SemLat}$}\xspace}
-                                                                                                                                                                                                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\SemMod}[1]{\mbox{$#1$-$\mathtt{SemMod}$}\xspace}
 \newcommand{\Ses}[1]{\mbox{$\mathtt{Ses}\left[#1\right]$}\xspace}
 \newcommand{\Set}{\mbox{$\mathtt{Set}$}\xspace}
@@ -408,6 +408,8 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\Stone}[1]{\mbox{$\mathtt{Stone}[#1]$}\xspace}
 \newcommand{\StSp}{\mbox{$\mathtt{StSp}$}\xspace}
 \newcommand{\StrEpi}[1]{\mbox{$\mathtt{StrEpi}(#1)$}\xspace}
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\StrMon}[1]{\mbox{$\mathtt{StrMon}(#1)$}\xspace}
 \newcommand{\StrMonCat}{\mbox{$\mathtt{StMonCat}$}\xspace}
 \newcommand{\struct}[1]{\mbox{$#1$-$\mathtt{FRL}$}\xspace}
@@ -432,8 +434,6 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\TopMon}{\mbox{$\mathtt{TopMon}$}\xspace}
 \newcommand{\TopSob}{\mbox{$\mathtt{TopSob}$}\xspace}
 \newcommand{\TopSpec}{\mbox{$\mathtt{Top}_{\mathtt{spec}}$}\xspace}
-                                                                                                                                                                                                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\TopTZero}{\mbox{$\mathtt{Top}_0$}\xspace}
 \newcommand{\TorFrAb}{\mbox{$\mathtt{TorFrAb}$}\xspace}
 \newcommand{\TotDis}{\mbox{$\mathtt{TotDisc}$}\xspace}
@@ -459,6 +459,8 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\Vect}[1]{\mbox{$#1$-$\mathtt{Vec}$}\xspace}
 
 %%%%% WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW %%%%%%%%%
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 
 \newcommand{\wNHD}[1]{\mbox{$\mathtt{wNbd}[#1]$}\xspace} % category of
 % internal weak neighbourhood spaces
@@ -486,8 +488,6 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\adjtiso}[3]{\mbox{${#1} \overset{#3}{\dashv} {#2}$}}
 \newcommand{\adjtpair}[5]{\mbox{$\xymatrix@!C=#5{ {#3}
 \ar@/^2ex/[r]^{#1}  &amp; {#4} \ar@/^2ex/[l]^{#2} }$}}
-                                                                                                                                                                                                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\ADJTSIT}[7]{\mbox{$\Bigl\langle\xymatrix{ {#3}
 \ar@&amp;lt;0.9ex&amp;gt;[r]^{#1} \ar@{}[r]|{\bot} \ar@&amp;lt;-0.9ex&amp;gt;@{&amp;lt;-}[r]_{#2} &amp; {#4} };
 \mathrm{unit:}\xspace \id{#3} \xrightarrow{#5} {#2}\circ {#1},
@@ -510,6 +510,8 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\arity}[1]{\mbox{$\mathtt{ar}\,{#1}$}\xspace}
 \newcommand{\ArGrFib}[7]{\mbox{$\xymatrix{ {#4} \ar@{-&amp;gt;}[dd]_{#2} &amp; {#6} \ar@{-&amp;gt;}[dd]^{#3} \\ {} \ar@{-&amp;gt;}[r]^{#1} &amp; \\ {#5} &amp; {#7} }$}}
 \newcommand{\Arr}[3]{\mbox{$#2 \xrightarrow{#1} #3$}}
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\Arrl}[3]{\mbox{$\xymatrix{ {#2} \ar@{~&amp;gt;}[r]^-{#1} &amp; {#3} }$}}
 \newcommand{\arr}[5]{\mbox{$#1 : #2 \xrightarrow[#4]{#5} #3$}}
 \newcommand{\arrp}[4]{\mbox{$\xymatrix@!{ {#3} \ar@&amp;lt;3pt&amp;gt;[r]^-{#1}
@@ -540,8 +542,6 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\bld}[1]{\mbox{$\mathbf{#1}$}}
 \newcommand{\borel}[1]{\mbox{$\mathscr{B}{#1}$}\xspace} %%% requires
 %%% mathrsfs package
-                                                                                                                                                                                                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\BOT}{\mbox{$\bot$}}
 \newcommand{\BOX}[1]{\framebox{$#1$}\xspace}
 \newcommand{\boxop}[2]{\mbox{$\boxed{{#1}}_{\text{\hspace{0.6ex}}{#2}}$}\xspace}
@@ -561,6 +561,8 @@ l}}-$\mathtt{CRing}$}\xspace}
             \node[shape=circle,draw,inner sep=2pt] (char) {#1};}\xspace}
 \newcommand{\clemb}[1]{\mbox{$#1_{\text{clemb}}$}\xspace}
 \newcommand{\cls}[2]{\mbox{$\mathrm{cl}_{#2}{#1}$}\xspace}
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\clsm}[2]{\mbox{$\widehat{\mathrm{cl}_{#2}}{#1}$}\xspace}
 \newcommand{\cluster}[3]{\mbox{${#1} \underset{{#3}}{\rightsquigarrow} {#2}$}\xspace}
 \newcommand{\closedembed}[1]{\mbox{${#1}_{\mathsf{clemb}}$}\xspace}
@@ -594,8 +596,6 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\coev}[2]{\mbox{$\mathbf{coev}^{#1}_{#2}$}}  % #1=domain
 \newcommand{\coft}[3]{\mbox{$\omega_{#1}^{#3}(#2)$}}
 \newcommand{\Coker}[1]{\mbox{$\mathtt{c}_{#1}$}}
-                                                                                                                                                                                                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\Cokero}[1]{\mbox{$\mathtt{cok}\,\/#1$}}
 \newcommand{\Cokernel}[1]{\mbox{$(\mathtt{Cok}\,\/#1, \mathtt{cok}\,\/#1)$}}
 \newcommand{\colimit}[2]{\mbox{${\underrightarrow{\mathtt{lim}}}_{{#2}}\,
@@ -612,6 +612,8 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\consfunc}[1]{\mbox{$\mathbf{#1}$}}
 \newcommand{\Converge}[4]{\mbox{$\lim_{#3 \rightarrow #4}#1 = #2$}}
 \newcommand{\converge}[4]{$#1 \longrightarrow #2$ as $#3 \longrightarrow
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 #4$}
 \newcommand{\copower}[2]{\mbox{${#1} _{\scriptstyle \square} {#2}$}\xspace}
 \newcommand{\coprd}[2]{\mbox{${#1} \boldsymbol{+} {#2}$}}
@@ -648,8 +650,6 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\diam}[1]{\mbox{$\mathfrak{d}(#1)$}}
 \newcommand{\din}[4]{\mbox{$\int_{{#1}}^{{#2}} {#3}\,\text{d}{#4}$}}
 \newcommand{\dinat}[3]{\mbox{${#1}: {#2} \rightsquigarrow  {#3}$}\xspace}
-                                                                                                                                                                                                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\dirsum}[2]{\mbox{$#1 \oplus #2$}}
 \newcommand{\dirsumfin}[2]{\mbox{$#1_{0} \oplus #1_{1} \oplus \dots
 #1_{{#2}-1}$}}
@@ -663,6 +663,8 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\dom}[1]{\mbox{$\mathtt{dom}\,#1$}\xspace}
 \newcommand{\downset}[1]{\mbox{$\mathtt{Dn}{#1}$}\xspace}
 \newcommand{\downsetfg}[1]{\mbox{$\mathtt{Dn}_{\mathtt{fg}}{#1}$}\xspace}
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\dpp}[2]{\mbox{$\mathrm{dpp}({\mathcal #1}, {\mathcal #2})$}}
 \newcommand{\Dpp}[2]{\mbox{$\mathrm{dpp}(#1, #2)$}}
 \newcommand{\dx}[2]{\mbox{$\dfrac{\text{d}}{\text{d}{#2}}#1$}}
@@ -702,8 +704,6 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\eulf}[1]{\mbox{${\mathfrak #1}$}}
 \newcommand{\ev}[2]{\mbox{$\mathtt{ev}^{#1}_{#2}$}}  % #1=domain, #2=codomain
 \newcommand{\Exists}{\mbox{$\text{\raisebox{0.6em}{
-                                                                                                                                                                                                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                                                                                                                                                                                                           
         \rotatebox{-180}{\bf E}}}$}\xspace}
 \newcommand{\exs}[2]{\mbox{$\exists_{{#1}} {#2}$}}
 \newcommand{\extn}[2]{\mbox{$\left[#1:#2\right]$}}
@@ -714,6 +714,8 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\factmap}[1]{\mbox{$\nu_{#1}$}}
 \newcommand{\facemap}[4]{\mbox{$\sigma_{{#3}}^{{#1}, {#2}}{#4}$}\xspace}
 \newcommand{\famap}[5]{$#1 \xrightarrow{#3} #2$, $(#4)$, in $#5$\,\,}
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\fepi}[3]{\mbox{$\xymatrix{ {#2} \ar@{-&amp;gt;&amp;gt;}[r]^-{{#1}} &amp; {#3} }$}\xspace}
 \newcommand{\finer}[2]{\mbox{$#1 \curlyeqprec #2$}}
 \newcommand{\FINV}[2]{\mbox{${#1}^{\mathbf{-1}}{#2}$}\xspace}
@@ -756,8 +758,6 @@ l}}-$\mathtt{CRing}$}\xspace}
     $}\xspace}
 \newcommand{\grprng}[2]{\mbox{$#1\langle\langle#2\rangle\rangle$}}
 \newcommand{\gte}[2]{\mbox{${#1} \geq {#2}$}}
-                                                                                                                                                                                                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                                                                                                                                                                                                           
 
 %%%%%% HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH %%%%%%
 
@@ -765,6 +765,8 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\HOM}[2]{\mbox{$\mathrm{hom}(#1, #2)$}}
 \newcommand{\homo}[3]{\mbox{$\mathrm{hom}_{#1}\left(#2, #3\right)$}}
 \newcommand{\Homo}[3]{\mbox{${#1}\left(#2, #3\right)$}}
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\homob}[3]{\mbox{${\mathtt{Bim}}(#1, #2; #3)$}}
 \newcommand{\homoe}[3]{\mbox{${#1}[#2, #3]$}\xspace}
 \newcommand{\homoi}[2]{\mbox{$\mathrm{Hom}({#1},{#2})$}}
@@ -810,12 +812,12 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\InvRel}[3]{\mbox{$#1^{-1}\bigl(\xymatrix{ {#2}
 \ar@/^2ex/[r] \ar@/_2ex/[r] &amp; {#3} }\bigr)$}\xspace}
 \newcommand{\iso}[3]{\mbox{$\xymatrix{ {#2} \ar@{-&amp;gt;}[r]^{#1}
-                                                                                                                                                                                                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                                                                                                                                                                                                           
       \ar@{}[r]_{\approx} &amp; {#3} }$}}
 \newcommand{\ISO}[2]{\mbox{${#1} \approx {#2}$}\xspace}
 
 %%%%%% KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK %%%%%%
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 
 \newcommand{\kanl}[2]{\mbox{$\left(\mathsf{lan}_{{#2}}{#1}\right)$}\xspace}
 \newcommand{\kanr}[2]{\mbox{$\left(\mathsf{ran}_{{#2}}{#1}\right)$}\xspace}
@@ -864,9 +866,9 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\matsq}[2]{\mbox{$\left({#1_{i,j}}\right)_{i,j=0}^{{#2}-1}$}}
 \newcommand{\Max}[1]{\mbox{$\mathtt{Max}[#1]$}\xspace}
 \newcommand{\mc}[1]{\mbox{$\mathfrak{C}_{{#1}}$}\xspace}
-                                                                                                                                                                                                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\mcimgo}[1]{\mbox{$\mathtt{Coim}{#1}$}\xspace}
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\mcimg}[1]{\mbox{$\mathtt{coim}{#1}$}\xspace}
 \newcommand{\md}[1]{\mbox{$\mathfrak{D}_{{#1}}$}\xspace}
 \newcommand{\mdr}[1]{\mbox{$\mathfrak{Dr}_{{#1}}$}\xspace}
@@ -916,10 +918,10 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\opp}[1]{\mbox{$#1^{\mathtt{op}}$}}
 \newcommand{\ord}[1]{\mbox{$\omega_{#1}$}}
 \newcommand{\orth}[1]{\mbox{${#1}^{\bot}$}\xspace}
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\orthpair}[2]{\mbox{${#1} \perp {#2}$}\xspace}
 \newcommand{\otriple}[3]{\mbox{$(#1, #2, #3)$}\xspace}
-                                                                                                                                                                                                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\overfib}[2]{\mbox{$\xymatrix{ {#1} \ar@{|-&amp;gt;}[r] &amp; {#2} }$}\xspace}
 \newcommand{\Overfib}[3]{\mbox{$\xymatrix{ {#2} \ar@{|-&amp;gt;}[r]^{#1} &amp; {#3}
 }$}\xspace}
@@ -967,13 +969,13 @@ l}}-$\mathtt{CRing}$}\xspace}
       #1_{#2}
     \right)_{{#2} \in {#3}}$}\xspace}
 \newcommand{\prdten}[2]{\mbox{$#1 \otimes #2$}}
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\preimg}[2]{\mbox{${#1}^{\leftarrow}[#2]$}\xspace}
 \newcommand{\prepartop}[4]{\mbox{$\bigl(#1, #2, #3, #4\bigr)$}\xspace}
 \newcommand{\Prm}[1]{\mbox{$\mathtt{Prm}[#1]$}\xspace}
 \newcommand{\probinifin}[4]{$(#1, #2, #3~: #4)$}
 \newcommand{\probinifinsol}[7]{$#5 = \text{#7}_{#6}(#1, #2, #3~: #4)$}
-                                                                                                                                                                                                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\proj}[2]{\mbox{\text{{\small \bf pr}}$_{#2}{#1}$}} %%% projection of the vector #1 on the vector #2
 \newcommand{\propermorphism}[1]{\mbox{${#1}_{\mathsf{pr}}$}\xspace}
 \newcommand{\pscmpl}[2]{\mbox{$#1 \longrightarrow #2$}\xspace}
@@ -1018,6 +1020,8 @@ l}}-$\mathtt{CRing}$}\xspace}
 
 \newcommand{\quoset}[2]{\mbox{$\mathsf{Q}[{#1}, {#2}]$}\xspace}
 \newcommand{\quoSet}[3]{\mbox{$
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
     \left(\frac{#1}{#2=#3}
     \right)$}\xspace}
 \newcommand{\quomap}[2]{\mbox{$\mathsf{q}_{{#1},{#2}}$}\xspace}
@@ -1026,8 +1030,6 @@ l}}-$\mathtt{CRing}$}\xspace}
 
 \newcommand{\ract}[3]{\mbox{$\left[{#3} \triangleleft_{#1} {#2}\right]$}\xspace}
 \newcommand{\rbel}[2]{\mbox{$#1 \prec #2$}}
-                                                                                                                                                                                                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\rcf}[1]{\mbox{$\mathfrak{C}\,#1$}\xspace}
 \newcommand{\rcfb}[1]{\mbox{$\mathfrak{C}^*\,#1$}\xspace}
 \newcommand{\rlfrm}{\mbox{$\mathcal{L}(\mathbb{R})$}\xspace}
@@ -1069,6 +1071,8 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\ses}[5]{\mbox{$\xymatrix{ {\zeroo} \ar@{-&amp;gt;}[r]^{} &amp; {#3}
 \ar@{-&amp;gt;}[r]^{#1} &amp; {#4} \ar@{-&amp;gt;}[r]^{#2} &amp; {#5} \ar@{-&amp;gt;}[r]^{} &amp;
 {\zeroo} }$}}
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\SET}[1]{\mbox{$\mathbf{Set}(#1)$}}
 \newcommand{\sgn}[1]{\mbox{$\mathbf{sgn}\,#1$}}
 \newcommand{\sing}[1]{\mbox{$\{\cdot\}_{#1}$}}
@@ -1080,8 +1084,6 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\specfrm}[1]{\mbox{$\Sigma #1$}}
 \newcommand{\specfrmopen}[2]{\mbox{$\Sigma_{#2}(#1)$}}
 \newcommand{\splepi}[4]{\mbox{$\left(\xymatrix{ {#3} \ar@&amp;lt;0.6ex&amp;gt;[r]^-{#1} \ar@{&amp;lt;-}@&amp;lt;-0.6ex&amp;gt;[r]_-{#2} &amp; {#4} }\right)$}\xspace}
-                                                                                                                                                                                                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\Splepi}[3]{\mbox{$\left(\xymatrix{ {#2} \ar@&amp;lt;0.6ex&amp;gt;[r]^-{#1} \ar@{&amp;lt;-}@&amp;lt;-0.6ex&amp;gt;[r]_-{s_{#1}} &amp; {#3}} \right)$}\xspace}
 \newcommand{\splrel}[7]{$\xymatrix{ &amp; {#5} \ar@{-&amp;gt;}[dl]_{#1}
 \ar@{-&amp;gt;}[dr]^{#2} &amp; \\ {#6} \ar@/^8ex/[ur]^{#3} &amp; &amp; {#7}
@@ -1120,6 +1122,8 @@ node[below] at (0,0.36) {${#1}$};}\xspace}
 \ar@(ur,dr)@2{-} \\
 }$}\xspace}
 \newcommand{\terma}[1]{\mbox{$\mathtt{t}_{#1}$}\xspace}
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\termo}{\mbox{${\mathtt 1}$}\xspace}
 \newcommand{\tensor}[3]{\mbox{$#2 \otimes_{#1} #3$}\xspace}
 \newcommand{\tfae}{The following are equivalent\xspace}
@@ -1134,8 +1138,6 @@ node[below] at (0,0.36) {${#1}$};}\xspace}
 \newcommand{\triple}[3]{\mbox{$(#1, #2, #3)$}}
 \newcommand{\TT}[1]{\mbox{${\mathtt #1}$}}
 \newcommand{\tuple}[2]{\mbox{$(#1_{0}, #1_{1}, \dots, #1_{#2 - 1})$}}
-                                                                                                                                                                                                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand{\tw}{\mbox{$\mathbf{\scriptstyle tw}$}}
 
 %%%%%% UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU  %%%%%%%
@@ -1171,56 +1173,36 @@ node[below] at (0,0.36) {${#1}$};}\xspace}
 \newcommand{\zeroo}{\mbox{$\mathtt{0}$}\xspace}
 \newcommand{\ZeroSp}{\mbox{$\mathfrak{0}$}\xspace}
 \newcommand{\zidl}[1]{\mbox{$\mathbf{Zid}[#1]$}\xspace}
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 \newcommand\xspace{}
 \newcommand\xymatrixcolsep[1]{}
 \newcommand\xymatrixrowsep[1]{}
   \)
- </div> <!-- l. 2 --><div class='crosslinks'><p class='noindent'>[<a href='OERsu4.html'>next</a>] [<a href='#tailOERsu3.html'>tail</a>] [<a href='OERsu2.html#OERsu3.html'>up</a>] </p></div>
- <h5 class='subsubsectionHead' id='deciding-on-equality'><span class='titlemark'>1.2.1. </span> <a id='x6-50001.2.1'></a>Deciding on equality</h5>
+
+</p>
+<!-- l. 2 --><div class='crosslinks'><p class='noindent'>[<a href='OERsu4.html'>next</a>] [<a href='OERsu2.html'>prev</a>] [<a href='OERsu2.html#tailOERsu2.html'>prev-tail</a>] [<a href='#tailOERsu3.html'>tail</a>] [<a href='OERse2.html#OERsu3.html'>up</a>] </p></div>
+ <h4 class='subsectionHead' id='pairing'><span class='titlemark'>1.2.3   </span> <a id='x8-70001.2.3'></a>Pairing</h4>
  <div class='newtheorem'>
 <!-- l. 5 --><p class='noindent'><span class='head'>
-<a id='x6-5001r1'></a>
-<span class='cmcsc-10'>A<span class='small-caps'>xiom</span> </span>1 (Axiom of Extensionality)<span class='cmcsc-10'>.</span>  </span> \begin {equation}  \label {eq:extensionality} \bigl ( u \in x \Leftrightarrow u \in y \bigr ) \Rightarrow x = y.  \end {equation}
+<a id='x8-7001r3'></a>
+<span class='cmbx-12'>Axiom 3 </span>(Axiom of Pairing)<span class='cmbx-12'>.</span>  </span><a id='eq:pairing'></a> \begin {equation}  \label{eq:pairing} \exists a \bigl ( \smset {a} \LAND x \in a \LAND y \in a \bigr ).  \end {equation}<a id='x8-7002r4'></a>
 </p>
  </div>
-<!-- l. 13 --><p class='indent'>
-                                                                                                                                                                                                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                                                                                                                                                                                                           
-</p><!-- l. 15 --><p class='noindent'>
- </p><dl class='enumerate-enumitem'><dt class='enumerate-enumitem'>
- H. </dt><dd class='enumerate-enumitem'><a id='x6-50028'></a> Firstly, <span class='cmbx-10'>every axiom is a sentence</span>; the statement actually does not seem so. Thus the statement should have been: \begin {equation*}  \forall x\forall y \forall u \biggl [ \bigl ( u \in x \Leftrightarrow u \in y \bigr ) \Rightarrow x = y \biggr ];  \end {equation*}
-however, we <span class='cmti-10'>agree </span>to write as in \(\mathrm {(\ref {eq:extensionality})}\). Whenever an axiom is stated, it is meant to hold for <span class='cmss-10'>all </span>occurrences of the free variables. Under this agreement, the second form is just redundant.
-<!-- l. 28 --><p class='indent'> One reason for this strange agreement: this is a standard practice in mathematics, thereby making the axioms look much <span class='cmti-10'>simpler </span>without the decorative initial string of universal quantifier symbols \(\forall \).
-</p><!-- l. 30 --><p class='indent'> In fact, we take this agreement a little further: in this series, whenever a statement with free variables is asserted to be <span class='cmss-10'>true</span>, it means that for all occurrences of the free variables the respective statements are <span class='cmss-10'>true</span>.
- </p></dd><dt class='enumerate-enumitem'>
- I. </dt><dd class='enumerate-enumitem'>Taking \(\phi (x) = u \in x\), the substitution and symmetry properties of equality (equations \(\mathrm {(\ref {eq:symmetry})}\)&amp;\(\mathrm {(\ref {eq:substitution})}\)) states: \begin {equation*}  x = y \Rightarrow \biggl [ (\phi (x) \Rightarrow \phi (\divs {y}{x})) \LAND (\phi (y) \Rightarrow \phi (\divs {x}{y})) \biggr ]  \end {equation*}
-<!-- l. 40 --><p class='indent'> Thus, Axiom <a href='#x6-5001r1'>1<!-- tex4ht:ref: axiom:extensionality  --></a> ensures the non-trivial part of the statement: <span class='cmti-10'>two sets</span> \(x\) <span class='cmti-10'>and</span> \(y\) <span class='cmti-10'>are equal if and only if they have the same elements</span>.
- </p></dd><dt class='enumerate-enumitem'>
- J. </dt><dd class='enumerate-enumitem'>The sole purpose of Axiom <a href='#x6-5001r1'>1<!-- tex4ht:ref: axiom:extensionality  --></a> is to <span class='cmti-10'>define </span>equality of two sets.</dd></dl>
- <div class='newtheorem'>
-<!-- l. 45 --><p class='noindent'><span class='head'>
-<span class='cmcsc-10'>D<span class='small-caps'>efinition</span>.</span>  </span> A set \(x\) is called a <span class='cmti-10'>small set</span>, written \(\mathtt {small}[x]\), if \(\exists y(x \in y)\); a set which is not small, i.e., \(\neg \smset {x}\) is true, is called a <span class='cmti-10'>large set </span>and written \(\mathtt {large}[x]\).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 \(\Diamond \)
-</p>
- </div>
-<!-- l. 48 --><p class='indent'>
-</p><!-- l. 50 --><p class='noindent'>Does there exist a small set? a large set? Till now, we do not know the answer. However, if we are given \(x\) is a small set, then from its definition there exists a set \(y\) such that \(x \in y\).
-</p><!-- l. 52 --><p class='indent'> The <span class='cmti-10'>checking </span>for equality in Axiom <a href='#x6-5001r1'>1<!-- tex4ht:ref: axiom:extensionality  --></a> can be done only with small sets:
+<!-- l. 14 --><p class='indent'>
 </p>
  <div class='newtheorem'>
-<!-- l. 53 --><p class='noindent'><span class='head'>
-<span class='cmcsc-10'>P<span class='small-caps'>roposition</span>.</span>  </span> <span class='cmti-10'>For any two sets</span> \(x, y\)<span class='cmti-10'>:</span> \(x = y \Leftrightarrow \forall u \bigl ( \smset {u} \LAND (u \in x \Leftrightarrow u \in y ) \bigr )\)<span class='cmti-10'>.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ///</span>
+<!-- l. 16 --><p class='noindent'><span class='head'>
+<a id='x8-7003r7'></a>
+<span class='cmbx-12'>Remark 1.7.</span>  </span> Axiom <a href='#x8-7001r3'>3<!-- tex4ht:ref: axiom:pairing  --></a> states: <span class='cmti-12'>for every sets</span> \(x\) <span class='cmti-12'>and</span> \(y\)<span class='cmti-12'>, there exists a small set</span> \(a\) <span class='cmti-12'>which contain both</span> \(x\) <span class='cmti-12'>and</span> \(y\) <span class='cmti-12'>as elements</span>.
+</p><!-- l. 20 --><p class='indent'> Thus, in essence, if we are given with small sets \(x, y\), using Axioms <a href='OERsu1.html#x6-5001r1'>1<!-- tex4ht:ref: axiom:extensionality  --></a>-<a href='#x8-7001r3'>3<!-- tex4ht:ref: axiom:pairing  --></a> one obtains the unique set \(\{x,y\}\) which contain precisely the sets \(x, y\). Is \(\{x,y\}\) a small set? till now not known, but Axiom suggests there exists a small set \(a\) such that \(\{x,y\} \subseteq a\). So, not only there is a single small set till now, it is not clear whether subsets of a small set are small sets.
 </p>
  </div>
-<!-- l. 59 --><p class='indent'>
-</p>
- <div class='proof'>
-<!-- l. 62 --><p class='indent'> <span class='head'>
-   <span class='cmcsc-10'>P<span class='small-caps'>roof</span>.</span> </span>In view of equations \(\mathrm {(\ref {eq:symmetry})}\) &amp; \(\mathrm {(\ref {eq:substitution})}\) it is enough to prove the “ \( \left (  \Longleftarrow  \right )\)” part. Assume \(u\) is a set, not necessarily small; if \(u \in x\) then \(\mathtt {small}[u]\) and hence from hypothesis, \(u \in y\); similarly, \(u \in y \Rightarrow u \in x\). Since the set \(u\) was taken arbitrarily, one concludes: \(\forall u \bigl ( u \in x \Leftrightarrow u \in y \bigr )\), which by Axiom <a href='#x6-5001r1'>1<!-- tex4ht:ref: axiom:extensionality  --></a>, forces \(x = y\). This completes the proof. <span class='qed'><span class='msam-10'>□</span></span>
-</p>
- </div>
+<!-- l. 22 --><p class='indent'>
                                                                                                                                                                                                                                                                                                                                                                                                                            
                                                                                                                                                                                                                                                                                                                                                                                                                            
- <!-- l. 2 --><div class='crosslinks'><p class='noindent'>[<a href='OERsu4.html'>next</a>] [<a href='OERsu3.html'>front</a>] [<a href='OERsu2.html#OERsu3.html'>up</a>] </p></div>
+</p>
+ <!-- l. 2 --><div class='crosslinks'><p class='noindent'>[<a href='OERsu4.html'>next</a>] [<a href='OERsu2.html'>prev</a>] [<a href='OERsu2.html#tailOERsu2.html'>prev-tail</a>] [<a href='OERsu3.html'>front</a>] [<a href='OERse2.html#OERsu3.html'>up</a>] </p></div>
 <!-- l. 2 --><p class='indent'> <a id='tailOERsu3.html'></a> </p> 
 </body> 
 </html>
