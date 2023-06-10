@@ -2,6 +2,9 @@
 /* start css.sty */
 .cmr-10{font-size:83%;}
 .cmr-10x-x-109{font-size:90%;}
+.cmr-8{font-size:66%;}
+.cmmi-12{font-style: italic;}
+.cmsy-8{font-size:66%;}
 .cmtt-12{font-family: monospace,monospace;}
 .cmtt-12{font-family: monospace,monospace;}
 .cmr-17x-x-120{font-size:170%;}
@@ -11,7 +14,10 @@
 .cmti-12{ font-style: italic;}
 .cmss-12{  font-family: sans-serif;}
 .cmbx-12{ font-weight: bold;}
+.cmbx-12{ font-weight: bold;}
 .cmti-10{font-size:83%; font-style: italic;}
+.cmbx-8{font-size:66%; font-weight: bold;}
+.cmbx-8{ font-weight: bold;}
 .small-caps{font-variant: small-caps; }
 p.noindent { text-indent: 0em }
 td p.noindent { text-indent: 0em; margin-top:0em; }
