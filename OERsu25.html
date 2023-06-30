@@ -1,0 +1,1248 @@
+<!DOCTYPE html> 
+<html lang='en-US' xml:lang='en-US'> 
+<head><title>Transforming families</title> 
+<meta charset='utf-8' /> 
+<meta content='TeX4ht (https://tug.org/tex4ht/)' name='generator' /> 
+<meta content='width=device-width,initial-scale=1' name='viewport' /> 
+<link href='OER.css' rel='stylesheet' type='text/css' /> 
+<meta content='OER.tex' name='src' /> 
+<script>window.MathJax = { loader: { load: ['[tex]/color', '[tex]/ams', 'xypic'], source: { xypic: 'https://cdn.jsdelivr.net/gh/sonoisa/XyJax-v3/build/xypic.js' } }, chtml: { matchFontHeight: false }, tex: { tags: "ams", packages: ['base', 'newcommand', 'color', 'ams' , 'xypic', 'boldsymbol', 'verb'], } }</script> 
+ <script async='async' id='MathJax-script' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js' type='text/javascript'></script>  
+ <script> window.MathJax = { tex: { tags: "ams", processEscapes: true, processEnvironments: true, packages: [’base’, ’color’, ’ams’, ’boldsymbol’, ’newcommand’, ’verb’, 'xypic'] }, loader: { load: [’[tex]/color’, ’[tex]/ams’, ’[tex]/boldsymbol’, ’[tex]/newcommand’, ’[tex]/verb’] } }; </script> 
+</head><body>
+<!-- l. 2 --><p class='noindent'>
+  \(
+\newcommand{\Ab}{\mbox{$\mathtt{Ab}$}\xspace}
+\newcommand{\AbCl}{\mbox{$\mathtt{AbCl}$}\xspace}
+\newcommand{\ActCat}[1]{\mbox{$#1$-$\mathtt{Act}$}\xspace}
+\newcommand{\AdjtCat}{\mbox{$\mathtt{Adjt}$}\xspace}
+\newcommand{\AdjtfrMon}[1]{\mbox{$\mathtt{Adjt}[{#1}]$}\xspace}
+\newcommand{\AfCRing}{\mbox{$\mathtt{Arch}$-\text{{\em
+f}}-$\mathtt{CRing}$}\xspace}
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+\newcommand{\AlCRing}{\mbox{$\mathtt{Arch}$-\text{{\em
+l}}-$\mathtt{CRing}$}\xspace}
+\newcommand{\Alex}{\mbox{$\mathtt{Alex}$}\xspace}
+\newcommand{\Alg}[1]{\mbox{${#1}$-$\mathtt{Alg}$}\xspace}
+\newcommand{\arcat}[1]{\mbox{$#1^{\cdot \rightarrow \cdot}$}\xspace}
+\newcommand{\Arrpair}{\mbox{$\downarrow\downarrow$}\xspace}
+\newcommand{\AnSymGrph}{\mbox{$\mathtt{AnSymGrph}$}\xspace}
+\newcommand{\BA}{\mbox{$\mathtt{BA}$}\xspace}
+\newcommand{\Bact}[3]{\mbox{$_{#2}{#1}_{#3}$}\xspace}
+\newcommand{\Ban}[1]{\mbox{$\mathtt{Ban}_{#1}$}\xspace}
+\newcommand{\BLat}{\mbox{$\mathtt{BLat}$}\xspace}
+\newcommand{\BDLat}{\mbox{$\mathtt{BDLat}$}\xspace}
+\newcommand{\BDPos}{\mbox{$\mathtt{BDPos}$}\xspace}
+\newcommand{\Bi}[1]{\mbox{$\mathrm{Bi}(#1)$}\xspace}
+\newcommand{\Bim}[1]{\mbox{$\mathtt{Bim}(#1)$}\xspace}
+\newcommand{\BiMod}[1]{\mbox{$\mathtt{BiMod}$-$#1$}\xspace}
+\newcommand{\BiTop}{\mbox{$\mathtt{BiTop}$}\xspace}
+\newcommand{\Bor}{\mbox{$\mathtt{Bor}$}\xspace}
+\newcommand{\BorSob}{\mbox{$\mathtt{BorSob}$}\xspace}
+\newcommand{\BoolAlg}{\mbox{$\mathtt{BAlg}$}\xspace}
+\newcommand{\BoolFrm}{\mbox{$\mathtt{BFrm}$}\xspace}
+\newcommand{\BoolsFrm}{\mbox{$\mathtt{B}\sigma\mathtt{Frm}$}\xspace}
+\newcommand{\BoolsFrmSpat}{\mbox{$\mathtt{SpB}\sigma\mathtt{Frm}$}\xspace}
+\newcommand{\BoolRng}{\mbox{$\mathtt{BRng}$}\xspace}
+\newcommand{\BoolSp}{\mbox{$\mathtt{BSp}$}\xspace}
+\newcommand{\BSemLat}{\mbox{$\mathtt{BSemLat}$}\xspace}
+\newcommand{\CBA}{\mbox{$\mathtt{CBA}$}\xspace}
+\newcommand{\CAtBoolAlg}{\mbox{$\mathtt{CatBA}$}\xspace}
+\newcommand{\Card}{\mbox{$\mathtt{Card}$}\xspace}
+\newcommand{\Cat}{\mbox{$\mathtt{Cat}$}\xspace}
+\newcommand{\Catv}[1]{\mbox{$\mathtt{Cat}_{\mathrm{objects} \in {#1}}$}\xspace}
+\newcommand{\CDLat}{\mbox{$\mathtt{CDLat}$}\xspace}
+\newcommand{\CenMor}[1]{\mbox{$\mathfrak{C}\,#1$}\xspace}
+\newcommand{\cenmor}[3]{\mbox{$\mathfrak{C}{#1}(#2,
+#3)$}\xspace}
+\newcommand{\CGrp}{\mbox{$\mathtt{CGrp}$}\xspace}
+\newcommand{\CGTop}{\mbox{$\mathtt{CGTop}$}\xspace}
+\newcommand{\ChComp}[1]{\mbox{$\mathtt{Ch}[#1]$}\xspace}
+\newcommand{\CIMon}{\mbox{$\mathtt{CIMon}$}\xspace}
+\newcommand{\cldidl}[1]{\mbox{$\underline{\mathrm{CldIdl}}(#1)$}\xspace}
+\newcommand{\CLat}{\mbox{$\mathtt{CLat}$}\xspace}
+\newcommand{\CLatOrdURng}{\mbox{$\mathtt{ComLatUnRng}$}\xspace}
+\newcommand{\clopen}[1]{\mbox{$\mathfrak{ClO}[#1]$}\xspace}
+\newcommand{\closed}[1]{\mbox{$\mathfrak{Cl}[#1]$}\xspace}
+\newcommand{\clsub}[1]{\mbox{$\mathtt{ClSub}[#1]$}\xspace}
+\newcommand{\clSub}[2]{\mbox{$\mathtt{ClSub}_{#2}[#1]$}\xspace}
+\newcommand{\CMagma}{\mbox{$\mathtt{CMagma}$}\xspace}
+\newcommand{\CMon}{\mbox{$\mathtt{CMon}$}\xspace}
+\newcommand{\coAlg}[1]{\mbox{${#1}$-$\mathrm{co}\mathtt{Alg}$}\xspace}
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+\newcommand{\CohFrm}{\mbox{$\mathtt{CohFrm}$}\xspace}
+\newcommand{\Comm}[1]{\mbox{$\mathtt{Comm}[#1]$}\xspace}
+\newcommand{\ComAlg}[1]{\mbox{$\mathtt{ComAlg}[#1]$}\xspace}
+\newcommand{\ComIntAlg}[2]{\mbox{$\mathtt{Comm}#1[#2]$}\xspace}
+\newcommand{\conn}[1]{\mbox{$\pi_0\,{#1}$}\xspace}
+\newcommand{\Comp}[1]{\mbox{$\mathtt{K}[#1]$}\xspace}
+\newcommand{\CompObj}[1]{\mbox{$#1$-$\mathtt{Comp}$}\xspace}
+\newcommand{\CompHaus}{\mbox{$\mathtt{CompHaus}$}\xspace}
+\newcommand{\CompHAb}{\mbox{$\mathtt{CompHAb}$}\xspace}
+\newcommand{\CompMet}{\mbox{$\mathtt{CompMet}$}\xspace}
+\newcommand{\CompPOSp}{\mbox{$\mathtt{CompPOSp}$}\xspace}
+\newcommand{\Cone}[4]{\mbox{$\mathtt{Cone}(#4 \in #3_{0},
+    \Arr{#1}{#2}{#3})$}\xspace}      %%%%% #1: functor, #2, #3: dom, cod of
+%%%%% #1, #4: object from #3
+\newcommand{\ConeOpp}[4]{\mbox{$\mathtt{Cone}(\Arr{#1}{#2}{#3}, #4
+    \in #3_{0})$}\xspace}  %%%%% #1: functor, #2, #3: dom, cod of #1, #4: object
+    %%%%% from #3
+\newcommand{\conset}[1]{\mbox{$\mathtt{Cstr}[#1]$}\xspace}
+\newcommand{\ConTop}{\mbox{$\mathtt{CTop}$}\xspace}
+\newcommand{\Cov}[1]{\mbox{$\mathtt{Cov}[#1]$}\xspace}
+\newcommand{\CovInt}[1]{\mbox{$\mathtt{Cov}[#1]$}\xspace}
+\newcommand{\cpo}{\mbox{$\mathtt{CPO}$}\xspace}
+\newcommand{\cpt}[1]{\mbox{$\mathfrak{K}[#1]$}\xspace}
+\newcommand{\cptopen}[1]{\mbox{$\mathfrak{KO}[#1]$}\xspace}
+\newcommand{\CHeytAlg}{\mbox{$\mathtt{CHeytAlg}$}\xspace}
+\newcommand{\CRegHaus}{\mbox{$\mathtt{CRegHaus}$}\xspace}
+\newcommand{\CRegIdl}[1]{\mbox{$\underline{\mathrm{CRegIdl}}[#1]$}\xspace}
+\newcommand{\CRegFrm}{\mbox{$\mathtt{CRegFrm}$}\xspace}
+\newcommand{\CRegLoc}{\mbox{$\mathtt{CRegLoc}$}\xspace}
+\newcommand{\CRg}{\mbox{$\mathtt{Crg}$}\xspace}
+\newcommand{\CRig}{\mbox{$\mathtt{CRig}$}\xspace}
+\newcommand{\CRing}{\mbox{$\mathtt{CRing}$}\xspace}
+\newcommand{\CRingz}[1]{\mbox{${#1}_{z\text{-ideal}}$}\xspace}
+\newcommand{\CRng}{\mbox{$\mathtt{CRng}$}\xspace}
+\newcommand{\CSemGrp}{\mbox{$\mathtt{CSemGrp}$}\xspace}
+\newcommand{\CSemLat}[1]{\mbox{${#1}$-$\mathtt{CSemLat}$}\xspace}
+\newcommand{\CstarAlg}{\mbox{$C^*$-$\mathtt{Alg}$}\xspace}
+\newcommand{\cstr}[1]{\mbox{${#1}_{\mathtt{cstr}}$}\xspace}
+\newcommand{\CTopGrp}{\mbox{$\mathtt{ComTopGrp}$}\xspace}
+\newcommand{\CUMagma}{\mbox{$\mathtt{CUMag}$}\xspace}
+\newcommand{\CUnif}{\mbox{$\mathtt{CUnif}$}\xspace}
+\newcommand{\CURng}{\mbox{$\mathtt{CURng}$}\xspace}
+\newcommand{\CUSemLat}{\mbox{$\mathtt{CUSemLat}$}\xspace}
+\newcommand{\Cut}[1]{\mbox{$\mathfrak{CC}(#1)$}\xspace}
+\newcommand{\cutabs}[1]{\mbox{${#1}$-$\mathtt{ACut}$}\xspace}
+\newcommand{\cutfull}[1]{\mbox{${#1}$-$\mathtt{FCut}$}\xspace}
+\newcommand{\cutsimple}[1]{\mbox{${#1}$-$\mathtt{SCut}$}\xspace}
+\newcommand{\desdat}[1]{\mbox{$\mathtt{Des}[#1]$}\xspace}
+\newcommand{\didl}[1]{\mbox{$\underline{\mathrm{DIdl}}(#1)$}\xspace}
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+\newcommand{\DiffGrMod}[1]{\mbox{$\mathtt{DiffGrad}$-$#1$-$\mathtt{Mod}$}\xspace}
+\newcommand{\disc}[1]{\mbox{$\mathfrak{D}{#1}$}\xspace}
+\newcommand{\DiscMSet}[1]{\mbox{$\mathtt{Dis}$-$#1$-$\mathtt{Set}$}\xspace}
+\newcommand{\DisFib}[1]{\mbox{$\mathtt{DisFib}[#1]$}\xspace}
+\newcommand{\DisOpFib}[1]{\mbox{$\mathtt{DisOpFib}[#1]$}\xspace}
+\newcommand{\DLat}{\mbox{$\mathtt{DLat}$}\xspace}
+\newcommand{\EffEq}[1]{\mbox{$\mathtt{EffEq}({#1})$}\xspace}
+\newcommand{\Elmt}[1]{\mbox{$(\termo \downarrow\, #1)$}\xspace}
+\newcommand{\Emb}[1]{\mbox{$\mathrm{Emb}(#1)$}\xspace}
+\newcommand{\EM}[2]{\mbox{${#1}^{{#2}}$}\xspace}
+\newcommand{\cEM}[2]{\mbox{$^{{#2}}{#1}$}\xspace}
+\newcommand{\End}[1]{\mbox{$\mathtt{End}(#1)$}\xspace}
+\newcommand{\Entour}[1]{\mbox{$\mathtt{Ent}(#1)$}\xspace}
+\newcommand{\Ens}{\mbox{$\mathtt{Ens}$}\xspace}
+\newcommand{\Epi}[1]{\mbox{$\mathtt{Epi}(#1)$}\xspace}
+\newcommand{\Eq}[1]{\mbox{$\mathtt{Eq}[#1]$}\xspace}
+\newcommand{\Equiv}[1]{\mbox{$\mathtt{Eq}(#1)$}\xspace}
+\newcommand{\ExpMor}[1]{\mbox{$\mathtt{Exp}[{#1}]$}\xspace}
+\newcommand{\ExpMorS}[1]{\mbox{$\mathtt{ExpS}[{#1}]$}\xspace}
+\newcommand{\Exs}[1]{\mbox{$\mathfrak{Ex}\left[#1\right]$}\xspace}
+\newcommand{\ExtEpi}[1]{\mbox{$\mathtt{ExtEpi}(#1)$}\xspace}
+\newcommand{\ExtMon}[1]{\mbox{$\mathtt{ExtMon}(#1)$}\xspace}
+\newcommand{\FAM}[1]{\mbox{$\mathtt{Fam}[#1]$}\xspace}
+\newcommand{\Fam}[2]{\mbox{$\mathtt{Fam}_{#1}\bigl[#2\bigr]$}\xspace}
+%\newcommand{\Fib}[2]{\framebox[1.2\width][c]{$\mathtt{Fib}_{#2}(#1)$}\xspace}
+\newcommand{\Fib}[2]{\mbox{$\mathtt{Fib}_{#2}(#1)$}\xspace} % #1 fibre of, #2 the functor
+\newcommand{\FibCat}[1]{\mbox{$\mathtt{Fib}[#1]$}\xspace}
+\newcommand{\FibCats}[1]{\mbox{$\mathtt{Fib}_{\mathtt{sm}}[#1]$}\xspace}
+\newcommand{\Fil}[1]{\mbox{$\mathtt{Fil}#1$}\xspace}
+\newcommand{\Filb}[1]{\mbox{$\mathtt{Filb}\,#1$}\xspace}
+\newcommand{\Filfg}[1]{\mbox{$\mathtt{Fil}_{\mathtt{fg}}#1$}\xspace}
+\newcommand{\Filu}[1]{\mbox{$\mathtt{UFil}\,#1$}\xspace}
+\newcommand{\FinAb}{\mbox{$\mathtt{FinAb}$}\xspace}
+\newcommand{\FinOrd}{\mbox{$\mathtt{FinOrd}$}\xspace}
+\newcommand{\FinPrOrd}{\mbox{$\mathtt{FinPrOrd}$}\xspace}
+\newcommand{\FinSet}{\mbox{$\mathtt{FinSet}$}\xspace}
+\newcommand{\FinTop}{\mbox{$\mathtt{FinTop}$}\xspace}
+\newcommand{\FitFrm}{\mbox{$\mathtt{FitFrm}$}\xspace}
+\newcommand{\FitLoc}{\mbox{$\mathtt{FitLoc}$}\xspace}
+\newcommand{\fix}[1]{\mbox{$\mathtt{Fix}(#1)$}\xspace}
+\newcommand{\Flat}[2]{\mbox{$\mathtt{Flat}(#1, #2)$}\xspace}
+\newcommand{\Fld}{\mbox{$\mathtt{Fld}$}\xspace}
+\newcommand{\fp}[1]{\mbox{$#1_{\mathtt{fp}}$}\xspace}
+\newcommand{\fpr}[1]{\mbox{$#1_{\mathtt{fpr}}$}\xspace}
+\newcommand{\fpfc}[1]{\mbox{$#1_{\mathtt{fpfc}}$}\xspace}
+\newcommand{\fCRing}{\mbox{\text{{\em f}-}$\mathtt{CRing}$}\xspace}
+\newcommand{\ffRing}{\mbox{$\mathfrak{ff}\text{-}\mathtt{CRing}$}}
+\newcommand{\frfp}[1]{\mbox{${#1}^{\times}$}\xspace}
+\newcommand{\Frm}{\mbox{$\mathtt{Frm}$}\xspace}
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+\newcommand{\FrmReal}{\mbox{$\CAL{L}(\Bb{R})$}\xspace}
+\newcommand{\FrmSpat}{\mbox{$\mathtt{SpatFrm}$}\xspace}
+\newcommand{\frtop}[1]{\mbox{$\mho(#1)$}\xspace}
+\newcommand{\fs}[1]{\mbox{$\mathtt{FS}[#1]$}\xspace}
+\newcommand{\Grpd}{\mbox{$\mathtt{Grpd}$}\xspace}
+\newcommand{\Grp}{\mbox{$\mathtt{Grp}$}\xspace}
+\newcommand{\GrMod}[1]{\mbox{$\mathtt{Grad}$-$#1$-$\mathtt{Mod}$}\xspace}
+\newcommand{\Grph}{\mbox{$\mathtt{Graph}$}\xspace}
+\newcommand{\Grphon}[1]{\mbox{$\mathtt{Grph}[#1]$}\xspace}
+\newcommand{\GrphRef}{\mbox{$\mathtt{GrphRef}$}\xspace}
+\newcommand{\GrphSym}{\mbox{$\mathtt{GrphSym}$}\xspace}
+\newcommand{\GrphTrn}{\mbox{$\mathtt{GrphTrn}$}\xspace}
+\newcommand{\Grphv}[1]{\mbox{$\mathtt{Grph}_{\mathrm{vert.} \in {#1}}$}\xspace}
+\newcommand{\GL}[3]{\mbox{$\mathcal{GL}_{#1, #2}(#3)$}\xspace}
+\newcommand{\GLin}[2]{\mbox{$\mathcal{GL}_{#1}(#2)$}\xspace}
+\newcommand{\Haus}{\mbox{$\mathtt{Haus}$}\xspace}
+\newcommand{\HausCGTop}{\mbox{$\mathtt{HausCGTop}$}\xspace}
+\newcommand{\HausObj}[1]{\mbox{$#1$-$\mathtt{Haus}$}\xspace}
+\newcommand{\hcat}[1]{\mbox{$\mathfrak{Ho}[#1]$}\xspace}
+\newcommand{\HeytAlg}{\mbox{$\mathtt{HeytAlg}$}\xspace}
+\newcommand{\hTop}{\mbox{$\mathcal{h}\mathtt{Top}$}\xspace}
+\newcommand{\Idl}[1]{\mbox{$\mathtt{Idl}[#1]$}\xspace}
+\newcommand{\Idllt}[1]{\mbox{$\mathtt{Idl}_{l}[#1]$}\xspace}
+\newcommand{\Idlrt}[1]{\mbox{$\mathtt{Idl}_{r}[#1]$}\xspace}
+\newcommand{\idm}[1]{\mbox{$\mathtt{Idm}
+    \left[
+      {#1}
+    \right]$}\xspace} %%% idempotent completion
+\newcommand{\IndMonad}[1]{\mbox{$\mathtt{Adj}[#1]$}\xspace}%%% adjuntions
+%%% inducing the monad #1
+\newcommand{\ind}[1]{\mbox{$\mathtt{Ind}\,#1$}\xspace}
+\newcommand{\intcat}[1]{\mbox{${#1}$-$\mathtt{Int}$}} %%% interval wrt bifunctor
+\newcommand{\Int}[2]{\mbox{$#1[#2]$}\xspace}
+\newcommand{\IntDom}{\mbox{$\mathtt{IntDom}$}\xspace}
+\newcommand{\IntFunCat}[3]{\mbox{$\llfloor{#2}^{#1}\rrfloor_{#3}$}\xspace} %uses stmaryrd
+\newcommand{\IntMon}[1]{\mbox{$\mathtt{Mon}(#1)$}\xspace}
+\newcommand{\InvRAdjt}[1]{\mbox{${#1}_{\mathtt{ppj}}$}\xspace}
+\newcommand{\Irr}[2]{\mbox{$\mathtt{Irr}_{{#1}}[#2]$}\xspace}
+\newcommand{\isbenv}[1]{\mbox{$\mathcal{IE}[#1]$}\xspace}
+\newcommand{\IsbHausFrm}{\mbox{$\mathtt{IsbHausFrm}$}\xspace}
+\newcommand{\IsbHausLoc}{\mbox{$\mathtt{IsbHausLoc}$}\xspace}
+\newcommand{\Iso}[1]{\mbox{$\mathtt{Iso}(#1)$}\xspace}
+\newcommand{\Iter}[2]{\mbox{$\mathtt{It}_{{#1}}[{#2}]$}\xspace} %%% #1 functor, #2 base category
+\newcommand{\KCReg}[1]{\mbox{$\mathtt{KCReg}#1$}\xspace}
+\newcommand{\KCRegFrm}{\mbox{$\mathtt{KCRegFrm}$}\xspace}
+\newcommand{\ken}[1]{\mbox{$\mathtt{Kar}\left[{#1}\right]$}\xspace}
+\newcommand{\KFrm}{\mbox{$\mathtt{KFrm}$}\xspace}
+\newcommand{\KReg}[1]{\mbox{$\mathtt{KReg}#1$}\xspace}
+\newcommand{\KRegFrm}{\mbox{$\mathtt{KRegFrm}$}\xspace}
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+\newcommand{\KRegLoc}{\mbox{$\mathtt{KRegLoc}$}\xspace}
+\newcommand{\KHaus}{\mbox{$\mathtt{KHaus}$}\xspace}
+\newcommand{\KL}[2]{\mbox{${#1}_{{#2}}$}\xspace}
+\newcommand{\cKL}[2]{\mbox{$_{{#2}}{#1}$}\xspace}
+\newcommand{\KPOSp}{\mbox{$\mathtt{KPOSp}$}\xspace}
+\newcommand{\kappaFrm}{\mbox{$\kappa\mathtt{Frm}$}\xspace}
+\newcommand{\kappaTop}{\mbox{$\kappa\mathtt{Top}$}\xspace}
+\newcommand{\KTopSpec}{\mbox{$\mathtt{KTop}_{\mathtt{spec}}$}\xspace}
+\newcommand{\Lact}[2]{\mbox{$_{#2}{#1}$}\xspace}
+\newcommand{\Lat}{\mbox{$\mathtt{Lat}$}\xspace}
+\newcommand{\LebInt}[2]{\mbox{$\mathtt{L}(#1, #2)$}\xspace}
+\newcommand{\Lex}[2]{\mbox{$\mathtt{Lex}(#1, #2)$}\xspace}
+\newcommand{\lex}{\mbox{$\mathtt{Lex}$}\xspace}
+\newcommand{\lfp}{\mbox{$\mathtt{Lfp}$}\xspace}
+\newcommand{\LinLoc}{\mbox{$\mathtt{LinLoc}$}\xspace}
+\newcommand{\LinRegLoc}{\mbox{$\mathtt{LinRegLoc}$}\xspace}
+\newcommand{\LinSp}[1]{\mbox{$\mathtt{LinSp}_{#1}$}\xspace}
+\newcommand{\LKHaus}{\mbox{$\mathtt{LKHaus}$}\xspace}
+\newcommand{\Loc}{\mbox{$\mathtt{Loc}$}\xspace}
+\newcommand{\LocConTop}{\mbox{$\mathtt{LCTop}$}\xspace}
+\newcommand{\LocConConTop}{\mbox{$\mathtt{LCCTop}$}\xspace}
+\newcommand{\LocHaus}{\mbox{$\mathtt{LocHaus}$}\xspace}
+\newcommand{\LocSpat}{\mbox{$\mathtt{LocSpat}$}\xspace}
+\newcommand{\loopcat}[1]{\mbox{$\mathcal{L}\,#1\,$}\xspace}
+\newcommand{\lCRing}{\mbox{\text{{\em l}-}$\mathtt{CRing}$}\xspace}
+\newcommand{\Magma}{\mbox{$\mathtt{Mag}$}\xspace}
+\newcommand{\meas}[2]{\mbox{$\mathtt{meas}(#1, #2)$}\xspace}
+\newcommand{\Meas}{\mbox{$\mathtt{Meas}$}\xspace}
+\newcommand{\MeasSob}{\mbox{$\mathtt{MeasSob}$}\xspace}
+\newcommand{\Met}{\mbox{$\mathtt{Met}$}\xspace}
+\newcommand{\MetContr}{\mbox{$\mathtt{Met}_{\mathrm contraction}$}\xspace}
+\newcommand{\MetUC}{\mbox{$\mathtt{Met}_{\mathrm unif}$}\xspace}
+\newcommand{\Mod}[1]{\mbox{${#1}$-$\mathtt{Mod}$}\xspace}
+\newcommand{\Modlt}[1]{\mbox{${#1}$-$\mathtt{Mod}_{l}$}\xspace}
+\newcommand{\Modrt}[1]{\mbox{${#1}$-$\mathtt{Mod}_{r}$}\xspace}
+\newcommand{\Monad}[1]{\mbox{$\mathtt{Monad}[#1]$}\xspace}
+\newcommand{\Mon}{\mbox{$\mathtt{Mon}$}\xspace} %%%%%% the category Mon
+\newcommand{\MonCat}{\mbox{$\mathtt{MonCat}$}\xspace}      %%%%%% category
+%%%%%% of small monoidal categories
+\newcommand{\moncat}[5]{\mbox{$\bigl({#1}, {#2}, {#3}, {#4}, {#5},
+{\mathbb{1}}\bigr)$}\xspace} %%%%%% a monoidal category, 1=category, 2=tensor,
+%%%%%% 3=associator, 4=left unitor, 5=right unitor, 6=unit
+\newcommand{\MonExt}[1]{\mbox{$\mathtt{MonExt}[#1]$}\xspace}
+\newcommand{\Mono}[1]{\mbox{$\mathtt{Mono}(#1)$}\xspace}
+\newcommand{\Mor}[1]{\mbox{$\mathrm{Mor}(#1)$}\xspace}
+\newcommand{\MSet}[1]{\mbox{$#1$-$\mathtt{Set}$}\xspace}
+\newcommand{\MSetl}[1]{\mbox{$#1$-$\mathtt{Set}_{\mathsrm{l}}$}\xspace}
+\newcommand{\MSetr}[1]{\mbox{$#1$-$\mathtt{Set}_{\mathrm{r}}$}\xspace}
+
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+%%%%%%  NNNNNNNNNNNNNNNNNNNNNNNNNN     %%%%%%%
+\newcommand{\NHD}[1]{\mbox{$\mathtt{Nbd}[#1]$}\xspace} % the category
+% of intenal neighbourhod spaces
+\newcommand{\nhd}[1]{\mbox{$\mathtt{nbd}[#1]$}\xspace} % neighbourhood structures
+\newcommand{\NorMon}[1]{\mbox{$\mathtt{NorMon[#1]}$}\xspace}
+\newcommand{\NorSub}[1]{\mbox{$\mathtt{NorSub}[#1]$}\xspace}
+\newcommand{\NLinSp}{\mbox{$\mathtt{NLSp}$}\xspace}
+\newcommand{\nquo}[1]{\mbox{$\mathtt{NQuo}(#1)$}\xspace}
+\newcommand{\NQuo}[2]{\mbox{$\mathtt{NQuo}_{#2}(#1)$}\xspace}
+\newcommand{\nsub}[1]{\mbox{$\mathtt{NSub}(#1)$}\xspace}
+\newcommand{\NSub}[2]{\mbox{$\mathtt{NSub}_{#2}(#1)$}\xspace}
+\newcommand{\Nuc}[1]{\mbox{$\mathtt{Nuc}[#1]$}\xspace}
+
+%%%%%% OOOOOOOOOOOOOOOOOOOOOOOOOO %%%%%%
+
+\newcommand{\One}{\mbox{$\mathtt{1}$}\xspace}
+\newcommand{\Oper}[1]{\mbox{$\mathtt{Oper}[{#1}]$}\xspace}
+\newcommand{\open}[1]{\mbox{$\mathfrak{O}[#1]$}\xspace}
+\newcommand{\opencstr}[1]{\mbox{$\mathfrak{O}_{\mathtt{cstr}}[#1]$}\xspace}
+\newcommand{\opde}[1]{\mbox{$\mathtt{DO}(#1)$}\xspace}
+\newcommand{\Ord}{\mbox{$\mathtt{Ord}$}\xspace}
+
+%%%%%%  PPPPPPPPPPPPPPPPPPPPPPPPPP      %%%%%%
+
+\newcommand{\parpair}{\mbox{$\mathtt{parpair}$}\xspace}
+\newcommand{\pair}[1]{\mbox{$\mathtt{Graph}[#1]$}\xspace}
+\newcommand{\paircd}[1]{\mbox{$\mathtt{GraphCd}[#1]$}\xspace}
+\newcommand{\pairSt}{\mbox{$\mathtt{pairSt}$}\xspace}
+\newcommand{\prtn}[1]{\mbox{$\mathtt{Part}[#1]$}\xspace}
+\newcommand{\pathsp}[1]{\mbox{$\mathtt{Path}[{#1}]$}\xspace}
+\newcommand{\perm}[1]{\mbox{$\mathtt{Perm}#1$}\xspace}
+\newcommand{\PerTop}{\mbox{$\mathtt{PerTop}$}\xspace}
+\newcommand{\pCGTop}{\mbox{$\mathtt{CGTop}_{\star}$}\xspace}
+\newcommand{\pfs}[1]{\mbox{$\mathtt{Pfs}[#1]$}\xspace}
+\newcommand{\pit}[2]{\mbox{$\mathtt{Pit}_{{#1}}[{#2}]$}\xspace}
+\newcommand{\PMet}{\mbox{$\mathtt{PMet}$}\xspace}
+\newcommand{\pNHD}[1]{\mbox{$\mathtt{pNbd}[#1]$}\xspace} % pre-nbds on an object
+\newcommand{\pcNHD}[1]{\mbox{$\mathtt{pNbd}_{\mathtt{c}}[#1]$}\xspace} % pre-nbds on an object with continuous pnbd morphisms
+\newcommand{\pnhd}[1]{\mbox{$\mathtt{pnbd}[#1]$}\xspace} % category
+\newcommand{\poCRing}{\mbox{\text{{\em po}-}$\mathtt{CRing}$}\xspace}
+\newcommand{\Pos}{\mbox{$\mathtt{Pos}$}\xspace}
+\newcommand{\PosZero}{\mbox{$\mathtt{Pos}_{\mathtt{0}}$}\xspace}
+\newcommand{\POSp}{\mbox{$\mathtt{POSp}$}\xspace}
+\newcommand{\PPJ}[1]{\mbox{$#1_{\mathtt{ppj}}$}\xspace}
+\newcommand{\pp}[1]{\mbox{$#1_{\mathtt{pp}}$}\xspace}
+\newcommand{\PreCat}{\mbox{$\mathtt{PreCat}$}\xspace}
+\newcommand{\PreGrpd}{\mbox{$\mathtt{PreGrpd}$}\xspace}
+\newcommand{\PreOrd}{\mbox{$\mathtt{PreOrd}$}\xspace}
+\newcommand{\Pries}{\mbox{$\mathtt{Pries}$}\xspace}
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+\newcommand{\Prof}{\mbox{$\mathtt{Prof}$}\xspace}
+\newcommand{\Pros}{\mbox{$\mathtt{Pros}$}\xspace}
+\newcommand{\pre}[1]{\mbox{$\mathtt{pre}[#1]$}\xspace}
+\newcommand{\pse}[1]{\mbox{$\mathtt{pse}[#1]$}\xspace}
+\newcommand{\PSE}[1]{\mbox{$\mathtt{Pse}[#1]$}\xspace}
+\newcommand{\pSet}{\mbox{$\mathtt{pSet}$}\xspace}
+\newcommand{\pTop}{\mbox{$\mathtt{pTop}$}\xspace}
+\newcommand{\ptcat}[1]{\mbox{$#1_{\star}$}\xspace}
+\newcommand{\ptover}[2]{\mbox{$\mathtt{pt}_{#2}[#1]$}\xspace}
+\newcommand{\pts}[1]{\mbox{$\mathtt{pt}
+    \left[
+      {#1}
+    \right]$}\xspace}
+\newcommand{\quo}[1]{\mbox{$\mathtt{Quo}[#1]$}\xspace}
+\newcommand{\Quo}[2]{\mbox{$\mathtt{Quo}_{#2}(#1)$}\xspace}
+\newcommand{\quocl}[1]{\mbox{$\mathtt{q}_{\mathrm{cl}\xspace}(#1)$}\xspace}
+\newcommand{\quot}[2]{\mbox{$\mathtt{q}_{#2}(#1)$}\xspace}
+\newcommand{\Quant}{\mbox{$\mathtt{Quantale}$}\xspace}
+
+%%%%%% RRRRRRRRRRRRRRRRRRRRRRRRRR %%%%%%
+
+\newcommand{\Ract}[2]{\mbox{${#1}_{#2}$}\xspace}
+\newcommand{\RCompHaus}{\mbox{$\mathtt{RCompHaus}$}\xspace}
+\newcommand{\RCompLoc}{\mbox{$\mathtt{RCompLoc}$}\xspace}
+\newcommand{\RCompRegLoc}{\mbox{$\mathtt{RCompLoc}$}\xspace}
+\newcommand{\reflzero}[1]{\mbox{$\mathsf{RZ}[#1]$}\xspace}
+\newcommand{\ReflGrph}{\mbox{$\mathtt{ReflGrph}$}\xspace}
+\newcommand{\RegEpi}[1]{\mbox{$\mathtt{RegEpi}(#1)$}\xspace}
+\newcommand{\RSTGrph}[1]{\mbox{$\mathtt{RSTGrph}(#1)$}\xspace}
+\newcommand{\RegIdl}[1]{\mbox{$\underline{\mathrm{RegIdl}}[#1]$}\xspace}
+\newcommand{\RegMon}[1]{\mbox{$\mathtt{RegMon}(#1)$}\xspace}
+\newcommand{\RegFrm}{\mbox{$\mathtt{RegFrm}$}\xspace}
+\newcommand{\RegLoc}{\mbox{$\mathtt{RegLoc}$}\xspace}
+\newcommand{\RegQuo}[1]{\mbox{$\mathfral{RegQuo}(#1)$}\xspace}
+\newcommand{\RegsFrm}{\mbox{$\mathtt{Reg}\sigma\mathtt{Frm}$}\xspace}
+\newcommand{\Rel}[1]{\mbox{$\mathtt{Rel}(#1)$}\xspace}
+\newcommand{\RELon}[2]{\mbox{$\mathtt{Rel}_{#2}[#1]$}\xspace}
+\newcommand{\REL}{\mbox{$\mathtt{Rel}$}\xspace}
+\newcommand{\retr}[1]{\mbox{$\mathfrak{R}[#1]$}\xspace}
+\newcommand{\retro}[1]{\mbox{$\mathfrak{OR}[#1]$}\xspace}
+\newcommand{\Rg}{\mbox{$\mathtt{Rg}$}\xspace}
+\newcommand{\Rig}{\mbox{$\mathtt{Rig}$}\xspace}
+\newcommand{\RimInt}[2]{\mbox{$\mathtt{R}[#1, #2]$}\xspace}
+\newcommand{\Ring}{\mbox{$\mathtt{Ring}$}\xspace}
+\newcommand{\Rng}{\mbox{$\mathtt{Rng}\,$}\xspace}
+\newcommand{\rp}[1]{\mbox{$#1_{\mathtt{rp}}$}\xspace}
+
+%%%%%% SSSSSSSSSSSSSSSSSSSSSSSSSS %%%%%%
+
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+\newcommand{\Sch}{\mbox{$\mathtt{Sch}$}\xspace}
+\newcommand{\Sec}[1]{\mbox{$\mathrm{Sect}(#1)$}\xspace}
+\newcommand{\SemGrp}{\mbox{$\mathtt{SemGrp}$}\xspace}
+\newcommand{\SemLat}[1]{\mbox{${#1}{\text -}\mathtt{SemLat}$}\xspace}
+\newcommand{\SemMod}[1]{\mbox{$#1$-$\mathtt{SemMod}$}\xspace}
+\newcommand{\Ses}[1]{\mbox{$\mathtt{Ses}\left[#1\right]$}\xspace}
+\newcommand{\Set}{\mbox{$\mathtt{Set}$}\xspace}
+\newcommand{\sSet}{\mbox{$\mathtt{sSet}$}\xspace}
+\newcommand{\Setinj}{\mbox{$\mathtt{Set}_{\text{inj}\xspace}$}\xspace}
+\newcommand{\Setpair}{\mbox{$\mathtt{SetPair}$}\xspace}
+\newcommand{\Setsur}{\mbox{$\mathtt{Set}_{\text{sur}\xspace}$}\xspace}
+\newcommand{\sFrm}{\mbox{$\sigma\mathtt{Frm}$}\xspace}
+\newcommand{\Sgr}{\mbox{$\mathtt{SemGrp}$}\xspace} %%%% for backward
+%%%% compatibility
+\newcommand{\Shv}[1]{\mbox{$\mathtt{Shv}#1$}\xspace}
+\newcommand{\SimpCat}{\mbox{$\mathtt{\Delta}$}\xspace}
+\newcommand{\sind}[1]{\mbox{$\mathtt{Sind}\,#1$}\xspace}
+\newcommand{\Skel}[1]{\mbox{$\mathtt{Skel}[#1]$}\xspace}
+\newcommand{\slice}[2]{\mbox{$\left( #1 \downarrow\, #2\right)$}\xspace}
+\newcommand{\Span}[1]{\mbox{$\mathtt{Span}[#1]$}\xspace}
+\newcommand{\Spanbb}[1]{\mbox{$\mathtt{Spanbb}[#1]$}\xspace}
+\newcommand{\Spanbbon}[3]{\mbox{$\mathtt{Spanbb}_{#2, #3}[#1]$}\xspace}
+\newcommand{\Spanon}[3]{\mbox{$\mathtt{Span}_{#2, #3}[#1]$}\xspace}
+\newcommand{\SpatFrm}{\mbox{$\mathtt{SpatFrm}$}\xspace}
+\newcommand{\Spec}[1]{\mbox{$\mathtt{Spec}\,#1$}\xspace}
+\newcommand{\Spectral}{\mbox{$\mathtt{Spectral}$}\xspace}
+\newcommand{\Spl}[2]{\mbox{$\mathtt{Spl}(#1, #2)$}\xspace}
+\newcommand{\SplEpi}[1]{\mbox{$\mathtt{SplEpi}(#1)$}\xspace}
+\newcommand{\SplMon}[1]{\mbox{$\mathtt{SplMon}(#1)$}\xspace}
+\newcommand{\Stone}[1]{\mbox{$\mathtt{Stone}[#1]$}\xspace}
+\newcommand{\StSp}{\mbox{$\mathtt{StSp}$}\xspace}
+\newcommand{\StrEpi}[1]{\mbox{$\mathtt{StrEpi}(#1)$}\xspace}
+\newcommand{\StrMon}[1]{\mbox{$\mathtt{StrMon}(#1)$}\xspace}
+\newcommand{\StrMonCat}{\mbox{$\mathtt{StMonCat}$}\xspace}
+\newcommand{\struct}[1]{\mbox{$#1$-$\mathtt{FRL}$}\xspace}
+\newcommand{\sub}[1]{\mbox{$\mathtt{Sub}(#1)$}\xspace}
+\newcommand{\Sub}[2]{\mbox{$\mathtt{Sub}_{#2}(#1)$}\xspace}
+\newcommand{\subcat}[3]{\mbox{$#1 \sqsubseteq_{\mathrm{{#3}}} #2$}\xspace}
+\newcommand{\subcnt}[1]{\mbox{$\mathsf{2}^{#1}_{&amp;lt;\aleph_1}$}\xspace}
+\newcommand{\subfin}[1]{\mbox{$\mathsf{2}^{#1}_{&amp;lt;\aleph_0}$}\xspace}
+\newcommand{\SubFitFrm}{\mbox{$\mathtt{SubFitFrm}$}\xspace}
+\newcommand{\SubFitLoc}{\mbox{$\mathtt{SubFitLoc}$}\xspace}
+\newcommand{\SupLat}{\mbox{$\mathtt{SupLat}$}\xspace}
+\newcommand{\SymGrph}{\mbox{$\mathtt{SymGrph}$}\xspace}
+\newcommand{\SymMor}[1]{\mbox{$\mathfrak{S}\,#1$}\xspace}
+\newcommand{\symmor}[3]{\mbox{$\mathfrak{S}{#1}(#2, #3)$}\xspace}
+
+%%%%%% TTTTTTTTTTTTTTTTTTTTTTTTTT %%%%%%
+
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+\newcommand{\tnhd}[1]{\mbox{$\mathtt{top}[#1]$}\xspace}
+\newcommand{\Top}{\mbox{$\mathtt{Top}$}\xspace}
+\newcommand{\TopAb}{\mbox{$\mathtt{TopAb}$}\xspace}
+\newcommand{\TopGrp}{\mbox{$\mathtt{TopGrp}$}\xspace}
+\newcommand{\TopMon}{\mbox{$\mathtt{TopMon}$}\xspace}
+\newcommand{\TopSob}{\mbox{$\mathtt{TopSob}$}\xspace}
+\newcommand{\TopSpec}{\mbox{$\mathtt{Top}_{\mathtt{spec}}$}\xspace}
+\newcommand{\TopTZero}{\mbox{$\mathtt{Top}_0$}\xspace}
+\newcommand{\TorFrAb}{\mbox{$\mathtt{TorFrAb}$}\xspace}
+\newcommand{\TotDis}{\mbox{$\mathtt{TotDisc}$}\xspace}
+\newcommand{\TrnGrph}{\mbox{$\mathtt{TrnGrph}$}\xspace}
+\newcommand{\TrvCov}[1]{\mbox{$\mathtt{TrivCov[#1]}$}\xspace}
+\newcommand{\two}{\mbox{\eulf{2}\xspace}}
+\newcommand{\Tych}{\mbox{$\mathtt{Tych}$}\xspace}
+\newcommand{\TychObj}[1]{\mbox{$A$-$\mathtt{Tych}$}\xspace}
+
+%%%%%% UUUUUUUUUUUUUUUUUUUUUUUUUU %%%%%%
+
+\newcommand{\UAlg}[1]{\mbox{${#1}$-$\mathtt{Alg}$}\xspace}
+\newcommand{\UFil}[1]{\mbox{$\mathtt{UFil}#1$}\xspace}
+\newcommand{\UMagma}{\mbox{$\mathtt{UMag}$}\xspace}
+\newcommand{\Unif}{\mbox{$\mathtt{Unif}$}\xspace}
+\newcommand{\unif}[1]{\mbox{$\mathtt{U}#1$}\xspace}
+\newcommand{\URng}{\mbox{$\mathtt{URng}$}\xspace}
+
+%%%%%%  VVVVVVVVVVVVVVVVVVVVVVVVVV      %%%%%%
+
+\newcommand{\VecFin}[1]{\mbox{$\bigl({#1}\mathrm{-}\mathtt{Vec}\bigr)_{\mathrm{dim}
+&amp;lt; \omega_0}$}\xspace}
+\newcommand{\Vect}[1]{\mbox{$#1$-$\mathtt{Vec}$}\xspace}
+
+%%%%% WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW %%%%%%%%%
+
+\newcommand{\wNHD}[1]{\mbox{$\mathtt{wNbd}[#1]$}\xspace} % category of
+% internal weak neighbourhood spaces
+\newcommand{\wnhd}[1]{\mbox{$\mathtt{wnbd}[#1]$}\xspace} % weak
+% neighbourhood structures
+
+%%%%%%  ZZZZZZZZZZZZZZZZZZZZZZZZZZ     %%%%%%
+
+\newcommand{\zero}{\mbox{$\mathtt O$}}
+\newcommand{\ZerosetSp}{\mbox{$\mathtt{Zero}$}\xspace}
+\newcommand{\ZDimTop}{\mbox{$\mathtt{ZDimTop}$}\xspace}
+\newcommand{\ZKFrm}{\mbox{$\mathtt{zKFrm}$}\xspace}
+
+\newcommand{\abv}[2]{\mbox{$#1 \bigtriangleup #2$}}
+\newcommand{\abs}[1]{\mbox{$\left\lvert {#1} \right\rvert$}\xspace}
+\newcommand{\act}[2]{\mbox{$#1 \,\rule[0.2em]{0.36ex}{0.36ex}\, #2$}}
+\newcommand{\Act}[3]{\mbox{$#1 \,\rule[0.2em]{0.36ex}{0.36ex}_{#3}  #2$}}
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+\newcommand{\adjt}[2]{\mbox{$ {#1} \dashv {#2}$}}
+\newcommand{\Adjt}[2]{\mbox{$
+    \left[
+      {#1} \dashv {#2}
+    \right]$}} % for adjoint factorisation
+\newcommand{\adjteq}[2]{\mbox{$ {#1} \dashv\vdash {#2}$}}
+\newcommand{\adjtequiv}[4]{\mbox{$\xymatrix{ {#3} \ar@&amp;lt;1ex&amp;gt;[r]^-{#1} \ar@{}[r]|-{\top\,\bot} &amp; {#4} \ar@&amp;lt;1ex&amp;gt;[l]^-{#2} }$}}
+\newcommand{\adjtiso}[3]{\mbox{${#1} \overset{#3}{\dashv} {#2}$}}
+\newcommand{\adjtpair}[5]{\mbox{$\xymatrix@!C=#5{ {#3}
+\ar@/^2ex/[r]^{#1}  &amp; {#4} \ar@/^2ex/[l]^{#2} }$}}
+\newcommand{\ADJTSIT}[7]{\mbox{$\Bigl\langle\xymatrix{ {#3}
+\ar@&amp;lt;0.9ex&amp;gt;[r]^{#1} \ar@{}[r]|{\bot} \ar@&amp;lt;-0.9ex&amp;gt;@{&amp;lt;-}[r]_{#2} &amp; {#4} };
+\mathrm{unit:}\xspace \id{#3} \xrightarrow{#5} {#2}\circ {#1},
+\mathrm{counit:}\xspace {#1}\circ {#2} \xrightarrow{#6}
+\id{#4}; \mathrm{adjt. iso:}\xspace {#7}\Bigr\rangle$}} % first adjt
+% diagram, follows by unit, co-unit
+        % and then the adjunction isomorphism
+
+\newcommand{\Adjtsit}[6]{\mbox{$\Bigl\langle\xymatrix{ {#3}
+      \ar@&amp;lt;1ex&amp;gt;[r]^{#1} \ar@{}[r]|{\bot} \ar@&amp;lt;-1ex&amp;gt;@{&amp;lt;-}[r]_{#2} &amp; {#4} };
+    {#5}, {#6}\Bigr\rangle$}} % first adjt diagram, follows by unit, co-unit
+
+\newcommand{\adjtsit}[4]{\mbox{$\xymatrix@!{ {#3} \ar@&amp;lt;0.9ex&amp;gt;[r]^-{#1} \ar@{}[r]|-{\bot} \ar@&amp;lt;-0.9ex&amp;gt;@{&amp;lt;-}[r]_-{#2} &amp; {#4} }$}}
+\newcommand{\aemu}[1]{a. e. $[#1]$}
+\newcommand{\alg}[2]{\mbox{$\mathfrak{#2}[#1]$}} %%% like Mon[A] for
+%%% monoids in A, A:=1, Mon, ....:=2
+\newcommand{\angmes}[1]{\mbox{${#1}^{\circ}$}\xspace}
+\newcommand{\Angle}[2]{\mbox{$\widehat{{#1}, {#2}}$}\xspace}
+\newcommand{\aqu}[3]{\mbox{$_{#1}{\mathcal U}^{#3}_{#2}$}}
+\newcommand{\arity}[1]{\mbox{$\mathtt{ar}\,{#1}$}\xspace}
+\newcommand{\ArGrFib}[7]{\mbox{$\xymatrix{ {#4} \ar@{-&amp;gt;}[dd]_{#2} &amp; {#6} \ar@{-&amp;gt;}[dd]^{#3} \\ {} \ar@{-&amp;gt;}[r]^{#1} &amp; \\ {#5} &amp; {#7} }$}}
+\newcommand{\Arr}[3]{\mbox{$#2 \xrightarrow{#1} #3$}}
+\newcommand{\Arrl}[3]{\mbox{$\xymatrix{ {#2} \ar@{~&amp;gt;}[r]^-{#1} &amp; {#3} }$}}
+\newcommand{\arr}[5]{\mbox{$#1 : #2 \xrightarrow[#4]{#5} #3$}}
+\newcommand{\arrp}[4]{\mbox{$\xymatrix@!{ {#3} \ar@&amp;lt;3pt&amp;gt;[r]^-{#1}
+      \ar@&amp;lt;-3pt&amp;gt;[r]_-{#2} &amp; {#4} }$}\xspace}
+\newcommand{\arrpGrFib}[8]{\mbox{$\xymatrix{ {#5} \ar@{-&amp;gt;}[dd]_{#3} &amp;
+{#7} \ar@{-&amp;gt;}[dd]^{#4} \\ {} \ar@&amp;lt;1ex&amp;gt;[r]^{#1} \ar@&amp;lt;-1ex&amp;gt;[r]_{#2} &amp; \\
+{#6} &amp; {#8} }$}}
+\newcommand{\Arrsq}[3]{\mbox{$#2 \overset{#1}{\rightsquigarrow} #3$}}
+\newcommand{\arrtype}[4]{\mbox{$#2 \xrightarrow[\mathrm{#4}]{#1} #3$}}
+\newcommand{\ass}[3]{\mbox{$\Lbag #1, #2, #3 \Rbag$}}  % uses stmaryrd
+\newcommand{\atleast}[1]{\mbox{$\uparrow #1$}}
+\newcommand{\atmost}[1]{\mbox{$\downarrow #1$}}
+\newcommand{\atom}[1]{\mbox{$\mathtt{atom}(#1)$}\xspace}
+\newcommand{\aut}[2]{\mbox{$\mathfrak{Aut}_{#1}(#2)$}}
+\newcommand{\Ball}[3]{\mbox{$\mathtt{B}_{#3}(#1; #2)$}}
+\newcommand{\Ballc}[3]{\mbox{$\bar{\mathtt{B}}_{#3}(#1; #2)$}}
+\newcommand{\ball}[2]{\mbox{$\mathtt{B}(#1; #2)$}}
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+\newcommand{\ballc}[2]{\mbox{$\bar{\mathtt{B}}(#1; #2)$}}
+\newcommand{\BAR}[1]{\mbox{$\overline{#1}$}}
+\newcommand{\Bb}[1]{\mbox{${\mathbb #1}$}}
+\newcommand{\bel}[2]{\mbox{$#1 \bigtriangledown #2$}}
+\newcommand{\bil}[3]{\mbox{$\mathtt{Bil}(#1, #2; #3)$}}
+\newcommand{\bim}[5]{\mbox{$\xymatrixcolsep{#5}\xymatrix{ {#2 \times #3} \ar@{~&amp;gt;}[r]^-{#1} &amp; {#4} }$}\xspace} %#5 is the unit measure
+\newcommand{\bilforms}[2]{\mbox{$\mathtt{Bil}\bigl({#1},
+{#2}\bigr)$}\xspace} %%% #1 = vector space, #2 = basis
+\newcommand{\bin}[2]{\mbox{$#1 \star #2$}}
+\newcommand{\binop}[3]{\mbox{${#1} {#2} {#3}$}}
+\newcommand{\bld}[1]{\mbox{$\mathbf{#1}$}}
+\newcommand{\borel}[1]{\mbox{$\mathscr{B}{#1}$}\xspace} %%% requires
+%%% mathrsfs package
+\newcommand{\BOT}{\mbox{$\bot$}}
+\newcommand{\BOX}[1]{\framebox{$#1$}\xspace}
+\newcommand{\boxop}[2]{\mbox{$\boxed{{#1}}_{\text{\hspace{0.6ex}}{#2}}$}\xspace}
+\newcommand{\bsfrmgen}[1]{\mbox{$\mathfrak{b}#1$}}
+\newcommand{\CAL}[1]{\mbox{${\mathcal #1}$}}
+\newcommand{\card}[1]{\mbox{$\aleph_{#1}$}}
+\newcommand{\category}[7]{\mbox{$\xymatrixcolsep{1.2cm}
+    \xymatrix{
+      {#3} \ar[r]^-{#7} &amp; {#2} \ar@&amp;lt;1ex&amp;gt;[r]^-{#4} \ar@&amp;lt;-1ex&amp;gt;[r]_-{#5} \ar@{&amp;lt;-}[r]|-{#6} &amp; {#1}
+    }$}} %1: object, 2: morphism, 3: composable pairs, 4: domain, 5: codomain, 6: identity, 7: composition
+\newcommand{\cc}[2]{\mbox{$\mathbf{cc}_{#2}[#1]$}\xspace} %#1=point,#2=space
+\newcommand{\ccint}[2]{\mbox{$[#1, #2]$}}
+\newcommand{\cdj}[1]{\mbox{$\mathtt{cd}#1$}\xspace}
+\newcommand{\cdo}[1]{\mbox{$\mathtt{CD}#1$}\xspace}
+\newcommand{\chclx}[2]{\mbox{$\left({#1}_{\bullet}, {#2}_{\bullet}\right)$}\xspace}
+\newcommand{\circled}[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,draw,inner sep=2pt] (char) {#1};}\xspace}
+\newcommand{\clemb}[1]{\mbox{$#1_{\text{clemb}}$}\xspace}
+\newcommand{\cls}[2]{\mbox{$\mathrm{cl}_{#2}{#1}$}\xspace}
+\newcommand{\clsm}[2]{\mbox{$\widehat{\mathrm{cl}_{#2}}{#1}$}\xspace}
+\newcommand{\cluster}[3]{\mbox{${#1} \underset{{#3}}{\rightsquigarrow} {#2}$}\xspace}
+\newcommand{\closedembed}[1]{\mbox{${#1}_{\mathsf{clemb}}$}\xspace}
+\newcommand{\closedmorphism}[1]{\mbox{${#1}_{\mathsf{cl}}$}\xspace}
+\newcommand{\clprop}[1]{\mbox{$#1_{\text{prop}}$}\xspace}
+\newcommand{\clsep}[1]{\mbox{$#1_{\text{sep}}$}\xspace}
+\newcommand{\cmpfn}[2]{\mbox{$#1\/#2$}} %compactification
+\newcommand{\cochclx}[2]{\mbox{$\left({#1}^{\bullet}, {#2}^{\bullet}\right)$}\xspace}
+\newcommand{\cod}[1]{\mbox{$\mathtt{cod}\,#1$}\xspace}
+\newcommand{\cofch}[1]{\mbox{$\mathrm{ch}_{\mathrm{cof}}\/#1$}}
+\newcommand{\cof}[2]{\mbox{$\mathtt{cofinal}: {#1} \subseteq {#2}$}\xspace}
+\newcommand{\coint}[2]{\mbox{$[#1, #2\rrangle$}}
+\newcommand{\conjugate}[1]{\mbox{$\overline{{#1}}$}\xspace}
+\newcommand{\conv}[3]{\mbox{${#1} \underset{{#3}}{\rightarrow} {#2}$}\xspace}
+\newcommand{\coord}[2]{\mbox{$\mathrm{coord}_{#2}(#1)$}\xspace}
+\newcommand{\copow}[2]{\mbox{${#1} _{\scriptstyle \square} {#2}$}\xspace}
+\newcommand{\covrefine}[2]{\mbox{$#1 \preceq #2$}\xspace}
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+\newcommand{\chbasis}[2]{\mbox{$\mathbf{P}_{{#1} \rightarrow
+{#2}}$}\xspace}
+\newcommand{\chbasisint}[3]{\mbox{${#1}_{{#2} \leftrightarrow
+{#3}}$}\xspace}
+\newcommand{\chbasismul}[3]{\mbox{${#1}_{{#2}
+\mathbin{\rotatebox[origin=c]{-180}{$\mapsto$}} ({#2} \times {#3}) }$}\xspace}
+\newcommand{\chbasissum}[3]{\mbox{${#1}_{{#3}
+\mathbin{\rotatebox[origin=c]{-180}{$\mapsto$}} ({#2} + {#3})}$}\xspace}
+\newcommand{\Chan}[1]{\mbox{$\mathpzc{#1}$}}
+\newcommand{\Chfn}[1]{\mbox{$\psi(#1)$}}
+\newcommand{\chfn}[1]{\mbox{$\chi_{#1}$}}
+\newcommand{\cnv}[3]{\mbox{$\xymatrixcolsep{1.56cm}\xymatrix{ {#1}
+\ar[r]|-{\xy*=&amp;lt;4ex,6ex&amp;gt;{#3}*\cir&amp;lt;1.8ex&amp;gt;{}\endxy} &amp; {#2} }$}\xspace}
+\newcommand{\coev}[2]{\mbox{$\mathbf{coev}^{#1}_{#2}$}}  % #1=domain
+\newcommand{\coft}[3]{\mbox{$\omega_{#1}^{#3}(#2)$}}
+\newcommand{\Coker}[1]{\mbox{$\mathtt{c}_{#1}$}}
+\newcommand{\Cokero}[1]{\mbox{$\mathtt{cok}\,\/#1$}}
+\newcommand{\Cokernel}[1]{\mbox{$(\mathtt{Cok}\,\/#1, \mathtt{cok}\,\/#1)$}}
+\newcommand{\colimit}[2]{\mbox{${\underrightarrow{\mathtt{lim}}}_{{#2}}\,
+    #1$}}
+\newcommand{\comm}[2]{\mbox{${#1}\, \circled{\eulf{c}}\, {#2}$}\xspace}
+\newcommand{\comp}[2]{\mbox{$#1\vcenter{\hbox{$\scriptstyle\circ$}} #2$}}
+\newcommand{\comphor}[2]{\mbox{${#1}{\varoast}{#2}$}}
+\newcommand{\comprel}[2]{\mbox{${#1}_{\bullet} {#2}$}}
+\newcommand{\compl}[1]{\mbox{$\neg #1$}}% complement in dist lattice
+\newcommand{\compver}[2]{\mbox{$#1\varocircle #2$}}
+\newcommand{\commsq}[8]{\mbox{$\xymatrix@!{ {#4} \ar@{-&amp;gt;}[r]^{#8} \ar@{-&amp;gt;}[d]_{#7} \ar@{}[dr]|{\#} &amp; {#1} \ar@{-&amp;gt;}[d]^{#5} \\ {#3} \ar@{-&amp;gt;}[r]_{#6} &amp; {#2} }$}}
+\newcommand{\cone}[4]{\mbox{$\mathbf{#1Cone}(#2, #3, #4)$}}
+\newcommand{\congalg}[1]{\mbox{$\mathfrak{C}\/#1$}}
+\newcommand{\consfunc}[1]{\mbox{$\mathbf{#1}$}}
+\newcommand{\Converge}[4]{\mbox{$\lim_{#3 \rightarrow #4}#1 = #2$}}
+\newcommand{\converge}[4]{$#1 \longrightarrow #2$ as $#3 \longrightarrow
+#4$}
+\newcommand{\copower}[2]{\mbox{${#1} _{\scriptstyle \square} {#2}$}\xspace}
+\newcommand{\coprd}[2]{\mbox{${#1} \boldsymbol{+} {#2}$}}
+\newcommand{\coprdi}[2]{\mbox{$\boldsymbol{+}_{#2} {#1}_{#2}$}}
+\newcommand{\coprdii}[3]{\mbox{$\sum_{{#2} \in {#3}} {#1}_{#2}$}}
+\newcommand{\coprt}[1]{$\xymatrix{ *++=[o][F-]{#1} }$}
+\newcommand{\coro}{Corollary\,\,}
+\newcommand{\correct}[1]{\mbox{\color{red}$\checkmark^{\times
+      {#1}}$}\xspace}
+\newcommand{\Coz}[1]{\mbox{$\mathrm{Coz}[#1]$}\xspace}
+\newcommand{\coz}[1]{\mbox{$\mathrm{coz}(#1)$}\xspace}
+\newcommand{\CPrm}[1]{\mbox{$\mathtt{CPrm}[#1]$}\xspace}
+\newcommand{\cprt}[1]{\framebox[1.1\width][c]{$\,#1\,$}\,}
+\newcommand{\cpyrt}[1]{\mbox{$\xy*++{#1}*\cir&amp;lt;6pt&amp;gt;{}\endxy$}}
+\newcommand{\CReg}[1]{\mbox{$\mathfrak{CReg}#1$}}
+\newcommand{\creg}[1]{\mbox{$\underline{creg}[#1]$}\xspace}
+\newcommand{\cts}[2]{$#1$-$#2$ continuous\xspace}
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+\newcommand{\cur}[1]{\mbox{${\mathfrak C}{\mathfrak r}{\mathfrak v}(#1)$}}
+\newcommand{\cutfill}[2]{\mbox{${#2}_- \cdots {#1} \cdots {#2}_+$}}
+\newcommand{\cxc}[1]{\mbox{$\mathbf{C}({#1}, \mathbb{C})$}\xspace}
+\newcommand{\cx}[1]{\mbox{$\mathsf{C}[{#1}]$}\xspace}
+\newcommand{\cxy}[2]{\mbox{$\mathbf{C}({#1}, {#2})$}\xspace}
+
+%%%%%% DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD %%%%%%
+
+\newcommand{\dedcut}[1]{\mbox{$\mathtt{DC}[#1]$}\xspace}
+\newcommand{\Def}{Definition\,\,}
+\newcommand{\degnmap}[4]{\mbox{$\partial_{{#3}}^{{#1}, {#2}}{#4}$}\xspace}
+\newcommand{\densemorphism}[1]{\mbox{${#1}_{\mathsf{d}}$}\xspace}
+\newcommand{\descompfnc}[1]{\mbox{${#1}_{_{!}}$}}
+\newcommand{\despulbfnc}[1]{\mbox{${#1}^{\star}$}}
+\newcommand{\diagmat}[2]{\mbox{$\mathrm{diag}(#1_{1}, #1_{2}, \dots,
+    #1_{#2})$}} %%%%%% #1: letter, #2: suffices, letter_1, letter_2,...
+\newcommand{\diam}[1]{\mbox{$\mathfrak{d}(#1)$}}
+\newcommand{\din}[4]{\mbox{$\int_{{#1}}^{{#2}} {#3}\,\text{d}{#4}$}}
+\newcommand{\dinat}[3]{\mbox{${#1}: {#2} \rightsquigarrow  {#3}$}\xspace}
+\newcommand{\dirsum}[2]{\mbox{$#1 \oplus #2$}}
+\newcommand{\dirsumfin}[2]{\mbox{$#1_{0} \oplus #1_{1} \oplus \dots
+#1_{{#2}-1}$}}
+\newcommand{\Dirsum}[4]{\mbox{$\bigoplus_{{#2} \in {#3}}{#1}_{#2}$}\xspace}
+%\newcommand{\dirun}[2]{\tikz[scale={#2}]{\draw [line width=0.6pt, -&amp;gt;] (0,0.24)--(0.08,0)--(0.16,0.24) node at (0.36,0.12){${#1}$};}}
+\newcommand{\discr}{$\mathfrak{d}$}
+\newcommand{\divdiff}[2]{\mbox{$\mathfrak{D}_{#2}{#1}$}\xspace}
+\newcommand{\divs}[2]{\mbox{$#1\mid #2$}}
+\newcommand{\dmc}[1]{\mbox{$\mathtt{DM}#1$}\xspace}
+\newcommand{\dn}[1]{\mbox{${#1}^{\perp}$}}
+\newcommand{\dom}[1]{\mbox{$\mathtt{dom}\,#1$}\xspace}
+\newcommand{\downset}[1]{\mbox{$\mathtt{Dn}{#1}$}\xspace}
+\newcommand{\downsetfg}[1]{\mbox{$\mathtt{Dn}_{\mathtt{fg}}{#1}$}\xspace}
+\newcommand{\dpp}[2]{\mbox{$\mathrm{dpp}({\mathcal #1}, {\mathcal #2})$}}
+\newcommand{\Dpp}[2]{\mbox{$\mathrm{dpp}(#1, #2)$}}
+\newcommand{\dx}[2]{\mbox{$\dfrac{\text{d}}{\text{d}{#2}}#1$}}
+\newcommand{\dnx}[3]{\mbox{$\dfrac{\mathrm{d}^{#3}}{\mathrm{d}#2^{#3}} #1$}}
+\newcommand{\down}[2]{\mbox{$#1 \perp #2$}}
+\newcommand{\drmorphism}[1]{\mbox{${#1}_{\mathtt{dr}}$}\xspace}
+\newcommand{\dualr}[1]{\mbox{$#1^{\star}$}\xspace}
+\newcommand{\duall}[1]{\mbox{$\,_{\star}{#1}$}\xspace}
+
+%%%%%%  EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE    %%%%%%
+
+\newcommand{\eigensp}[2]{\mbox{$\mathcal{E}_{#1}[#2]$}\xspace} %%%%%% #2:
+%%%%%% square matrix, #1: eigen value
+\newcommand{\elnum}[1]{\mbox{$\mid #1 \mid$}}
+\newcommand{\elmatint}[3]{\mbox{$\mathbf{E}^{{#3}}_{{#1}
+\leftrightarrow {#2}}$}\xspace}
+\newcommand{\elmatmul}[3]{\mbox{$\mathbf{E}^{{#3}}_{{#1}
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+\mathbin{\rotatebox[origin=c]{-180}{$\mapsto$}} ({#1} \times {#2})
+}$}\xspace}
+\newcommand{\elmatsum}[3]{\mbox{$\mathbf{E}^{{#3}}_{{#2}
+\mathbin{\rotatebox[origin=c]{-180}{$\mapsto$}} ({#1} + {#2}) }$}\xspace}
+\newcommand{\epi}[3]{\mbox{$\xymatrix@!{ {#2} \ar@{-&amp;gt;&amp;gt;}[r]^{#1} &amp; {#3} }$}}
+\newcommand{\eqcl}[2]{\mbox{$\left[\frac{#1}{#2}\right]$}}
+\newcommand{\Eqcl}[2]{\mbox{$\left({#1}/{#2}\right)$}}{}
+\newcommand{\eqn}[2]{\mbox{$\mid #1 \mid = \mid #2 \mid$}}
+\newcommand{\eqrel}[7]{\mbox{$
+    \xymatrix{
+      {#6 \times_{#7} #6} \ar@&amp;lt;1ex&amp;gt;[r]^-{p_{1}} \ar@&amp;lt;-1ex&amp;gt;[r]_-{p_{2}}
+      \ar[r]|-{#5} &amp;
+      {#6}  \ar@&amp;lt;1ex&amp;gt;[r]^-{#1} \ar@&amp;lt;-1ex&amp;gt;[r]_-{#2} \ar@(ul,ur)^-{#4} &amp;
+      {#7} \ar[l]|-{#3}
+    }$}\xspace} % #1, #2=r_1,r_2, #3=com rt inv., #4=inv., #5=comp., #6=rel.obj, #7=base obj
+\newcommand{\equivalent}[2]{\mbox{${#1} \hspace{1pt}\sim
+    \hspace{1pt} {#2}$}}
+\newcommand{\etach}[1]{\mbox{$\mathrm{ch}_{\eta}\/#1$}}
+\newcommand{\etaset}[1]{\mbox{$\eta_{#1}$-}}
+\newcommand{\eulf}[1]{\mbox{${\mathfrak #1}$}}
+\newcommand{\ev}[2]{\mbox{$\mathtt{ev}^{#1}_{#2}$}}  % #1=domain, #2=codomain
+\newcommand{\Exists}{\mbox{$\text{\raisebox{0.6em}{
+        \rotatebox{-180}{\bf E}}}$}\xspace}
+\newcommand{\exs}[2]{\mbox{$\exists_{{#1}} {#2}$}}
+\newcommand{\extn}[2]{\mbox{$\left[#1:#2\right]$}}
+
+%%%%%% FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF %%%%%%
+
+\newcommand{\fact}[2]{$(#1, #2)$-factorisation} %not used in beamer
+\newcommand{\factmap}[1]{\mbox{$\nu_{#1}$}}
+\newcommand{\facemap}[4]{\mbox{$\sigma_{{#3}}^{{#1}, {#2}}{#4}$}\xspace}
+\newcommand{\famap}[5]{$#1 \xrightarrow{#3} #2$, $(#4)$, in $#5$\,\,}
+\newcommand{\fepi}[3]{\mbox{$\xymatrix{ {#2} \ar@{-&amp;gt;&amp;gt;}[r]^-{{#1}} &amp; {#3} }$}\xspace}
+\newcommand{\finer}[2]{\mbox{$#1 \curlyeqprec #2$}}
+\newcommand{\FINV}[2]{\mbox{${#1}^{\mathbf{-1}}{#2}$}\xspace}
+\newcommand{\finv}[2]{\mbox{${#1}^{\mathbf{-1}}{#2}$}\xspace}
+\newcommand{\ffinv}[3]{\mbox{$\bigl({#1}^{-1}{#2}\bigr)^{-1}{#3}$}\xspace}
+\newcommand{\fInv}[2]{\mbox{$\forall_{_{\hspace{-3pt}#1}}{#2}$}\xspace}
+\newcommand{\Fix}[1]{\mbox{$\mathtt{Fix}[#1]$}\xspace}
+\newcommand{\fmon}[3]{\mbox{$\xymatrix{ {#2} \ar@{&amp;gt;-&amp;gt;}[]!&amp;lt;24pt,0ex&amp;gt;;[r]!&amp;lt;-2pt,0ex&amp;gt;^-{#1} &amp; {#3}
+}$}\xspace}  %%% hint from manual and https://tex.stackexchange.com/questions/34475/moving-the-position-of-an-arrow-in-x;;;y-pic
+\newcommand{\fol}[2]{\mbox{$\forall_{{#1}} {#2}$}}
+\newcommand{\fneg}[1]{\mbox{$\mathrm{neg}(#1)$}}
+\newcommand{\fpos}[1]{\mbox{$\mathrm{pos}(#1)$}}
+\newcommand{\funeval}[2]{\mbox{$#1(#2)$}}
+
+%%%%%% GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG %%%%%%
+
+\newcommand{\galstr}[8]{\mbox{$\Bigl\langle\Bigl\langle\xymatrix{ {#3}
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+\ar@/^1.56ex/[r]^{#1} \ar@{}[r]|{\bot} &amp; {#4} \ar@/^1.56ex/[l]^{#2} };
+#5, #6; #7, #8\Bigr\rangle\Bigr\rangle$}}
+\newcommand{\gen}[1]{\mbox{$
+    \bigl[
+    #1\/
+    \bigr]$}}
+\newcommand{\genfil}[1]{\mbox{$\langle#1\rangle_{\mathrm fil}$}\xspace}
+\newcommand{\genidl}[1]{\mbox{$\langle#1\rangle_{\mathrm idl}$}\xspace}
+\newcommand{\globsec}[2]{\mbox{$\mathfrak{Gl}_{#2}(#1)$}}
+\newcommand{\gor}{\eulf{R}\eulf{e}\eulf{v}.\,\,\, \eulf{G}\eulf{o}\eulf{r}\eulf{e}\eulf{a}\eulf{u}\eulf{x}\/\,\, \eulf{C}\eulf{e}\eulf{n}\eulf{t}\eulf{e}\eulf{r} \eulf{f}\eulf{o}\eulf{r} \eulf{H}\eulf{i}\eulf{g}\eulf{h}\eulf{e}\eulf{r} \eulf{M}\eulf{a}\eulf{t}\eulf{h}\eulf{e}\eulf{m}\eulf{a}\eulf{t}\eulf{i}\eulf{c}\eulf{s}\/\,}
+\newcommand{\gint}[1]{\mbox{$\lfloor #1 \rfloor$}}
+\newcommand{\grgrp}[1]{\mbox{$\mathtt{GrGrp}\left[#1\right]$}\xspace}
+\newcommand{\group}[1]{$#1$-group}
+\newcommand{\grph}[1]{\mbox{$\mathfrak{graph}_{#1}$}}
+\newcommand{\grphref}[5]{\mbox{$\xymatrix{ {#4} \ar@&amp;lt;1.2ex&amp;gt;[r]^-{#1} \ar@&amp;lt;-1.2ex&amp;gt;[r]_-{#2} \ar@{&amp;lt;-}[r]|-{#3} &amp; {#5} }$}\xspace}
+\newcommand{\grphsym}[5]{\mbox{$\xymatrix{ {#4} \ar@&amp;lt;1ex&amp;gt;[r]^-{#1} \ar@&amp;lt;-1ex&amp;gt;[r]_-{#2} \ar@(ur,ul)_-{#3} &amp; {#5} }$}\xspace}
+\newcommand{\grphtrn}[7]{\mbox{$
+    \xymatrix{
+      {{#6} \times_{#7} {#6}} \ar@&amp;lt;1.2ex&amp;gt;[r]^-{#4}
+      \ar@&amp;lt;-1.2ex&amp;gt;[r]_-{#5} \ar[r]|-{#3} &amp;
+      {#6} \ar@&amp;lt;1.2ex&amp;gt;[r]^-{#1} \ar@&amp;lt;-1.2ex&amp;gt;[r]_-{#2} &amp; {#7}
+    }
+    $}\xspace}
+\newcommand{\grprng}[2]{\mbox{$#1\langle\langle#2\rangle\rangle$}}
+\newcommand{\gte}[2]{\mbox{${#1} \geq {#2}$}}
+
+%%%%%% HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH %%%%%%
+
+
+\newcommand{\HOM}[2]{\mbox{$\mathrm{hom}(#1, #2)$}}
+\newcommand{\homo}[3]{\mbox{$\mathrm{hom}_{#1}\left(#2, #3\right)$}}
+\newcommand{\Homo}[3]{\mbox{${#1}\left(#2, #3\right)$}}
+\newcommand{\homob}[3]{\mbox{${\mathtt{Bim}}(#1, #2; #3)$}}
+\newcommand{\homoe}[3]{\mbox{${#1}[#2, #3]$}\xspace}
+\newcommand{\homoi}[2]{\mbox{$\mathrm{Hom}({#1},{#2})$}}
+\newcommand{\homoib}[2]{\mbox{$\mathrm{Hom}_{\mathtt{b}}\bigl({#1},
+{#2}\bigr)$}\xspace}
+\newcommand{\homoil}[2]{\mbox{$\mathrm{Hom}_{\mathtt{l}}({#1},{#2})$}\xspace}
+\newcommand{\homoir}[2]{\mbox{$\mathrm{Hom}_{\mathtt{r}}({#1},{#2})$}\xspace}
+
+%%%%%% IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII %%%%%%
+
+\newcommand{\ID}[1]{\mbox{$\xymatrix{ {#1} \ar@2{-}[r]^{} &amp; {#1} }$}}
+\newcommand{\id}[1]{\mbox{$\mathbf{1}_{#1}$}}
+\newcommand{\image}[1]{\mbox{${\mathrm Im}[#1]$}}
+\newcommand{\imaginary}[1]{\mbox{$\text{\small Im}\,{#1}$}\xspace}
+\newcommand{\Img}[1]{\mbox{$\mathcal{I}_{#1}$}\xspace}
+\newcommand{\Imgs}[2]{\mbox{$#1[#2]$}\xspace}
+\newcommand{\img}[2]{\mbox{$\exists_{_{#1}}{#2}$}}
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+\newcommand{\imgfil}[2]{\mbox{$\overrightarrow{#1}{#2}$}\xspace}
+\newcommand{\Imgfil}[2]{\mbox{$\overset{\sqcap}{#1}{#2}$}\xspace}
+\newcommand{\imply}[2]{\mbox{$#1 \longrightarrow #2$}}
+\newcommand{\implyl}[2]{\mbox{$#1 \Longleftarrow #2$}}
+\newcommand{\implyr}[2]{\mbox{
+    $\left(
+      #1 \Longrightarrow #2
+    \right)$}\xspace}
+\newcommand{\incl}[2]{\mbox{$\mathtt{I}_{#1} : #1 \hookrightarrow
+    #2$}}
+\newcommand{\inclmap}[1]{\mbox{${\mathtt{I}}_{#1}$}}
+\newcommand{\find}[1]{\mbox{$\mathtt{ind}\,{#1}$}}
+\newcommand{\indiscr}{$\mathfrak{i}$}
+\newcommand{\inita}[1]{\mbox{$\mathtt{i}_{#1}$}\xspace}
+\newcommand{\initer}{\mbox{$\mathbold{\zeta}$}\xspace}
+\newcommand{\inito}{\mbox{${\emptyset}$}\xspace}
+\newcommand{\innprd}[2]{\mbox{$\Bigl\langle {#1}, {#2}
+\Bigr\rangle$}\xspace}
+\newcommand{\Innprd}[3]{\mbox{$\Bigl\langle {#1}, {#2}
+\Bigr\rangle_{{#3}}$}\xspace} %%% #1, #2=vectors, #3=p.def. matrix
+\newcommand{\inpr}[2]{\mbox{$\llangle #1, #2 \rrangle$}}
+\newcommand{\intr}[2]{\mbox{$\mathtt{int}_{#2}#1$}\xspace}
+\newcommand{\inv}[1]{\mbox{${#1}^{{-1}}$}}
+\newcommand{\invfil}[2]{\mbox{$\overleftarrow{#1}{#2}$}\xspace}
+\newcommand{\Invfil}[2]{\mbox{$\overset{\sqcup}{#1}{#2}$}\xspace}
+\newcommand{\InvRel}[3]{\mbox{$#1^{-1}\bigl(\xymatrix{ {#2}
+\ar@/^2ex/[r] \ar@/_2ex/[r] &amp; {#3} }\bigr)$}\xspace}
+\newcommand{\iso}[3]{\mbox{$\xymatrix{ {#2} \ar@{-&amp;gt;}[r]^{#1}
+      \ar@{}[r]_{\approx} &amp; {#3} }$}}
+\newcommand{\ISO}[2]{\mbox{${#1} \approx {#2}$}\xspace}
+
+%%%%%% KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK %%%%%%
+
+\newcommand{\kanl}[2]{\mbox{$\left(\mathsf{lan}_{{#2}}{#1}\right)$}\xspace}
+\newcommand{\kanr}[2]{\mbox{$\left(\mathsf{ran}_{{#2}}{#1}\right)$}\xspace}
+\newcommand{\Ker}[1]{\mbox{$\mathtt{k}_{#1}$}}
+\newcommand{\Kero}[1]{\mbox{$\mathtt{ker}\,#1$}}
+\newcommand{\Kerp}[1]{\mbox{$\mathtt{k}_{#1}$}\xspace}
+\newcommand{\kx}[1]{\mbox{${\mathfrak K}({#1})$}}
+\newcommand{\kzx}[1]{\mbox{${\mathfrak K}_{0}({#1})$}}
+
+%%%%%% LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL %%%%%%
+
+\newcommand{\lact}[3]{\mbox{$\left[{#2} \triangleright_{#1} {#3}\right]$}\xspace}
+\newcommand{\LAND}{\texttt{ AND }}
+\newcommand{\LOR}{\texttt{ OR }}
+\newcommand{\lbds}[1]{\mbox{${#1}^{\mathsf{l}}$}}
+\newcommand{\lgset}[1]{\mbox{$\mathsf{large}[#1]$}\xspace}
+\newcommand{\lubds}[1]{\mbox{${#1}^{\mathsf{lu}}$}}
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+\newcommand{\lcm}{\mbox{$\mathrm{lcm}$}}
+\newcommand{\least}[1]{\mbox{$\uparrow_{\text{\hspace{-1.44ex}$\circ$}}#1$}\xspace}
+\newcommand{\Lem}{Lemma\,\,}
+\newcommand{\length}[1]{\mbox{$\mathrm{len}\,{#1}$}\xspace}
+\newcommand{\levset}[3]{\mbox{$
+    \left[
+      {#1} {#3} {#2}
+    \right]$}}
+\newcommand{\Lim}[2]{\mbox{\bf{#1lim} $#2$}}
+\newcommand{\limit}[2]{\mbox{${\underleftarrow{\mathtt{lim}}}_{{#2}}\, #1$}}
+\newcommand{\lin}[3]{\mbox{$\int_{{#1}} {#2}\,\text{d}{#3}$}}
+\newcommand{\lint}[1]{\mbox{$\lceil #1 \rceil$}}
+\newcommand{\loc}[2]{\mbox{$#1^{-1}#2$}\xspace}
+\newcommand{\low}[2]{\mbox{${#1}_{{#2}}$}}
+\newcommand{\lpsp}[2]{\mbox{$\mathfrak{L}^{#1}(#2)$\,}}
+\newcommand{\lte}[2]{\mbox{${#1} \leq {#2}$}}
+
+%%%%%% MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM %%%%%%
+
+\newcommand{\mapfrcoprod}[2]{\mbox{$\begin{pmatrix} {#1} \\ {#2}
+    \end{pmatrix}$}\xspace}
+\newcommand{\mapfrcoprodi}[3]{\mbox{$\bigl[{#1}_{{#2}}\bigr]_{{#2} \in
+{#3}}$}\xspace}
+\newcommand{\matcol}[2]{\mbox{$\mathbf{col}_{#2}[{#1}]$}\xspace}
+\newcommand{\matrow}[2]{\mbox{$\mathbf{row}_{#2}[{#1}]$}\xspace}
+\newcommand{\matpres}[3]{\mbox{$\mathrm{Mat}_{{#2} \rightarrow {#3}}({#1})$}\xspace} %%% matrix presentation of linear transformation
+\newcommand{\matrep}[1]{\mbox{$\mathbf{Mat}\left[{#1}\right]$}\xspace} % matrix representation of morphisms
+\newcommand{\matret}[3]{\mbox{$\left({#1}_{i,j}\right)_{i,j=0}^{{#2}-1,{#3}-1}$}}
+\newcommand{\matsq}[2]{\mbox{$\left({#1_{i,j}}\right)_{i,j=0}^{{#2}-1}$}}
+\newcommand{\Max}[1]{\mbox{$\mathtt{Max}[#1]$}\xspace}
+\newcommand{\mc}[1]{\mbox{$\mathfrak{C}_{{#1}}$}\xspace}
+\newcommand{\mcimgo}[1]{\mbox{$\mathtt{Coim}{#1}$}\xspace}
+\newcommand{\mcimg}[1]{\mbox{$\mathtt{coim}{#1}$}\xspace}
+\newcommand{\md}[1]{\mbox{$\mathfrak{D}_{{#1}}$}\xspace}
+\newcommand{\mdr}[1]{\mbox{$\mathfrak{Dr}_{{#1}}$}\xspace}
+\newcommand{\Min}[1]{\mbox{$\mathbold{Min}[#1]$}\xspace}
+\newcommand{\mimgo}[1]{\mbox{$\mathtt{Im}{#1}$}\xspace}
+\newcommand{\mimg}[1]{\mbox{$\mathtt{im}{#1}$}\xspace}
+\newcommand{\mo}[1]{\mbox{$\mathfrak{O}_{#1}$}\xspace}
+\newcommand{\modlt}[2]{\mbox{$\,_{#1}#2$}}
+\newcommand{\modrt}[2]{\mbox{$#2_{#1}\,$}}
+\newcommand{\modulo}[3]{\mbox{$#1 = #2\,(\mathrm{mod }\,#3)$}}
+\newcommand{\modulus}[1]{\mbox{${\mathbf \|}#1{\mathbf \|}$}}
+\newcommand{\mon}[3]{\mbox{$\xymatrix{ {#2} \ar@{ &amp;gt;-&amp;gt;}[r]^{#1} &amp; {#3}}$}}
+\newcommand{\monad}[4]{$\mathfrak{#1} = (#4 \xrightarrow[]{#1} #4, #2 :
+  \id{#4} \Rightarrow #1, #3 : {{#1}^2} \Rightarrow {#1})$} %%%%%% #1:=endo-functor, #2:=unit, #3:=multiplication, #4:= category
+\newcommand{\most}[1]{\mbox{$\downarrow^{\text{\hspace{-1.44ex}$\circ$}}#1$}\xspace}
+\newcommand{\msdr}[1]{\mbox{$\mathfrak{Drs}_{{#1}}$}\xspace}
+\newcommand{\mtug}{\CAL{M}athematics \CAL{T}raining for the \CAL{U}ndergraduates\/\,}
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+\newcommand{\mtbf}[1]{\mbox{$\mathbf{#1}$}\xspace}
+\newcommand{\mxc}[1]{\mbox{$\mathbf{M}({#1}, \mathbb{C})$}\xspace}
+\newcommand{\mx}[1]{\mbox{$\mathbf{M}({#1}, \mathbb{R})$}\xspace}
+\newcommand{\mxy}[2]{\mbox{$\mathbf{M}({#1}, {#2})$}\xspace}
+
+%%%%%% NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN %%%%%%
+
+\newcommand{\NAME}[1]{\mbox{$\ulcorner #1 \urcorner$}\xspace}
+\newcommand{\Nattrn}[5]{\mbox{$\xymatrixcolsep{1.2cm}\xymatrix{ {#4} \ar@&amp;lt;2ex&amp;gt;[r]^-{#2}="u" \ar@&amp;lt;-2ex&amp;gt;[r]_-{#3}="l" &amp; {#5} \ar@{-&amp;gt;} &amp;lt;0pt,-2pt&amp;gt;+"u";&amp;lt;0pt,2pt&amp;gt;+"l"^{#1}}$}\xspace}
+\newcommand{\NattrnGrFib}[9]{$\xymatrix@!C=12ex{ {#6} \ar@{-&amp;gt;}[dd]_{#4} &amp; {#8} \ar@{-&amp;gt;}[dd]^{#5} \\ {} \rtwocell^{#3}_{#2}{!\,\,\,#1} &amp; {} \\ {#7} &amp; {@9} }$}
+\newcommand{\nattrn}[3]{\mbox{$\xymatrix{ {#2} \ar@2{-&amp;gt;}[r]^{#1} &amp; {#3} }$}\xspace}
+\newcommand{\nbd}[2]{\mbox{${\mathcal N}^{#1}_{#2}$}\xspace}
+\newcommand{\ncluster}[3]{\mbox{${#1} \underset{{#3}}{\not\rightsquigarrow} {#2}$}\xspace}
+\newcommand{\nconv}[3]{\mbox{${#1} \underset{{#3}}{\not\rightarrow} {#2}$}\xspace}
+\newcommand{\NEG}[1]{\mbox{$\neg_{\,_{#1}}$}\xspace}
+\newcommand{\nepi}[3]{\mbox{$\xymatrix{ {#2} \ar@{-|&amp;gt;}[r]^-{#1} &amp; {#3} }$}\xspace}
+\newcommand{\nmon}[3]{\mbox{$\xymatrix{ {#2} \ar@{|&amp;gt;-&amp;gt;}[r]^-{#1} &amp; {#3} }$}\xspace}
+\newcommand{\norm}[1]{\mbox{$\left\lVert {#1} \right\rVert$}\xspace}
+\newcommand{\normalto}[2]{\mbox{$#1 \vartriangleleft  #2$}\xspace}
+\newcommand{\nucl}[1]{\mbox{$\mathfrak{N}#1$}}
+
+%%%%%% OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO %%%%%%
+
+\newcommand{\ocint}[2]{\mbox{$\llangle #1, #2]$}}
+\newcommand{\ooint}[2]{\mbox{$\llangle #1, #2\rrangle$}}
+\newcommand{\OneZer}[2]{\mbox{$\bigl(\mathbf{1}_{#1}, \mathbf{0}_{{#1}, {#2}}\bigr)$}\xspace}
+\newcommand{\opair}[2]{\mbox{$\left(#1, #2\right)$}}
+\newcommand{\Opair}[2]{\mbox{$\begin{pmatrix} {#1} \\ {#2} \end{pmatrix}$}} % uses stmaryrd package
+\newcommand{\OPAIR}[2]{\mbox{$\langle #1, #2\rangle$}}
+\newcommand{\opp}[1]{\mbox{$#1^{\mathtt{op}}$}}
+\newcommand{\ord}[1]{\mbox{$\omega_{#1}$}}
+\newcommand{\orth}[1]{\mbox{${#1}^{\bot}$}\xspace}
+\newcommand{\orthpair}[2]{\mbox{${#1} \perp {#2}$}\xspace}
+\newcommand{\otriple}[3]{\mbox{$(#1, #2, #3)$}\xspace}
+\newcommand{\overfib}[2]{\mbox{$\xymatrix{ {#1} \ar@{|-&amp;gt;}[r] &amp; {#2} }$}\xspace}
+\newcommand{\Overfib}[3]{\mbox{$\xymatrix{ {#2} \ar@{|-&amp;gt;}[r]^{#1} &amp; {#3}
+}$}\xspace}
+\newcommand{\overfibp}[6]{\mbox{$\xymatrix{ {#3} \ar[r]^{#1} \ar@{|-&amp;gt;}[d] &amp;
+{#4} \ar@{|-&amp;gt;}[d] \\ {#5} \ar[r]_{#2} &amp; {#6} }$}\xspace}
+\newcommand{\Overfibp}[7]{\mbox{$\xymatrix{ {#4} \ar[r]^{#2}
+\ar@{|-&amp;gt;}[d]_{#1} &amp; {#5} \ar@{|-&amp;gt;}[d]^{#1} \\ {#6} \ar[r]_{#3} &amp; {#7}
+}$}\xspace}
+
+
+%%%%%% PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP %%%%%%
+%%%%%% \probinifinsol requires amsmath package for \text
+\newcommand{\parder}[2]{\mbox{$\frac{\partial #1}{\partial #2}$}}
+\newcommand{\parderd}[2]{\mbox{$\dfrac{\partial #1}{\partial #2}$}}
+\newcommand{\pardert}[2]{\mbox{$\tfrac{\partial #1}{\partial #2}$}}
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+\newcommand{\parderg}[3]{\mbox{$\frac{\partial^{|#3|} #1}{\partial #2^{#3}}$}}
+\newcommand{\pardergd}[3]{\mbox{$\dfrac{\partial^{|#3|} #1}{\partial #2^{#3}}$}}
+\newcommand{\pardergt}[3]{\mbox{$\tfrac{\partial^{|#3|} #1}{\partial #2^{#3}}$}}
+\newcommand{\pardertwo}[3]{\mbox{$\frac{\partial^{2} #1}{\partial #2 \partial #3}$}}
+\newcommand{\pardertwod}[3]{\mbox{$\dfrac{\partial^{2} #1}{\partial #2 \partial #3}$}}
+\newcommand{\pardertwot}[3]{\mbox{$\tfrac{\partial^{2} #1}{\partial #2 \partial #3}$}}
+\newcommand{\parderthr}[4]{\mbox{$\frac{\partial^{3} #1}{\partial #2 \partial #3\partial #4}$}}
+\newcommand{\parderthrd}[4]{\mbox{$\dfrac{\partial^{3} #1}{\partial #2 \partial #3 \partial #4}$}}
+\newcommand{\parderthrt}[4]{\mbox{$\tfrac{\partial^{3} #1}{\partial #2
+      \partial #3 \partial #4}$}}
+\newcommand{\perfectmorphism}[1]{\mbox{${#1}_{\mathsf{per}}$}\xspace}
+\newcommand{\placeholder}[1]{\mbox{$\bigl({#1}\bigr)$}\xspace}
+\newcommand{\poly}[2]{\mbox{$#1[#2]$}\xspace}
+\newcommand{\polyto}[3]{\mbox{${#1}_{#3}(#2)$}\xspace}
+\newcommand{\polyfrac}[2]{\mbox{$#1(#2)$}}
+\newcommand{\polyn}[3]{\mbox{$#1[#2_{1}, #2_{2}, \dots, #2_{#3}]$}}
+\newcommand{\polynfrac}[3]{\mbox{$#1(#2_{1}, #2_{2}, \dots, #2_{#3})$}}
+\newcommand{\pow}[2]{\mbox{${#1}^{{#2}}$}}
+\newcommand{\power}[2]{\mbox{${#1} \blacktriangle {#2}$}\xspace}
+\newcommand{\powser}[3]{\mbox{$\sum_{#3 \geq 0}{#1}_{#3}{#2}^{#3}$}}
+\newcommand{\powserring}[2]{\mbox{$#1[[#2]]$}}
+\newcommand{\powserringn}[3]{\mbox{$#1[[#2_{1}, #2_{2}, \dots, #2_{#3}]]$}}
+\newcommand{\powset}[1]{\mbox{$\mathtt{2}^{#1}$}\xspace}
+\newcommand{\powsetsize}[2]{\mbox{$2^{#1}_{&amp;lt; #2}$}\xspace}
+\newcommand{\prd}[2]{\mbox{$#1 \times #2$}}
+\newcommand{\prdi}[2]{\mbox{$\prod_{#2} {#1}_{#2}$}}
+\newcommand{\prdii}[3]{\mbox{$\prod_{{#2} \in {#3}} {#1}_{#2}$}}
+\newcommand{\prdmap}[3]{\mbox{$
+    \left(
+      #1_{#2}
+    \right)_{{#2} \in {#3}}$}\xspace}
+\newcommand{\prdten}[2]{\mbox{$#1 \otimes #2$}}
+\newcommand{\preimg}[2]{\mbox{${#1}^{\leftarrow}[#2]$}\xspace}
+\newcommand{\prepartop}[4]{\mbox{$\bigl(#1, #2, #3, #4\bigr)$}\xspace}
+\newcommand{\Prm}[1]{\mbox{$\mathtt{Prm}[#1]$}\xspace}
+\newcommand{\probinifin}[4]{$(#1, #2, #3~: #4)$}
+\newcommand{\probinifinsol}[7]{$#5 = \text{#7}_{#6}(#1, #2, #3~: #4)$}
+\newcommand{\proj}[2]{\mbox{\text{{\small \bf pr}}$_{#2}{#1}$}} %%% projection of the vector #1 on the vector #2
+\newcommand{\propermorphism}[1]{\mbox{${#1}_{\mathsf{pr}}$}\xspace}
+\newcommand{\pscmpl}[2]{\mbox{$#1 \longrightarrow #2$}\xspace}
+\newcommand{\Pt}[3]{\mbox{$\xymatrix{ {#2} \ar@&amp;lt;0.6ex&amp;gt;[r]^{#1} &amp; {#3} \ar@&amp;lt;0.6ex&amp;gt;[l]^-{s_{#1}}}$}\xspace}
+\newcommand{\pt}[1]{\mbox{$\mathtt{pt}{#1}$}\xspace}
+\newcommand{\ptset}[1]{\mbox{$\overset{\star}{#1}$}}
+\newcommand{\pulbob}[3]{\mbox{${#1} \times_{{#3}} {#2}$}}
+\newcommand{\Pulbob}[4]{\mbox{${#1} \times_{({#3}, {#4})} {#2}$}}  %% pulback of #3 along #4
+\newcommand{\pullback}[6]{\mbox{
+    $\xymatrixcolsep{1.8cm}
+    \xymatrixrowsep{1.56cm}
+    \xymatrix{
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+      {{#6}} \ar[r]^-{p_2} \ar[d]_{p_1}
+      \ar@{}[dr]|(0.096){\text{\LARGE{$\lrcorner$}}} &amp; {{#2}}
+      \ar[d]^{{#4}} \\
+         {{#1}} \ar[r]_-{{#5}} &amp; {{#3}}
+}$
+}\xspace} %%% the last entry is the pullback object
+\newcommand{\PULLBACK}[5]{\mbox{
+    $\xymatrixcolsep{1.8cm}
+    \xymatrixrowsep{1.56cm}
+    \xymatrix{
+      {{#1} \times_{#3} {#2}} \ar[r]^-{{#5}_{#4}} \ar[d]_{{#4}_{#5}}
+      \ar@{}[dr]|(0.18){\text{\large$\lrcorner$}} &amp; {#2} \ar[d]^{#4}  \\
+          {#1} \ar[r]_-{#5} &amp; {#3}
+    }$}\xspace}
+\newcommand{\pulbint}[7]{\mbox{$\xymatrix@!{ {#1 \cap #3} \ar@{ &amp;gt;-&amp;gt;}[r]^{#7} \ar@{ &amp;gt;-&amp;gt;}[d]_{#6} \ar@{ &amp;gt;-&amp;gt;}[dr]|{#4 \cap #5} &amp; {#1} \ar@{ &amp;gt;-&amp;gt;}[d]^{#4} \\ {#3} \ar@{ &amp;gt;-&amp;gt;}[r]_{#5} &amp; {#2} }$}}
+\newcommand{\Pulbmon}[8]{\mbox{$\xymatrix@!{ {#4 = {#7}^{\leftarrow}(#1)} \ar@{-&amp;gt;}[r]^{#8} \ar@{ &amp;gt;-&amp;gt;}[d]_{#7} &amp; {#1} \ar@{ &amp;gt;-&amp;gt;}[d]^{#5} \\ {#3} \ar@{-&amp;gt;}[r]_{#6} &amp; {#2} }$}}
+\newcommand{\pulbmon}[8]{\mbox{$\xymatrix@!{ {#4} \ar@{-&amp;gt;}[r]^{#8} \ar@{
+&amp;gt;-&amp;gt;}[d]_{#7} \ar@{}[dr]|{\text{pullback}} &amp; {#1} \ar@{ &amp;gt;-&amp;gt;}[d]^{#5} \\
+{#3} \ar@{-&amp;gt;}[r]_{#6} &amp; {#2} }$}}
+\newcommand{\pushob}[3]{\mbox{${#1} +_{{#3}} {#2}$}}
+\newcommand{\Pushob}[4]{\mbox{${#1} +_{({#3}, {#4})} {#2}$}}  %% pushout of #3 along #4
+\newcommand{\Push}[7]{\mbox{$\xymatrix@!{ {#3} \ar@{-&amp;gt;}[r]^{#4}
+\ar@{-&amp;gt;}[d]_{#5} \ar@{}[dr]|(0.906){\text{\large{$\ulcorner$}}} &amp; {#1}
+\ar@{-&amp;gt;}[d]^{#6} \\ {#2} \ar@{-&amp;gt;}[r]_{#7} &amp; {{#1} +_{#3} {#2}} }$}}
+\newcommand{\push}[8]{\mbox{$\xymatrix@!{ {#1} \ar@{-&amp;gt;}[r]^{#5}
+\ar@{-&amp;gt;}[d]_{#6} \ar@{}[dr]|(0.906){\text{\large{$\ulcorner$}}} &amp; {#2}
+\ar@{-&amp;gt;}[d]^{#7} \\ {#3} \ar@{-&amp;gt;}[r]_{#8} &amp; {#4} }$}}
+
+%%%%%% QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ %%%%%%%
+
+\newcommand{\quoset}[2]{\mbox{$\mathsf{Q}[{#1}, {#2}]$}\xspace}
+\newcommand{\quoSet}[3]{\mbox{$
+    \left(\frac{#1}{#2=#3}
+    \right)$}\xspace}
+\newcommand{\quomap}[2]{\mbox{$\mathsf{q}_{{#1},{#2}}$}\xspace}
+
+%%%%%% RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR %%%%%%
+
+\newcommand{\ract}[3]{\mbox{$\left[{#3} \triangleleft_{#1} {#2}\right]$}\xspace}
+\newcommand{\rbel}[2]{\mbox{$#1 \prec #2$}}
+\newcommand{\rcf}[1]{\mbox{$\mathfrak{C}\,#1$}\xspace}
+\newcommand{\rcfb}[1]{\mbox{$\mathfrak{C}^*\,#1$}\xspace}
+\newcommand{\rlfrm}{\mbox{$\mathcal{L}(\mathbb{R})$}\xspace}
+\newcommand{\real}[1]{\mbox{$\text{\small Re}\,{#1}$}\xspace}
+\newcommand{\reflgrph}[5]{\mbox{$
+    \xymatrixcolsep{1.2cm}
+    \xymatrix{
+      {{#4}} \ar@&amp;lt;1.8ex&amp;gt;[r]^-{{#1}} \ar@{&amp;lt;-}[r]|-{{#3}}
+      \ar@&amp;lt;-1.8ex&amp;gt;[r]_-{{#2}} &amp; {{#5}}
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+    }$}\xspace} % 6: the spacing limit
+\newcommand{\rel}[5]{$\xymatrix{ &amp; {#3} \ar@{-&amp;gt;}[dl]_{#1}
+\ar@{-&amp;gt;}[dr]^{#2} &amp; \\ {#4} &amp; &amp; {#5} }$}
+\newcommand{\relon}[6]{\mbox{$\xymatrix@!C=#6ex{ {#4} \ar@/^2ex/[r]^{#1}
+\ar@/_2ex/[r]_{#2} \ar@{&amp;lt;-}[r]|{#3} &amp; {#5} }$}\xspace}
+\newcommand{\Relon}[2]{\mbox{$\xymatrix{ {#1} \ar@/^1ex/[r]
+\ar@/_1ex/[r] &amp; {#2} }$}\xspace}
+\newcommand{\relation}[3]{\mbox{$\xymatrix{ {#2} \ar@{~}[r]^-{#1} &amp; {#3} }$}}
+\newcommand{\resofunc}[1]{\mbox{${\mathfrak r}^{{#1}}$}}
+\newcommand{\rest}[2]{\mbox{$({#1}\bigr|_{\,\tiny{#2 }})$}\xspace}
+\newcommand{\resdiv}[2]{\mbox{$\left(#1 \,\colon\, #2\right)$}\xspace} %%% uses stmaryrd
+\newcommand{\resdivl}[2]{\mbox{$\left(#1 \diagdown #2\right)$}\xspace} %%% uses stmaryrd
+\newcommand{\resdivr}[2]{\mbox{$\left(#1 \diagup #2\right)$}\xspace} %%% uses stmaryrd
+\newcommand{\roof}[5]{\mbox{$\xymatrix{ &amp; {#3} \ar[dl]_-{#1} \ar[dr]^-{#2} &amp; \\ {#4} &amp; &amp; {#5} }$}\xspace}
+
+
+%%%%%% SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS %%%%%%
+
+\newcommand{\scf}[2]{\mbox{$[{#1}_0; {#1}_1, {#1}_2, \dots,
+{#1}_{#2}]$}}
+\newcommand{\SCR}[1]{\mbox{${\mathscr #1}$}}
+\newcommand{\sdrmorphism}[1]{\mbox{${#1}_{\mathtt{sdr}}$}\xspace}
+\newcommand{\sect}[2]{\mbox{$\mathrm{Sect}[{#1}, {#2}]$}} %object of sections of #2 under #1
+\newcommand{\sepmorphism}[1]{\mbox{${#1}_{\mathsf{sep}}$}\xspace}
+\newcommand{\seq}[3]{\mbox{$\bigl({#1}_{#2}\bigr)_{{#2} \in {#3}}$}}
+\newcommand{\SEQ}[3]{\mbox{$\bigl\llbracket{#1}_{#2}: {#2} \in {#3}\bigr\rrbracket$}} %uses stmaryrd
+\newcommand{\Seq}[4]{\mbox{$\bigl\langle {#1}_{#2}: {#2} {#3} {#4}\bigr\rangle$}}
+\newcommand{\ser}[3]{\mbox{$\sum_{#2 \in #3} {#1}_{#2}$}}
+\newcommand{\ses}[5]{\mbox{$\xymatrix{ {\zeroo} \ar@{-&amp;gt;}[r]^{} &amp; {#3}
+\ar@{-&amp;gt;}[r]^{#1} &amp; {#4} \ar@{-&amp;gt;}[r]^{#2} &amp; {#5} \ar@{-&amp;gt;}[r]^{} &amp;
+{\zeroo} }$}}
+\newcommand{\SET}[1]{\mbox{$\mathbf{Set}(#1)$}}
+\newcommand{\sgn}[1]{\mbox{$\mathbf{sgn}\,#1$}}
+\newcommand{\sing}[1]{\mbox{$\{\cdot\}_{#1}$}}
+\newcommand{\singis}[1]{\mbox{${\mathcal P}(#1)
+\xrightarrow{\sigma_{#1}} \Omega$}}
+\newcommand{\slclsd}[1]{\mbox{$\mathfrak{c}({#1})$}\xspace}
+\newcommand{\slopen}[1]{\mbox{$\mathfrak{o}({#1})$}\xspace}
+\newcommand{\smset}[1]{\mbox{$\mathtt{small}(#1)$}\xspace}
+\newcommand{\specfrm}[1]{\mbox{$\Sigma #1$}}
+\newcommand{\specfrmopen}[2]{\mbox{$\Sigma_{#2}(#1)$}}
+\newcommand{\splepi}[4]{\mbox{$\left(\xymatrix{ {#3} \ar@&amp;lt;0.6ex&amp;gt;[r]^-{#1} \ar@{&amp;lt;-}@&amp;lt;-0.6ex&amp;gt;[r]_-{#2} &amp; {#4} }\right)$}\xspace}
+\newcommand{\Splepi}[3]{\mbox{$\left(\xymatrix{ {#2} \ar@&amp;lt;0.6ex&amp;gt;[r]^-{#1} \ar@{&amp;lt;-}@&amp;lt;-0.6ex&amp;gt;[r]_-{s_{#1}} &amp; {#3}} \right)$}\xspace}
+\newcommand{\splrel}[7]{$\xymatrix{ &amp; {#5} \ar@{-&amp;gt;}[dl]_{#1}
+\ar@{-&amp;gt;}[dr]^{#2} &amp; \\ {#6} \ar@/^8ex/[ur]^{#3} &amp; &amp; {#7}
+\ar@/_8ex/[ul]_{#4} }$}
+\newcommand{\splvee}[1]{
+\tikz[baseline=-1mm,scale=0.6]{\draw[-] (-0.72,0)--(0,-0.72)--(0.72,0)
+node[below] at (0,0.36) {${#1}$};}\xspace}
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+\newcommand{\splwedge}[1]{
+\tikz[baseline=-1mm,scale=0.6]{\draw[-] (-0.72,0)--(0,0.72)--(0.72,0)
+node[below] at (0,0.36) {${#1}$};}\xspace}
+\newcommand{\stbasis}[1]{\mbox{$\mathbf{u}^{(#1)}$}\xspace}
+\newcommand{\strike}[1]{#1\hspace{-1ex}/}
+\newcommand{\subpre}[2]{\mbox{$_{#2}{#1}$}\xspace}
+\newcommand{\subst}[2]{\mbox{$#1|#2$}}
+\newcommand{\suppre}[2]{\mbox{$^{#2}{#1}$}\xspace}
+\newcommand{\Succ}[1]{\mbox{$\mathfrak{S}#1$}}  %%% successor set as for
+%%% Ax. Set Th.
+\newcommand{\sumten}[2]{\mbox{$#1 \oplus #2$}}
+\newcommand{\supp}[1]{\mbox{$\mathrm{supp}(#1)$}}
+
+%%%%%% TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT %%%%%%%
+
+\newcommand{\Talg}[1]{\mbox{${#1}$-$\mathrm{algebra}$}}
+\newcommand{\Talgd}[5]{\mbox{$\xymatrixcolsep{1.8cm}
+\xymatrix{
+{{#1}^2({#4})} \ar@&amp;lt;0.6ex&amp;gt;[r]^-{{#2}_{#4}} \ar@&amp;lt;-0.6ex&amp;gt;[r]_-{{#1}#5} &amp; {#1(#4)}
+\ar@&amp;lt;-0.6ex&amp;gt;[r]_-{{#5}} \ar@{&amp;lt;-}@&amp;lt;0.6ex&amp;gt;[r]^-{{#3}_{#4}} &amp; {#4
+} \ar@(ur,dr)@2{-}}$}\xspace}
+\newcommand{\Talghomd}[8]{\mbox{$\xymatrixcolsep{1.8cm}\xymatrixrowsep{1.56cm}
+\xymatrix{
+{{#1}^2({#4})} \ar@&amp;lt;0.6ex&amp;gt;[r]^-{{#2}_{#4}} \ar@&amp;lt;-0.6ex&amp;gt;[r]_-{{#1}#5} &amp; {#1(#4)}
+\ar@&amp;lt;-0.6ex&amp;gt;[r]_-{{#5}} \ar@{&amp;lt;-}@&amp;lt;0.6ex&amp;gt;[r]^-{{#3}_{#4}}
+\ar[d]_{{#1}{#8}} &amp; {#4} \ar[d]^{{#8}} \ar@(ur,dr)@2{-} \\
+{{#1}^2({#6})} \ar@&amp;lt;0.6ex&amp;gt;[r]^-{{#2}_{#6}} \ar@&amp;lt;-0.6ex&amp;gt;[r]_-{{#1}#7} &amp; {#1(#6)}
+\ar@&amp;lt;-0.6ex&amp;gt;[r]_-{{#7}} \ar@{&amp;lt;-}@&amp;lt;0.6ex&amp;gt;[r]^-{{#3}_{#6}} &amp; {#6}
+\ar@(ur,dr)@2{-} \\
+}$}\xspace}
+\newcommand{\terma}[1]{\mbox{$\mathtt{t}_{#1}$}\xspace}
+\newcommand{\termo}{\mbox{${\mathtt 1}$}\xspace}
+\newcommand{\tensor}[3]{\mbox{$#2 \otimes_{#1} #3$}\xspace}
+\newcommand{\tfae}{The following are equivalent\xspace}
+\newcommand{\Th}[1]{\mbox{$\mathtt{Th}
+    \left[
+      #1
+    \right]$}\xspace}
+\newcommand{\tiqu}[1]{\mbox{${\mathcal T}(#1)$}}
+\newcommand{\TOP}{\mbox{$\top$}}
+\newcommand{\torgrp}[1]{\mbox{$\mathfrak{t}[#1]$}}
+\newcommand{\trans}[1]{\mbox{$#1^{\mathbf t}$}}
+\newcommand{\triple}[3]{\mbox{$(#1, #2, #3)$}}
+\newcommand{\TT}[1]{\mbox{${\mathtt #1}$}}
+\newcommand{\tuple}[2]{\mbox{$(#1_{0}, #1_{1}, \dots, #1_{#2 - 1})$}}
+\newcommand{\tw}{\mbox{$\mathbf{\scriptstyle tw}$}}
+
+%%%%%% UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU  %%%%%%%
+
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+\newcommand{\ubds}[1]{\mbox{${#1}^{\mathsf{u}}$}}
+\newcommand{\ulbds}[1]{\mbox{${#1}^{\mathsf{ul}}$}}
+\newcommand{\um}[2]{the universal morphism from ${#1}$ to ${#2}$ exists}
+\newcommand{\umf}[4]{\mbox{$\xymatrix{ {#1} \ar[r]^-{#3} &amp; {#2(#4)}  }$}\xspace}
+\newcommand{\umo}[4]{\mbox{$\xymatrix{ {#2(#4)} \ar[r]^-{#3} &amp; {#1}  }$}\xspace}
+\newcommand{\unit}{\mbox{$\mathbb{1}$}}
+\newcommand{\up}[1]{\mbox{$^{\perp}{#1}$}}
+\newcommand{\upset}[1]{\mbox{$\mathtt{Up}#1$}\xspace}
+
+
+%%%%%% VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV %%%%%%
+
+\newcommand{\vltadjt}[2]{\mbox{$\dashv_{{#1}}{#2}$}}
+\newcommand{\vrtadjt}[2]{\mbox{${#2}\dashv_{{#1}}$}}
+\newcommand{\vect}[1]{\mbox{$\mathbf{#1}$}}
+\newcommand{\vectspan}[1]{\mbox{$\mathrm{span}{(#1)}$}\xspace} %put the vectros in the list here
+
+
+%%%%%% WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW %%%%%%
+
+\newcommand{\wbel}[2]{\mbox{$#1 \prec\prec #2$}}
+
+%%%%%%  ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ    %%%%%%
+
+\newcommand{\zeroa}[2]{\mbox{$_{#1}\mathtt{0}_{#2}$}}
+\newcommand{\zeroaf}[1]{\mbox{$_{#1}\mathtt{0}$}}
+\newcommand{\zeroat}[1]{\mbox{$\mathtt{0}_{#1}$}}
+\newcommand{\ZerOne}[2]{\mbox{$\bigl(\mathtt{0}_{{#1}, {#2}},\mathtt{1}_{#1}\bigr)$}\xspace}
+\newcommand{\zeroo}{\mbox{$\mathtt{0}$}\xspace}
+\newcommand{\ZeroSp}{\mbox{$\mathfrak{0}$}\xspace}
+\newcommand{\zidl}[1]{\mbox{$\mathbf{Zid}[#1]$}\xspace}
+\newcommand\xspace{}
+\newcommand\xymatrixcolsep[1]{}
+\newcommand\xymatrixrowsep[1]{}
+  \)
+
+</p>
+<!-- l. 2 --><div class='crosslinks'><p class='noindent'>[<a href='OERsu26.html'>next</a>] [<a href='#tailOERsu25.html'>tail</a>] [<a href='OERsu24.html#OERsu25.html'>up</a>] </p></div>
+<h5 class='subsubsectionHead' id='transforming-families'><span class='titlemark'>1.5.3.1   </span> <a id='x33-350001.5.3.1'></a>Transforming families</h5>
+<!-- l. 5 --><p class='noindent'>Families of sets can also be transformed using families of functions. To motivate, first consider two families \(\bigl ({s}_{x}\bigr )_{{x} \in {a}}\) and \(\bigl ({t}_{x}\bigr )_{{x} \in {a}}\) indexed by the same set \(a\). If we are to think of a family as a <span class='cmti-12'>bunch </span>of sets, labeled by the elements of \(a\), then a transformation should be one which transforms an element from the first family to an element of the second family which is labeled by the same element of \(a\). In other words, for each \(x \in a\), there must be a function
+\(\mathcal {s}_x \xrightarrow {f_x} \mathcal {t}_x\).
+</p><!-- l. 7 --><p class='noindent'>For the general case, consider the families \(\xymatrix { {3} \ar [r]^-{\mathcal {s}} &amp; {\mathbf {V}} \ar @{&lt;-}[r]^-{\mathcal {t}} &amp; {5} }\). Firstly, one must decide how the labeling sets should be transformed, i.e., a function \(3 \xrightarrow {f} 5\); once this is done, one could fall back on the previous step, i.e., obtain the functions \(\mathcal {s}_i \xrightarrow {f_i} \mathcal {t}_{f(i)}\) for each \(i \in 3\) — see Figure <a href='#-transform-families'>1.12<!-- tex4ht:ref: fig:morphism-of-families  --></a> for an example. Evidently, when both the families are indexed by the same set, taking the identity function on the labeling sets reduces to the first
+case.
+</p>
+<figure class='figure'> 
+
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+<!-- l. 54 --><p class='noindent' id='-transform-families'><img alt='PIC' height='923' src='images/morphisms-of-families.jpg' width='1684' /> <a id='x33-35001r12'></a></p>
+<figcaption class='caption'><span class='id'>Figure 1.12: </span><span class='content'>Schematic diagram for transforming families                                                                                                                                                                                                                                                                                                                                                                   </span></figcaption><!-- tex4ht:label?: x33-35001r12  -->
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+</figure>
+<!-- l. 59 --><p class='noindent'>This motivates the formal definition:
+</p>
+<div class='newtheorem'>
+<!-- l. 60 --><p class='noindent'><span class='head'>
+<span class='cmbx-12'>Definition.</span>  </span> Given the families \(\bigl ({\mathcal {s}}_{x}\bigr )_{{x} \in {a}}\), \(\bigl ({\mathcal {t}}_{y}\bigr )_{{y} \in {b}}\), a <span class='cmti-12'>morphism of families </span>is given by a pair \(\left (f, \seq {f}{x}{a}\right )\), where \(a \xrightarrow {f} b\) is a function and for each \(x \in a\), \(\mathcal {s}_x \xrightarrow {f_x} \mathcal {t}_{f(x)}\) is a function; the symbol \(\seq {\mathcal {s}}{x}{a} \xrightarrow {\opair {f}{\seq {f}{x}{a}}} \seq {\mathcal {t}}{y}{b}\) is used to denote the morphism.                                                                                                                                                                                                                                                                                                                                    \(\Diamond \)
+</p>
+</div>
+<!-- l. 63 --><p class='noindent'>
+</p>
+<div class='newtheorem'>
+<!-- l. 65 --><p class='noindent'><span class='head'>
+<span class='cmbx-12'>Proposition.</span>  </span> <span class='cmti-12'>Given</span> \(\xymatrixcolsep {6em}\xymatrix { {\seq {\mathcal {s}}{x}{a}} \ar [r]^-{\opair {f}{\seq {f}{x}{a}}} &amp; {\seq {\mathcal {t}}{y}{b}} \ar [r]^-{\opair {g}{\seq {g}{y}{b}}} &amp; {\seq {\mathcal {u}}{z}{c}} }\) <span class='cmti-12'>define: </span>\begin {equation*}  \comp {\opair {g}{\seq {g}{y}{b}}}{\opair {f}{\seq {f}{x}{a}}} = \opair {\comp {g}{f}}{\left (\comp {g_{f(x)}}{f_x}\right )_{x \in a}}.  \end {equation*}
+</p><!-- l. 72 --><p class='noindent'><span class='cmti-12'>Then</span> \(\seq {\mathcal {s}}{x}{a} \xrightarrow {\opair {\comp {g}{f}}{\left (\comp {g_{f(x)}}{f_x}\right )_{x \in a}}} \seq {\mathcal {u}}{z}{c}\)<span class='cmti-12'>; furthermore for each family</span> \(\bigl ({\mathcal {t}}_{y}\bigr )_{{y} \in {b}}\) <span class='cmti-12'>there is the morphism</span> \(\seq {\mathcal {t}}{y}{b} \xrightarrow {\opair {\id {b}}{\left (\id {\scriptsize \mathcal {t}_y}\right )_{y \in b}}} \seq {\mathcal {t}}{y}{b}\) <span class='cmti-12'>and given: </span>\begin {equation*}  \xymatrixcolsep {6em} \xymatrix { {\seq {\mathcal {s}}{x}{a}} \ar [r]^-{\opair {f}{\seq {f}{x}{a}}} &amp; {\seq {\mathcal {t}}{y}{b}} \ar [r]^-{\opair {g}{\seq {g}{y}{b}}} &amp; {\seq {\mathcal {u}}{z}{c}} \ar [r]^-{\opair {h}{\seq {h}{z}{c}}} &amp; {\seq {\mathcal {v}}{i}{d}}}  \end {equation*} <span class='cmti-12'>the following equations hold good: </span>\begin {align*}  \comp {\left (\comp {\opair {h}{\seq {h}{z}{c}}} {\opair {g}{\seq {g}{y}{b}}}\right )}{\opair {f}{\seq {f}{x}{a}}} &amp; = \comp {\opair {h}{\seq {h}{z}{c}}}{\left (\comp { \opair {g}{\seq {g}{y}{b}}}{\opair {f}{\seq {f}{x}{a}}}\right )}, \\ \comp {\opair {g}{\seq {g}{y}{b}}} {\opair {\id {b}}{\left (\id {\scriptsize \mathcal {t}_y}\right )_{y \in b}}} &amp; = \opair {g}{\seq {g}{y}{b}} = \comp {\opair {\id {c}}{\left (\id {\scriptsize \mathcal {u}_z}\right )_{z \in c}}}{\opair {g}{\seq {g}{y}{b}}}.  \end {align*}
+                                                                                                                                                                                                                                                                                                                                                                                                                        <span class='cmti-12'>///</span>
+</p>
+</div>
+<!-- l. 92 --><p class='noindent'>
+</p>
+<div class='proof'>
+<!-- l. 95 --><p class='noindent'><span class='head'>
+<span class='cmti-12'>Proof.</span> </span><span id='textcolor65'>Left for verification</span>.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  □
+</p>
+</div>
+<div class='newtheorem'>
+<!-- l. 98 --><p class='noindent'><span class='head'>
+<a id='x33-35002r63'></a>
+<span class='cmbx-12'>Remark 1.63.</span>  </span> Proposition defines a <span class='cmti-12'>composition </span>of morphisms of families and the first equation in Proposition shows the composition is associative, like the composition of functions.
+</p><!-- l. 102 --><p class='noindent'>The morphism \(\left (\id {b}, \left (\id {\mathcal {t}_y}\right )_{y \in b}\right )\) serves like the identity morphism on the family \(\bigl ({\mathcal {t}}_{y}\bigr )_{{y} \in {b}}\), just like the identity function \(\mathbf {1}_{x}\) is the identity (on \(x\)) with respect to composition of functions.
+</p>
+</div>
+<!-- l. 103 --><p class='noindent'>
+</p>
+<div class='newtheorem'>
+<!-- l. 105 --><p class='noindent'><span class='head'>
+<a id='x33-35003r64'></a>
+<span class='cmbx-12'>Remark 1.64.</span>  </span> In case of families indexed by a single set \(a\), henceforth unless otherwise mentioned, the morphisms would fix the elements of the set \(a\), i.e., the morphisms \(\seq {\mathcal {s}}{x}{a} \xrightarrow {\opair {\id {a}}{\seq {f}{x}{a}}} \seq {\mathcal {t}}{x}{a}\) shall be considered; hence they would be represented as \(\seq {\mathcal {s}}{x}{a} \xrightarrow {\seq {f}{x}{a}} \seq {\mathcal {t}}{x}{a}\).
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+</p>
+</div>
+<!-- l. 108 --><p class='noindent'>
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+</p>
+<!-- l. 2 --><div class='crosslinks'><p class='noindent'>[<a href='OERsu26.html'>next</a>] [<a href='OERsu25.html'>front</a>] [<a href='OERsu24.html#OERsu25.html'>up</a>] </p></div>
+<!-- l. 2 --><p class='noindent'><a id='tailOERsu25.html'></a> </p> 
+</body> 
+</html>

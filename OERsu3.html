@@ -8,7 +8,7 @@
 <meta content='OER.tex' name='src' /> 
 <script>window.MathJax = { loader: { load: ['[tex]/color', '[tex]/ams', 'xypic'], source: { xypic: 'https://cdn.jsdelivr.net/gh/sonoisa/XyJax-v3/build/xypic.js' } }, chtml: { matchFontHeight: false }, tex: { tags: "ams", packages: ['base', 'newcommand', 'color', 'ams' , 'xypic', 'boldsymbol', 'verb'], } }</script> 
  <script async='async' id='MathJax-script' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js' type='text/javascript'></script>  
- <script> window.MathJax = { tex: { tags: "ams", processEscapes: true, processEnvironments: true, packages: [’base’, ’color’, ’ams’, ’boldsymbol’, ’newcommand’, ’verb’, 'xypic'], }, loader: { load: [’[tex]/color’, ’[tex]/ams’, ’[tex]/boldsymbol’, ’[tex]/newcommand’, ’[tex]/verb’] } }; </script> 
+ <script> window.MathJax = { tex: { tags: "ams", processEscapes: true, processEnvironments: true, packages: [’base’, ’color’, ’ams’, ’boldsymbol’, ’newcommand’, ’verb’, 'xypic'] }, loader: { load: [’[tex]/color’, ’[tex]/ams’, ’[tex]/boldsymbol’, ’[tex]/newcommand’, ’[tex]/verb’] } }; </script> 
 </head><body>
 <!-- l. 2 --><p class='noindent'>
   \(
@@ -822,8 +822,8 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\kanl}[2]{\mbox{$\left(\mathsf{lan}_{{#2}}{#1}\right)$}\xspace}
 \newcommand{\kanr}[2]{\mbox{$\left(\mathsf{ran}_{{#2}}{#1}\right)$}\xspace}
 \newcommand{\Ker}[1]{\mbox{$\mathtt{k}_{#1}$}}
-\newcommand{\Kero}[1]{\mbox{$\mathtt{ker}\,\/#1$}}
-\newcommand{\Kerp}[1]{\mbox{$\mathtt{kerp}\,\/#1$}\xspace}
+\newcommand{\Kero}[1]{\mbox{$\mathtt{ker}\,#1$}}
+\newcommand{\Kerp}[1]{\mbox{$\mathtt{k}_{#1}$}\xspace}
 \newcommand{\kx}[1]{\mbox{${\mathfrak K}({#1})$}}
 \newcommand{\kzx}[1]{\mbox{${\mathfrak K}_{0}({#1})$}}
 
@@ -832,9 +832,9 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\lact}[3]{\mbox{$\left[{#2} \triangleright_{#1} {#3}\right]$}\xspace}
 \newcommand{\LAND}{\texttt{ AND }}
 \newcommand{\LOR}{\texttt{ OR }}
-\newcommand{\lbds}[1]{\mbox{${#1}^{\text{\bsifamily l}}$}}
+\newcommand{\lbds}[1]{\mbox{${#1}^{\mathsf{l}}$}}
 \newcommand{\lgset}[1]{\mbox{$\mathsf{large}[#1]$}\xspace}
-\newcommand{\lubds}[1]{\mbox{${#1}^{\text{\bsifamily lu}}$}}
+\newcommand{\lubds}[1]{\mbox{${#1}^{\mathsf{lu}}$}}
 \newcommand{\lcm}{\mbox{$\mathrm{lcm}$}}
 \newcommand{\least}[1]{\mbox{$\uparrow_{\text{\hspace{-1.44ex}$\circ$}}#1$}\xspace}
 \newcommand{\Lem}{Lemma\,\,}
@@ -1141,8 +1141,8 @@ node[below] at (0,0.36) {${#1}$};}\xspace}
 
 %%%%%% UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU  %%%%%%%
 
-\newcommand{\ubds}[1]{\mbox{${#1}^{\text{\bsifamily u}}$}}
-\newcommand{\ulbds}[1]{\mbox{${#1}^{\text{\bsifamily ul}}$}}
+\newcommand{\ubds}[1]{\mbox{${#1}^{\mathsf{u}}$}}
+\newcommand{\ulbds}[1]{\mbox{${#1}^{\mathsf{ul}}$}}
 \newcommand{\um}[2]{the universal morphism from ${#1}$ to ${#2}$ exists}
 \newcommand{\umf}[4]{\mbox{$\xymatrix{ {#1} \ar[r]^-{#3} &amp; {#2(#4)}  }$}\xspace}
 \newcommand{\umo}[4]{\mbox{$\xymatrix{ {#2(#4)} \ar[r]^-{#3} &amp; {#1}  }$}\xspace}
@@ -1181,27 +1181,27 @@ node[below] at (0,0.36) {${#1}$};}\xspace}
 
 </p>
 <!-- l. 2 --><div class='crosslinks'><p class='noindent'>[<a href='OERsu4.html'>next</a>] [<a href='OERsu2.html'>prev</a>] [<a href='OERsu2.html#tailOERsu2.html'>prev-tail</a>] [<a href='#tailOERsu3.html'>tail</a>] [<a href='OERse2.html#OERsu3.html'>up</a>] </p></div>
- <h4 class='subsectionHead' id='pairing'><span class='titlemark'>1.2.3   </span> <a id='x8-70001.2.3'></a>Pairing</h4>
- <div class='newtheorem'>
+<h4 class='subsectionHead' id='pairing'><span class='titlemark'>1.2.3   </span> <a id='x8-70001.2.3'></a>Pairing</h4>
+<div class='newtheorem'>
 <!-- l. 5 --><p class='noindent'><span class='head'>
 <a id='x8-7001r3'></a>
-<span class='cmbx-12'>Axiom 3 </span>(Axiom of Pairing)<span class='cmbx-12'>.</span>  </span><a id='eq:pairing'></a> \begin {equation}  \label{eq:pairing} \exists a \bigl ( \smset {a} \LAND x \in a \LAND y \in a \bigr ).  \end {equation}<a id='x8-7002r4'></a>
+<span class='cmbx-12'>Axiom 3 </span>(Axiom of Pairing)<span class='cmbx-12'>.</span>  </span> \begin {equation*}  \exists a \bigl ( \smset {a} \LAND x \in a \LAND y \in a \bigr ).  \end {equation*}
 </p>
- </div>
-<!-- l. 14 --><p class='indent'>
+</div>
+<!-- l. 13 --><p class='noindent'>
 </p>
- <div class='newtheorem'>
-<!-- l. 16 --><p class='noindent'><span class='head'>
-<a id='x8-7003r7'></a>
-<span class='cmbx-12'>Remark 1.7.</span>  </span> Axiom <a href='#x8-7001r3'>3<!-- tex4ht:ref: axiom:pairing  --></a> states: <span class='cmti-12'>for every sets</span> \(x\) <span class='cmti-12'>and</span> \(y\)<span class='cmti-12'>, there exists a small set</span> \(a\) <span class='cmti-12'>which contain both</span> \(x\) <span class='cmti-12'>and</span> \(y\) <span class='cmti-12'>as elements</span>.
-</p><!-- l. 20 --><p class='indent'> Thus, in essence, if we are given with small sets \(x, y\), using Axioms <a href='OERsu1.html#x6-5001r1'>1<!-- tex4ht:ref: axiom:extensionality  --></a>-<a href='#x8-7001r3'>3<!-- tex4ht:ref: axiom:pairing  --></a> one obtains the unique set \(\{x,y\}\) which contain precisely the sets \(x, y\). Is \(\{x,y\}\) a small set? till now not known, but Axiom suggests there exists a small set \(a\) such that \(\{x,y\} \subseteq a\). So, not only there is a single small set till now, it is not clear whether subsets of a small set are small sets.
+<div class='newtheorem'>
+<!-- l. 15 --><p class='noindent'><span class='head'>
+<a id='x8-7002r8'></a>
+<span class='cmbx-12'>Remark 1.8.</span>  </span> The statement in Axiom states: <span class='cmti-12'>for every sets</span> \(x\) <span class='cmti-12'>and</span> \(y\)<span class='cmti-12'>, there exists a small set</span> \(a\) <span class='cmti-12'>which contain both</span> \(x\) <span class='cmti-12'>and</span> \(y\) <span class='cmti-12'>as elements</span>.
+</p><!-- l. 19 --><p class='noindent'>Thus, in essence, if we are given with small sets \(x, y\), using Axioms <a href='OERsu1.html#x6-5001r1'>1<!-- tex4ht:ref: axiom:extensionality  --></a>-<a href='#x8-7001r3'>3<!-- tex4ht:ref: axiom:pairing  --></a> one obtains the unique set \(\{x,y\}\) which contain precisely the sets \(x, y\). Is \(\{x,y\}\) a small set? till now not known, but Axiom suggests there exists a small set \(a\) such that \(\{x,y\} \subseteq a\). So, not only there is a single small set till now, it is not clear whether subsets of a small set are small sets.
 </p>
- </div>
-<!-- l. 22 --><p class='indent'>
+</div>
+<!-- l. 21 --><p class='noindent'>
                                                                                                                                                                                                                                                                                                                                                                                                                            
                                                                                                                                                                                                                                                                                                                                                                                                                            
 </p>
- <!-- l. 2 --><div class='crosslinks'><p class='noindent'>[<a href='OERsu4.html'>next</a>] [<a href='OERsu2.html'>prev</a>] [<a href='OERsu2.html#tailOERsu2.html'>prev-tail</a>] [<a href='OERsu3.html'>front</a>] [<a href='OERse2.html#OERsu3.html'>up</a>] </p></div>
-<!-- l. 2 --><p class='indent'> <a id='tailOERsu3.html'></a> </p> 
+<!-- l. 2 --><div class='crosslinks'><p class='noindent'>[<a href='OERsu4.html'>next</a>] [<a href='OERsu2.html'>prev</a>] [<a href='OERsu2.html#tailOERsu2.html'>prev-tail</a>] [<a href='OERsu3.html'>front</a>] [<a href='OERse2.html#OERsu3.html'>up</a>] </p></div>
+<!-- l. 2 --><p class='noindent'><a id='tailOERsu3.html'></a> </p> 
 </body> 
 </html>

@@ -8,7 +8,7 @@
 <meta content='OER.tex' name='src' /> 
 <script>window.MathJax = { loader: { load: ['[tex]/color', '[tex]/ams', 'xypic'], source: { xypic: 'https://cdn.jsdelivr.net/gh/sonoisa/XyJax-v3/build/xypic.js' } }, chtml: { matchFontHeight: false }, tex: { tags: "ams", packages: ['base', 'newcommand', 'color', 'ams' , 'xypic', 'boldsymbol', 'verb'], } }</script> 
  <script async='async' id='MathJax-script' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js' type='text/javascript'></script>  
- <script> window.MathJax = { tex: { tags: "ams", processEscapes: true, processEnvironments: true, packages: [’base’, ’color’, ’ams’, ’boldsymbol’, ’newcommand’, ’verb’, 'xypic'], }, loader: { load: [’[tex]/color’, ’[tex]/ams’, ’[tex]/boldsymbol’, ’[tex]/newcommand’, ’[tex]/verb’] } }; </script> 
+ <script> window.MathJax = { tex: { tags: "ams", processEscapes: true, processEnvironments: true, packages: [’base’, ’color’, ’ams’, ’boldsymbol’, ’newcommand’, ’verb’, 'xypic'] }, loader: { load: [’[tex]/color’, ’[tex]/ams’, ’[tex]/boldsymbol’, ’[tex]/newcommand’, ’[tex]/verb’] } }; </script> 
 </head><body>
 <!-- l. 2 --><p class='noindent'>
   \(
@@ -822,8 +822,8 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\kanl}[2]{\mbox{$\left(\mathsf{lan}_{{#2}}{#1}\right)$}\xspace}
 \newcommand{\kanr}[2]{\mbox{$\left(\mathsf{ran}_{{#2}}{#1}\right)$}\xspace}
 \newcommand{\Ker}[1]{\mbox{$\mathtt{k}_{#1}$}}
-\newcommand{\Kero}[1]{\mbox{$\mathtt{ker}\,\/#1$}}
-\newcommand{\Kerp}[1]{\mbox{$\mathtt{kerp}\,\/#1$}\xspace}
+\newcommand{\Kero}[1]{\mbox{$\mathtt{ker}\,#1$}}
+\newcommand{\Kerp}[1]{\mbox{$\mathtt{k}_{#1}$}\xspace}
 \newcommand{\kx}[1]{\mbox{${\mathfrak K}({#1})$}}
 \newcommand{\kzx}[1]{\mbox{${\mathfrak K}_{0}({#1})$}}
 
@@ -832,9 +832,9 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\lact}[3]{\mbox{$\left[{#2} \triangleright_{#1} {#3}\right]$}\xspace}
 \newcommand{\LAND}{\texttt{ AND }}
 \newcommand{\LOR}{\texttt{ OR }}
-\newcommand{\lbds}[1]{\mbox{${#1}^{\text{\bsifamily l}}$}}
+\newcommand{\lbds}[1]{\mbox{${#1}^{\mathsf{l}}$}}
 \newcommand{\lgset}[1]{\mbox{$\mathsf{large}[#1]$}\xspace}
-\newcommand{\lubds}[1]{\mbox{${#1}^{\text{\bsifamily lu}}$}}
+\newcommand{\lubds}[1]{\mbox{${#1}^{\mathsf{lu}}$}}
 \newcommand{\lcm}{\mbox{$\mathrm{lcm}$}}
 \newcommand{\least}[1]{\mbox{$\uparrow_{\text{\hspace{-1.44ex}$\circ$}}#1$}\xspace}
 \newcommand{\Lem}{Lemma\,\,}
@@ -1141,8 +1141,8 @@ node[below] at (0,0.36) {${#1}$};}\xspace}
 
 %%%%%% UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU  %%%%%%%
 
-\newcommand{\ubds}[1]{\mbox{${#1}^{\text{\bsifamily u}}$}}
-\newcommand{\ulbds}[1]{\mbox{${#1}^{\text{\bsifamily ul}}$}}
+\newcommand{\ubds}[1]{\mbox{${#1}^{\mathsf{u}}$}}
+\newcommand{\ulbds}[1]{\mbox{${#1}^{\mathsf{ul}}$}}
 \newcommand{\um}[2]{the universal morphism from ${#1}$ to ${#2}$ exists}
 \newcommand{\umf}[4]{\mbox{$\xymatrix{ {#1} \ar[r]^-{#3} &amp; {#2(#4)}  }$}\xspace}
 \newcommand{\umo}[4]{\mbox{$\xymatrix{ {#2(#4)} \ar[r]^-{#3} &amp; {#1}  }$}\xspace}
@@ -1181,152 +1181,158 @@ node[below] at (0,0.36) {${#1}$};}\xspace}
 
 </p>
 <!-- l. 2 --><div class='crosslinks'><p class='noindent'>[<a href='OERsu3.html'>next</a>] [<a href='OERsu1.html'>prev</a>] [<a href='OERsu1.html#tailOERsu1.html'>prev-tail</a>] [<a href='#tailOERsu2.html'>tail</a>] [<a href='OERse2.html#OERsu2.html'>up</a>] </p></div>
- <h4 class='subsectionHead' id='building-sets'><span class='titlemark'>1.2.2   </span> <a id='x7-60001.2.2'></a>Building sets</h4>
- <div class='newtheorem'>
+<h4 class='subsectionHead' id='building-sets'><span class='titlemark'>1.2.2   </span> <a id='x7-60001.2.2'></a>Building sets</h4>
+<div class='newtheorem'>
 <!-- l. 5 --><p class='noindent'><span class='head'>
 <a id='x7-6001r2'></a>
-<span class='cmbx-12'>Axiom 2 </span>(Set building axiom)<span class='cmbx-12'>.</span>  </span> <span class='cmti-12'>If</span> \(\phi (x)\) <span class='cmti-12'>is a well formed formula in which</span> \(x\) <span class='cmti-12'>occurs as a free variable and</span> \(b\) <span class='cmti-12'>does not occur as a free variable then: </span><a id='eq:set-building'></a>\begin {equation}  \label{eq:set-building} \exists b \forall x \bigl [ x \in b \Leftrightarrow \smset {x} \LAND \phi (x) \bigr ].  \end {equation}<a id='x7-6002r2'></a>
+<span class='cmbx-12'>Axiom 2 </span>(Set building axiom)<span class='cmbx-12'>.</span>  </span> <span class='cmti-12'>If</span> \(\phi (x)\) <span class='cmti-12'>is a well formed formula in which</span> \(x\) <span class='cmti-12'>occurs as a free variable and</span> \(b\) <span class='cmti-12'>does not occur as a free variable then: </span>\begin {equation*}  \exists b \forall x \bigl [ x \in b \Leftrightarrow \smset {x} \LAND \phi (x) \bigr ].  \end {equation*}
 </p>
- </div>
-<!-- l. 15 --><p class='indent'>
+</div>
+<!-- l. 14 --><p class='noindent'>
 </p>
- <div class='newtheorem'>
-<!-- l. 17 --><p class='noindent'><span class='head'>
-<a id='x7-6003r5'></a>
-<span class='cmbx-12'>Remark 1.5.</span>  </span> The statement in \eqref{eq:set-building} says: <span class='cmti-12'>there exists a set</span> \(b\) <span class='cmti-12'>with the property that its elements are precisely those (small) sets which satisfy the formula</span> \(\phi (x)\). Moreover, while in the “ \(\left (  \Longrightarrow  \right )\)” part the smallness of \(x\) is redundant, one cannot neglect it in the “ \( \left (  \Longleftarrow  \right )\)” part; hence its inclusion in the statement.
-</p><!-- l. 21 --><p class='indent'> The statement: \begin {equation*}  \exists b \bigl [ x \in b \Leftrightarrow \smset {x} \LAND \phi (x) \bigr ]  \end {equation*} would mean: for every set \(x\) there exists a set \(b\) such that \(x \in b \Leftrightarrow \small {x} \LAND \phi (x)\), implying that the set \(b\) <span class='cmti-12'>depends </span>on the choice of the set \(x\). Definitely this is not the goal of the axiom. Hence, the quantifier \(\forall \) needs to be present and is not contrary to our agreement made in Remark <a href='OERsu1.html#x6-5003r3'>1.3<!-- tex4ht:ref: rem:extensionality  --></a>.
+<div class='newtheorem'>
+<!-- l. 16 --><p class='noindent'><span class='head'>
+<a id='x7-6002r6'></a>
+<span class='cmbx-12'>Remark 1.6.</span>  </span> The statement in Axiom says: <span class='cmti-12'>there exists a set</span> \(b\) <span class='cmti-12'>with the property that its elements are precisely those (small) sets which satisfy the formula</span> \(\phi (x)\). Moreover, while in the “ \(\left (  \Longrightarrow  \right )\)” part the smallness of \(x\) is redundant, one cannot neglect it in the “ \( \left (  \Longleftarrow  \right )\)” part; hence its inclusion in the statement.
+</p><!-- l. 20 --><p class='noindent'>The statement: \begin {equation*}  \exists b \bigl [ x \in b \Leftrightarrow \smset {x} \LAND \phi (x) \bigr ]  \end {equation*} would mean: for every set \(x\) there exists a set \(b\) such that \(x \in b \Leftrightarrow \small {x} \LAND \phi (x)\), implying that the set \(b\) <span class='cmti-12'>depends </span>on the choice of the set \(x\). Definitely this is not the goal of the axiom. Hence, the quantifier \(\forall \) needs to be present and is not contrary to our agreement made in Remark <a href='OERsu1.html#x6-5002r4'>1.4<!-- tex4ht:ref: rem:extensionality  --></a>.
 </p>
- </div>
-<!-- l. 29 --><p class='indent'>
-</p><!-- l. 31 --><p class='noindent'>Coupled with Axiom <a href='OERsu1.html#x6-5001r1'>1<!-- tex4ht:ref: axiom:extensionality  --></a> the set \(b\) asserted to exist in Axiom <a href='#x7-6001r2'>2<!-- tex4ht:ref: axiom:set-building  --></a> is unique. This unique set shall be denoted by the symbol \(\{x:\phi (x)\}\) — this is often called the <span class='cmti-12'>set builder notation</span>. The formula \(\phi (x)\) is often called the <span class='cmti-12'>defining property </span>of the set \(b\). Hence from Axiom <a href='#x7-6001r2'>2<!-- tex4ht:ref: axiom:set-building  --></a>, sets are just <span class='cmti-12'>names </span>to well formed formulae.
-</p><!-- l. 33 --><p class='indent'> As a consequence of Axiom <a href='#x7-6001r2'>2<!-- tex4ht:ref: axiom:set-building  --></a><a id='eq:difference'></a> several new sets come into existence, once we are given sets \(a, b\): \begin {align}  \label {eq:empty-set} \emptyset &amp; = \bigl \{ x: x \neq x \bigr \} &amp; \text { (empty set or null set or initial set)} \\ \label {eq:universal-set} \mathbf {V} &amp; = \bigl \{ x: x = x \bigr \} &amp; \text { (universal set)} \\ \label {eq:singleton-set} \{a\} &amp; = \bigl \{ x: x = a \bigr \} &amp; \text { (singleton set of $a$)} \\ \label {eq:unordered-pair} \{a,b\} &amp; = \bigl \{ x: x = a \LOR x = b \bigr \} &amp; \text { (unordered pair of $a, b$)} \\ \label {eq:ordered-pair} \opair {a}{b} &amp; = \biggl \{ \{a\},\{a,b\} \biggr \} &amp; \text { (ordered pair of $a, b$)} \\ \label {eq:successor-set} \Succ {a} &amp; = \bigl \{ x: x \in a \LOR x = a \bigr \} &amp; \text { (successor set of $a$)} \\ \label {eq:binary-union} a \cup b &amp; = \bigl \{ x: x \in a \LOR x \in b \bigr \} &amp; \text { (union of sets $a, b$)} \\ \label {eq:binary-intersection} a \cap b &amp; = \bigl \{ x: x \in a \LAND x \in b \bigr \} &amp; \text { (intersection of sets $a, b$)} \\ \label {eq:union} \bigcup a &amp; = \bigl \{ x: (\exists z \in a)(x \in z) \bigr \} &amp; \text { (union of the set $a$)} \\ \label {eq:intersection} \bigcap a &amp; = \bigl \{ x: z \in a \Rightarrow x \in z \bigr \} &amp; \text { (intersection of the set $a$)} \\ \label {eq:complement} a^{\mathsf {c}} &amp; = \bigl \{ x: x \notin a \bigr \}, &amp; \text { (complement of the set $a$)} \\ \label {eq:product} a \times b &amp; = \bigl \{ \opair {x}{y}: x \in a \LAND y \in b \bigr \} &amp; \text { (cartesian product of $a$ and $b$)} \\ \label {eq:relative-complement} a \setminus b &amp; = \bigl \{ x: x \in a \LAND x \notin b \bigr \} &amp; \text { (relative complement of $b$ in $a$)} \\ \label{eq:difference} a \Delta b &amp; = \bigl \{ x: x \in a \setminus b \LOR x \in b \setminus a \bigr \}, &amp; \text { (difference of the sets $a, b$)}  \end {align}
-</p><!-- l. 130 --><p class='indent'> or we can define:
+</div>
+<!-- l. 28 --><p class='noindent'>
+</p><!-- l. 30 --><p class='noindent'>Coupled with Axiom <a href='OERsu1.html#x6-5001r1'>1<!-- tex4ht:ref: axiom:extensionality  --></a> the set \(b\) asserted to exist in Axiom is unique. This unique set shall be denoted by the symbol \(\{x:\phi (x)\}\) — this is often called the <span class='cmti-12'>set builder notation</span>. Thus, to emphasise: the symbols \(\{x: \phi (x)\}\) denotes
 </p>
- <div class='newtheorem'>
-<!-- l. 131 --><p class='noindent'><span class='head'>
+<div class='center'>
+<!-- l. 33 --><p class='noindent'>
+</p>
+<div class='minipage'><!-- l. 37 --><p class='noindent'><span id='textcolor1'><span class='cmbx-12'>the set whose elements are precisely the small sets</span> \(x\) <span class='cmbx-12'>for which the well formed formula</span> \(\phi (x)\) <span class='cmbx-12'>is true. </span></span>                                                                                                                                                                                             </p></div></div>
+<!-- l. 43 --><p class='noindent'>The formula \(\phi (x)\) is often called the <span class='cmti-12'>defining property </span>of the set \(\{x:\phi (x)\}\). Hence from Axiom, sets are just <span class='cmti-12'>names </span>to well formed formulae.
+</p><!-- l. 45 --><p class='noindent'>As a consequence of Axiom several new sets come into existence, once we are given sets \(a, b\): \begin {align}  \label {eq:empty-set} \emptyset &amp; = \bigl \{ x: x \neq x \bigr \} &amp; \text { (empty set or null set or initial set)} \\ \label {eq:universal-set} \mathbf {V} &amp; = \bigl \{ x: x = x \bigr \} &amp; \text { (universal set)} \\ \label {eq:singleton-set} \{a\} &amp; = \bigl \{ x: x = a \bigr \} &amp; \text { (singleton set of $a$)} \\ \label {eq:unordered-pair} \{a,b\} &amp; = \bigl \{ x: x = a \LOR x = b \bigr \} &amp; \text { (unordered pair of $a, b$)} \\ \label {eq:ordered-pair} \opair {a}{b} &amp; = \biggl \{ \{a\},\{a,b\} \biggr \} &amp; \text { (ordered pair of $a, b$)} \\ \label {eq:successor-set} \Succ {a} &amp; = \bigl \{ x: x \in a \LOR x = a \bigr \} &amp; \text { (successor set of $a$)} \\ \label {eq:binary-union} a \cup b &amp; = \bigl \{ x: x \in a \LOR x \in b \bigr \} &amp; \text { (union of sets $a, b$)} \\ \label {eq:binary-intersection} a \cap b &amp; = \bigl \{ x: x \in a \LAND x \in b \bigr \} &amp; \text { (intersection of sets $a, b$)} \\ \label {eq:union} \bigcup a &amp; = \bigl \{ x: (\exists z \in a)(x \in z) \bigr \} &amp; \text { (union of the set $a$)} \\ \label {eq:intersection} \bigcap a &amp; = \bigl \{ x: z \in a \Rightarrow x \in z \bigr \} &amp; \text { (intersection of the set $a$)} \\ \label {eq:complement} a^{\mathsf {c}} &amp; = \bigl \{ x: x \notin a \bigr \}, &amp; \text { (complement of the set $a$)} \\ \label {eq:product} a \times b &amp; = \bigl \{ \opair {x}{y}: x \in a \LAND y \in b \bigr \} &amp; \text { (cartesian product of $a$ and $b$)} \\ \label {eq:relative-complement} a \setminus b &amp; = \bigl \{ x: x \in a \LAND x \notin b \bigr \} &amp; \text { (relative complement of $b$ in $a$)} \\ \label {eq:difference} a \Delta b &amp; = \bigl \{ x: x \in a \setminus b \LOR x \in b \setminus a \bigr \}, &amp; \text { (difference of the sets $a, b$)}  \end {align}
+</p><!-- l. 142 --><p class='noindent'>or we can define:
+</p>
+<div class='newtheorem'>
+<!-- l. 143 --><p class='noindent'><span class='head'>
 <span class='cmbx-12'>Definition.</span>  </span> A set \(a\) is said to be a <span class='cmti-12'>subset </span>of a set \(b\), or \(b\) is a <span class='cmti-12'>superset </span>of \(a\), written \(a \subseteq b\), if \(x \in a \Rightarrow x \in b\), and \(a\) is a <span class='cmti-12'>proper subset </span>of \(b\), or \(b\) a <span class='cmti-12'>proper superset </span>of \(a\), written \(a \subset b\), if \(a \subseteq b \LAND a \neq b\).                                                                                                                                                                                                                                                                                                                                                                  \(\Diamond \)
-</p>
- </div>
-<!-- l. 134 --><p class='indent'>
-</p><!-- l. 136 --><p class='indent'><a id='eq:power-set'></a> This yields another set from a given set \(a\): \begin {equation}  \label{eq:power-set} \mathcal {P}a = \bigl \{ x: x \subseteq a \bigr \}, \text { (power set of $a$)}.  \end {equation}<a id='x7-6004r3'></a>
-</p><!-- l. 145 --><p class='indent'> Are these sets small? large? not yet known. The following proposition provides one example of a large set and also provides a big list of <span class='cmti-12'>calculus </span>of sets obtained so far!
-</p>
- <div class='newtheorem'>
-<!-- l. 147 --><p class='noindent'><span class='head'>
                                                                                                                                                                                                                                                                                                                                                                                                                            
                                                                                                                                                                                                                                                                                                                                                                                                                            
+</p>
+</div>
+<!-- l. 146 --><p class='noindent'>
+</p><!-- l. 148 --><p class='noindent'>This yields another set from a given set \(a\): \begin {equation}  \label {eq:power-set} \mathcal {P}a = \bigl \{ x: x \subseteq a \bigr \}, \text { (power set of $a$)}.  \end {equation}<a id='x7-6003r1'></a>
+</p><!-- l. 157 --><p class='noindent'>Are these sets small? large? not yet known. The following proposition provides one example of a large set and also provides a big list of <span class='cmti-12'>calculus </span>of sets obtained so far!
+</p>
+<div class='newtheorem'>
+<!-- l. 159 --><p class='noindent'><span class='head'>
 <span class='cmbx-12'>Proposition.</span>  </span> <span class='cmti-12'>Given sets</span> \(a, b, c\) <span class='cmti-12'>the following statements are true:</span>
       </p><dl class='enumerate-enumitem'><dt class='enumerate-enumitem'>
-   <span class='cmti-12'>i.</span> </dt><dd class='enumerate-enumitem'><a id='x7-60051'></a> <span class='cmti-12'>If</span> \(\mathtt {large}[a]\) <span class='cmti-12'>or</span> \(\mathtt {large}[b]\) <span class='cmti-12'>then</span> \(\bigl ( \{a\}, \{a,b\}, \opair {a}{b} = \emptyset \bigr )\) <span class='cmti-12'>and</span> \(\Succ {a} = a\)<span class='cmti-12'>.</span>
+   <span class='cmti-12'>i.</span> </dt><dd class='enumerate-enumitem'><a id='x7-60041'></a> <span class='cmti-12'>If</span> \(\mathtt {large}[a]\) <span class='cmti-12'>or</span> \(\mathtt {large}[b]\) <span class='cmti-12'>then</span> \(\bigl ( \{a\}, \{a,b\}, \opair {a}{b} = \emptyset \bigr )\) <span class='cmti-12'>and</span> \(\Succ {a} = a\)<span class='cmti-12'>.</span>
       </dd><dt class='enumerate-enumitem'>
-  <span class='cmti-12'>ii.</span> </dt><dd class='enumerate-enumitem'><a id='x7-60062'></a> <span class='cmti-12'>For any set</span> \(x\)<span class='cmti-12'>,</span> \(x \notin \emptyset \) <span class='cmti-12'>and</span> \(\emptyset \subseteq x\)<span class='cmti-12'>.</span>
+  <span class='cmti-12'>ii.</span> </dt><dd class='enumerate-enumitem'><a id='x7-60052'></a> <span class='cmti-12'>For any set</span> \(x\)<span class='cmti-12'>,</span> \(x \notin \emptyset \) <span class='cmti-12'>and</span> \(\emptyset \subseteq x\)<span class='cmti-12'>.</span>
       </dd><dt class='enumerate-enumitem'>
-  <span class='cmti-12'>iii.</span> </dt><dd class='enumerate-enumitem'><a id='x7-60073'></a> <span class='cmti-12'>For any small set</span> \(x\)<span class='cmti-12'>,</span> \(x \in V\)<span class='cmti-12'>.</span>
+  <span class='cmti-12'>iii.</span> </dt><dd class='enumerate-enumitem'><a id='x7-60063'></a> <span class='cmti-12'>For any small set</span> \(x\)<span class='cmti-12'>,</span> \(x \in V\)<span class='cmti-12'>.</span>
       </dd><dt class='enumerate-enumitem'>
-  <span class='cmti-12'>iv.</span> </dt><dd class='enumerate-enumitem'><a id='x7-60084'></a> <span class='cmti-12'>The set</span> \( \bigl \{ x : x \notin x \bigr \}\) <span class='cmti-12'>is a large set.</span>
+  <span class='cmti-12'>iv.</span> </dt><dd class='enumerate-enumitem'><a id='x7-60074'></a> <span class='cmti-12'>The set</span> \( \bigl \{ x : x \notin x \bigr \}\) <span class='cmti-12'>is a large set.</span>
       </dd><dt class='enumerate-enumitem'>
-   <span class='cmti-12'>v.</span> </dt><dd class='enumerate-enumitem'><a id='x7-60095'></a> \(\bigcup \emptyset = \emptyset \) <span class='cmti-12'>and</span> \(\bigcap \emptyset = \mathbf {V}\)<span class='cmti-12'>.</span>
+   <span class='cmti-12'>v.</span> </dt><dd class='enumerate-enumitem'><a id='x7-60085'></a> \(\bigcup \emptyset = \emptyset \) <span class='cmti-12'>and</span> \(\bigcap \emptyset = \mathbf {V}\)<span class='cmti-12'>.</span>
       </dd><dt class='enumerate-enumitem'>
-  <span class='cmti-12'>vi.</span> </dt><dd class='enumerate-enumitem'><a id='x7-60106'></a> \(\bigcup \mathbf {V} = \mathbf {V}\) <span class='cmti-12'>and</span> \(\bigcap \mathbf {V} = \emptyset \)<span class='cmti-12'>.</span>
+  <span class='cmti-12'>vi.</span> </dt><dd class='enumerate-enumitem'><a id='x7-60096'></a> \(\bigcup \mathbf {V} = \mathbf {V}\) <span class='cmti-12'>and</span> \(\bigcap \mathbf {V} = \emptyset \)<span class='cmti-12'>.</span>
       </dd><dt class='enumerate-enumitem'>
- <span class='cmti-12'>vii.</span> </dt><dd class='enumerate-enumitem'><a id='x7-60117'></a> <span class='cmti-12'>For any small set</span> \(a\)<span class='cmti-12'>,</span> \(\{a\} = \{a,a\}\)<span class='cmti-12'>.</span>
+ <span class='cmti-12'>vii.</span> </dt><dd class='enumerate-enumitem'><a id='x7-60107'></a> <span class='cmti-12'>For any small set</span> \(a\)<span class='cmti-12'>,</span> \(\{a\} = \{a,a\}\)<span class='cmti-12'>.</span>
       </dd><dt class='enumerate-enumitem'>
- <span class='cmti-12'>viii.</span> </dt><dd class='enumerate-enumitem'><a id='x7-60128'></a> <span class='cmti-12'>For small sets</span> \(a, b\)<span class='cmti-12'>,</span> \(\{a,b\} = \{b,a\}\)<span class='cmti-12'>.</span>
+ <span class='cmti-12'>viii.</span> </dt><dd class='enumerate-enumitem'><a id='x7-60118'></a> <span class='cmti-12'>For small sets</span> \(a, b\)<span class='cmti-12'>,</span> \(\{a,b\} = \{b,a\}\)<span class='cmti-12'>.</span>
       </dd><dt class='enumerate-enumitem'>
-  <span class='cmti-12'>ix.</span> </dt><dd class='enumerate-enumitem'><a id='x7-60139'></a> <span class='cmti-12'>For small sets</span> \(a,b, c, d\)<span class='cmti-12'>,</span> \(\{a,b\}=\{c,d\}\) <span class='cmti-12'>if and only if either</span> \(a = c, b = d\) <span class='cmti-12'>or</span> \(a = d, b= c\)<span class='cmti-12'>.</span>
+  <span class='cmti-12'>ix.</span> </dt><dd class='enumerate-enumitem'><a id='x7-60129'></a> <span class='cmti-12'>For small sets</span> \(a,b, c, d\)<span class='cmti-12'>,</span> \(\{a,b\}=\{c,d\}\) <span class='cmti-12'>if and only if either</span> \(a = c, b = d\) <span class='cmti-12'>or</span> \(a = d, b= c\)<span class='cmti-12'>.</span>
       </dd><dt class='enumerate-enumitem'>
-   <span class='cmti-12'>x.</span> </dt><dd class='enumerate-enumitem'><a id='x7-601410'></a> <span class='cmti-12'>For small sets</span> \(a, b, c, d\)<span class='cmti-12'>,</span> \(\opair {a}{b} = \opair {c}{d}\) <span class='cmti-12'>if and only if</span> \(a = c, b = d\)<span class='cmti-12'>.</span>
+   <span class='cmti-12'>x.</span> </dt><dd class='enumerate-enumitem'><a id='x7-601310'></a> <span class='cmti-12'>For small sets</span> \(a, b, c, d\)<span class='cmti-12'>,</span> \(\opair {a}{b} = \opair {c}{d}\) <span class='cmti-12'>if and only if</span> \(a = c, b = d\)<span class='cmti-12'>.</span>
       </dd><dt class='enumerate-enumitem'>
-  <span class='cmti-12'>xi.</span> </dt><dd class='enumerate-enumitem'><a id='x7-601511'></a> <span class='cmti-12'>For small sets</span> \(a, b\)<span class='cmti-12'>,</span> \(a \setminus b = a \cap b^{\mathsf {c}}\)<span class='cmti-12'>.</span>
+  <span class='cmti-12'>xi.</span> </dt><dd class='enumerate-enumitem'><a id='x7-601411'></a> <span class='cmti-12'>For small sets</span> \(a, b\)<span class='cmti-12'>,</span> \(a \setminus b = a \cap b^{\mathsf {c}}\)<span class='cmti-12'>.</span>
       </dd><dt class='enumerate-enumitem'>
- <span class='cmti-12'>xii.</span> </dt><dd class='enumerate-enumitem'><a id='x7-601612'></a> <span class='cmti-12'>For small sets</span> \(a, b\)<span class='cmti-12'>,</span> \(a \Delta b = (a \setminus b) \cup (b \setminus a) = (a \cup b) \setminus (a \cap b)\)<span class='cmti-12'>.</span>
+ <span class='cmti-12'>xii.</span> </dt><dd class='enumerate-enumitem'><a id='x7-601512'></a> <span class='cmti-12'>For small sets</span> \(a, b\)<span class='cmti-12'>,</span> \(a \Delta b = (a \setminus b) \cup (b \setminus a) = (a \cup b) \setminus (a \cap b)\)<span class='cmti-12'>.</span>
       </dd><dt class='enumerate-enumitem'>
- <span class='cmti-12'>xiii.</span> </dt><dd class='enumerate-enumitem'><a id='x7-601713'></a> <span class='cmti-12'>For any small set</span> \(a\)<span class='cmti-12'>,</span> \(\bigcup \{a\} = a = \bigcap \{a\}\)<span class='cmti-12'>.</span>
+ <span class='cmti-12'>xiii.</span> </dt><dd class='enumerate-enumitem'><a id='x7-601613'></a> <span class='cmti-12'>For any small set</span> \(a\)<span class='cmti-12'>,</span> \(\bigcup \{a\} = a = \bigcap \{a\}\)<span class='cmti-12'>.</span>
       </dd><dt class='enumerate-enumitem'>
- <span class='cmti-12'>xiv.</span> </dt><dd class='enumerate-enumitem'><a id='x7-601814'></a> <span class='cmti-12'>For small sets</span> \(a, b\)<span class='cmti-12'>,</span> \(a \cup b = \bigcup \{a,b\}\)<span class='cmti-12'>.</span>
-      </dd><dt class='enumerate-enumitem'>
-  <span class='cmti-12'>xv.</span> </dt><dd class='enumerate-enumitem'><a id='x7-601915'></a> <span class='cmti-12'>For small sets</span> \(a, b\)<span class='cmti-12'>,</span> \(a \cap b = \bigcap \{a,b\}\)<span class='cmti-12'>.</span>
-      </dd><dt class='enumerate-enumitem'>
- <span class='cmti-12'>xvi.</span> </dt><dd class='enumerate-enumitem'><a id='x7-602016'></a> <span class='cmti-12'>For small sets</span> \(a, b\)<span class='cmti-12'>,</span> \(\bigcup \opair {a}{b} = \{a,b\}\)<span class='cmti-12'>.</span>
-      </dd><dt class='enumerate-enumitem'>
-<span class='cmti-12'>xvii.</span> </dt><dd class='enumerate-enumitem'><a id='x7-602117'></a> <span class='cmti-12'>For small sets</span> \(a, b\)<span class='cmti-12'>,</span> \(\bigcap \opair {a}{b} = \{a\}\)<span class='cmti-12'>.</span>
-      </dd><dt class='enumerate-enumitem'>
-<span class='cmti-12'>xviii.</span> </dt><dd class='enumerate-enumitem'><a id='x7-602218'></a> <span class='cmti-12'>For any two sets</span> \(a, b\)<span class='cmti-12'>,</span> \(a = b \Leftrightarrow a \subseteq b \LAND b \subseteq a\)<span class='cmti-12'>.</span>
+ <span class='cmti-12'>xiv.</span> </dt><dd class='enumerate-enumitem'><a id='x7-601714'></a> <span class='cmti-12'>For small sets</span> \(a, b\)<span class='cmti-12'>,</span> \(a \cup b = \bigcup \{a,b\}\)<span class='cmti-12'>.</span>
                                                                                                                                                                                                                                                                                                                                                                                                                            
                                                                                                                                                                                                                                                                                                                                                                                                                            
       </dd><dt class='enumerate-enumitem'>
- <span class='cmti-12'>xix.</span> </dt><dd class='enumerate-enumitem'><a id='x7-602319'></a> <span class='cmti-12'>For any three sets</span> \(a, b, c\)<span class='cmti-12'>:</span> \(a \subseteq a\)<span class='cmti-12'>,</span> \( \bigl ( a \subseteq b \LAND b \subseteq c \Rightarrow a \subseteq c \bigr )\) <span class='cmti-12'>and</span> \( \bigl ( a \subseteq b \LAND b \subseteq a \Rightarrow a = b\bigr )\)<span class='cmti-12'>.</span>
-      <!-- l. 219 --><p class='noindent'><span class='cmti-12'>In particular:</span> \(a \not \subset a\) <span class='cmti-12'>and</span> \((a \subset b \LAND b \subset c \Rightarrow a \subset c)\)<span class='cmti-12'>.</span>
+  <span class='cmti-12'>xv.</span> </dt><dd class='enumerate-enumitem'><a id='x7-601815'></a> <span class='cmti-12'>For small sets</span> \(a, b\)<span class='cmti-12'>,</span> \(a \cap b = \bigcap \{a,b\}\)<span class='cmti-12'>.</span>
+      </dd><dt class='enumerate-enumitem'>
+ <span class='cmti-12'>xvi.</span> </dt><dd class='enumerate-enumitem'><a id='x7-601916'></a> <span class='cmti-12'>For small sets</span> \(a, b\)<span class='cmti-12'>,</span> \(\bigcup \opair {a}{b} = \{a,b\}\)<span class='cmti-12'>.</span>
+      </dd><dt class='enumerate-enumitem'>
+<span class='cmti-12'>xvii.</span> </dt><dd class='enumerate-enumitem'><a id='x7-602017'></a> <span class='cmti-12'>For small sets</span> \(a, b\)<span class='cmti-12'>,</span> \(\bigcap \opair {a}{b} = \{a\}\)<span class='cmti-12'>.</span>
+      </dd><dt class='enumerate-enumitem'>
+<span class='cmti-12'>xviii.</span> </dt><dd class='enumerate-enumitem'><a id='x7-602118'></a> <span class='cmti-12'>For any two sets</span> \(a, b\)<span class='cmti-12'>,</span> \(a = b \Leftrightarrow a \subseteq b \LAND b \subseteq a\)<span class='cmti-12'>.</span>
+      </dd><dt class='enumerate-enumitem'>
+ <span class='cmti-12'>xix.</span> </dt><dd class='enumerate-enumitem'><a id='x7-602219'></a> <span class='cmti-12'>For any three sets</span> \(a, b, c\)<span class='cmti-12'>:</span> \(a \subseteq a\)<span class='cmti-12'>,</span> \( \bigl ( a \subseteq b \LAND b \subseteq c \Rightarrow a \subseteq c \bigr )\) <span class='cmti-12'>and</span> \( \bigl ( a \subseteq b \LAND b \subseteq a \Rightarrow a = b\bigr )\)<span class='cmti-12'>.</span>
+      <!-- l. 231 --><p class='noindent'><span class='cmti-12'>In particular:</span> \(a \not \subset a\) <span class='cmti-12'>and</span> \((a \subset b \LAND b \subset c \Rightarrow a \subset c)\)<span class='cmti-12'>.</span>
       </p></dd><dt class='enumerate-enumitem'>
-  <span class='cmti-12'>xx.</span> </dt><dd class='enumerate-enumitem'><a id='x7-602420'></a> <span class='cmti-12'>For any two sets</span> \(a, b\)<span class='cmti-12'>:</span> \(a \subseteq b \Leftrightarrow a \cup b = b \Leftrightarrow a \cap b = b\)<span class='cmti-12'>.</span>
+  <span class='cmti-12'>xx.</span> </dt><dd class='enumerate-enumitem'><a id='x7-602320'></a> <span class='cmti-12'>For any two sets</span> \(a, b\)<span class='cmti-12'>:</span> \(a \subseteq b \Leftrightarrow a \cup b = b \Leftrightarrow a \cap b = b\)<span class='cmti-12'>.</span>
       </dd><dt class='enumerate-enumitem'>
- <span class='cmti-12'>xxi.</span> </dt><dd class='enumerate-enumitem'><a id='x7-602521'></a> <span class='cmti-12'>For any set</span> \(a\)<span class='cmti-12'>:</span> \(\bigl ( t \in a \Rightarrow t \subseteq \bigcup a \bigr )\) <span class='cmti-12'>and</span> \(\bigl ( (t \in a \Rightarrow t \subseteq b) \Rightarrow (\bigcup a \subseteq b) \bigr )\)<span class='cmti-12'>.</span>
+ <span class='cmti-12'>xxi.</span> </dt><dd class='enumerate-enumitem'><a id='x7-602421'></a> <span class='cmti-12'>For any set</span> \(a\)<span class='cmti-12'>:</span> \(\bigl ( t \in a \Rightarrow t \subseteq \bigcup a \bigr )\) <span class='cmti-12'>and</span> \(\bigl ( (t \in a \Rightarrow t \subseteq b) \Rightarrow (\bigcup a \subseteq b) \bigr )\)<span class='cmti-12'>.</span>
       </dd><dt class='enumerate-enumitem'>
-<span class='cmti-12'>xxii.</span> </dt><dd class='enumerate-enumitem'><a id='x7-602622'></a> <span class='cmti-12'>For any set</span> \(a\)<span class='cmti-12'>:</span> \(\bigl ( t \in a \Rightarrow \bigcap a \subseteq t \bigr )\) <span class='cmti-12'>and</span> \(\biggl ( (t \in a \Rightarrow b \subseteq t) \Rightarrow (b \subseteq \bigcap a) \biggr )\)<span class='cmti-12'>.</span>
+<span class='cmti-12'>xxii.</span> </dt><dd class='enumerate-enumitem'><a id='x7-602522'></a> <span class='cmti-12'>For any set</span> \(a\)<span class='cmti-12'>:</span> \(\bigl ( t \in a \Rightarrow \bigcap a \subseteq t \bigr )\) <span class='cmti-12'>and</span> \(\biggl ( (t \in a \Rightarrow b \subseteq t) \Rightarrow (b \subseteq \bigcap a) \biggr )\)<span class='cmti-12'>.</span>
       </dd><dt class='enumerate-enumitem'>
-<span class='cmti-12'>xxiii.</span> </dt><dd class='enumerate-enumitem'><a id='x7-602723'></a> <span class='cmti-12'>For any sets</span> \(a, b\)<span class='cmti-12'>:</span> \(\bigl ( \bigcup a \bigr ) \cap \bigl ( \bigcup b \bigr ) = \bigcup \bigl \{ x \cap y: x \in a \LAND y \in b \bigr \}\)<span class='cmti-12'>.</span>
+<span class='cmti-12'>xxiii.</span> </dt><dd class='enumerate-enumitem'><a id='x7-602623'></a> <span class='cmti-12'>For any sets</span> \(a, b\)<span class='cmti-12'>:</span> \(\bigl ( \bigcup a \bigr ) \cap \bigl ( \bigcup b \bigr ) = \bigcup \bigl \{ x \cap y: x \in a \LAND y \in b \bigr \}\)<span class='cmti-12'>.</span>
       </dd><dt class='enumerate-enumitem'>
-<span class='cmti-12'>xxiv.</span> </dt><dd class='enumerate-enumitem'><a id='x7-602824'></a> <span class='cmti-12'>For any sets</span> \(a, b\)<span class='cmti-12'>:</span> \(\bigl ( \bigcap a \bigr ) \cup \bigl ( \bigcap b \bigr ) = \bigcap \bigl \{ x \cup y: x \in a \LAND y \in b \bigr \}\)
+<span class='cmti-12'>xxiv.</span> </dt><dd class='enumerate-enumitem'><a id='x7-602724'></a> <span class='cmti-12'>For any sets</span> \(a, b\)<span class='cmti-12'>:</span> \(\bigl ( \bigcap a \bigr ) \cup \bigl ( \bigcap b \bigr ) = \bigcap \bigl \{ x \cup y: x \in a \LAND y \in b \bigr \}\)
       </dd><dt class='enumerate-enumitem'>
- <span class='cmti-12'>xxv.</span> </dt><dd class='enumerate-enumitem'><a id='x7-602925'></a> <span class='cmti-12'>For any sets</span> \(a, b\)<span class='cmti-12'>:</span> \(\bigl ( \bigcup a \bigr ) \cup \bigl ( \bigcup b \bigr ) = \bigcup (a \cup b)\) <span class='cmti-12'>and</span> \(\bigl ( \bigcap a \bigr ) \cap \bigl ( \bigcap b \bigr ) = \bigcap (a \cap b)\)<span class='cmti-12'>.</span>
+ <span class='cmti-12'>xxv.</span> </dt><dd class='enumerate-enumitem'><a id='x7-602825'></a> <span class='cmti-12'>For any sets</span> \(a, b\)<span class='cmti-12'>:</span> \(\bigl ( \bigcup a \bigr ) \cup \bigl ( \bigcup b \bigr ) = \bigcup (a \cup b)\) <span class='cmti-12'>and</span> \(\bigl ( \bigcap a \bigr ) \cap \bigl ( \bigcap b \bigr ) = \bigcap (a \cap b)\)<span class='cmti-12'>.</span>
       </dd><dt class='enumerate-enumitem'>
-<span class='cmti-12'>xxvi.</span> </dt><dd class='enumerate-enumitem'><a id='x7-603026'></a> <span class='cmti-12'>For any set</span> \(a\)<span class='cmti-12'>:</span> \(a \cap a^{\mathsf {c}} = \emptyset \) <span class='cmti-12'>and</span> \(a \cup a^{\mathsf {c}} = \mathbf {V}\)<span class='cmti-12'>.</span>
+<span class='cmti-12'>xxvi.</span> </dt><dd class='enumerate-enumitem'><a id='x7-602926'></a> <span class='cmti-12'>For any set</span> \(a\)<span class='cmti-12'>:</span> \(a \cap a^{\mathsf {c}} = \emptyset \) <span class='cmti-12'>and</span> \(a \cup a^{\mathsf {c}} = \mathbf {V}\)<span class='cmti-12'>.</span>
       </dd><dt class='enumerate-enumitem'>
-<span class='cmti-12'>xxvii.</span> </dt><dd class='enumerate-enumitem'><a id='x7-603127'></a> <span class='cmti-12'>For any two sets</span> \(a, b\)<span class='cmti-12'>:</span> \(a \subseteq b^{\mathsf {c}} \Leftrightarrow a \cap b = \emptyset \)<span class='cmti-12'>.</span>
+<span class='cmti-12'>xxvii.</span> </dt><dd class='enumerate-enumitem'><a id='x7-603027'></a> <span class='cmti-12'>For any two sets</span> \(a, b\)<span class='cmti-12'>:</span> \(a \subseteq b^{\mathsf {c}} \Leftrightarrow a \cap b = \emptyset \)<span class='cmti-12'>.</span>
       </dd><dt class='enumerate-enumitem'>
-<span class='cmti-12'>xxviii.</span> </dt><dd class='enumerate-enumitem'><a id='x7-603228'></a> <span class='cmti-12'>For any set</span> \(a\)<span class='cmti-12'>:</span> \((a^{c})^{\mathsf {c}} = a\)<span class='cmti-12'>.</span>
+<span class='cmti-12'>xxviii.</span> </dt><dd class='enumerate-enumitem'><a id='x7-603128'></a> <span class='cmti-12'>For any set</span> \(a\)<span class='cmti-12'>:</span> \((a^{c})^{\mathsf {c}} = a\)<span class='cmti-12'>.</span>
       </dd><dt class='enumerate-enumitem'>
-<span class='cmti-12'>xxix.</span> </dt><dd class='enumerate-enumitem'><a id='x7-603329'></a> <span class='cmti-12'>For any set</span> \(a\)<span class='cmti-12'>:</span> \(\bigl ( (\bigcup a)^{\mathsf {c}} = \bigcap \bigl \{ x^{\mathsf {c}}: x \in a \bigr \} \bigr )\)<span class='cmti-12'>.</span>
+<span class='cmti-12'>xxix.</span> </dt><dd class='enumerate-enumitem'><a id='x7-603229'></a> <span class='cmti-12'>For any set</span> \(a\)<span class='cmti-12'>:</span> \(\bigl ( (\bigcup a)^{\mathsf {c}} = \bigcap \bigl \{ x^{\mathsf {c}}: x \in a \bigr \} \bigr )\)<span class='cmti-12'>.</span>
       </dd><dt class='enumerate-enumitem'>
- <span class='cmti-12'>xxx.</span> </dt><dd class='enumerate-enumitem'><a id='x7-603430'></a> <span class='cmti-12'>For any set</span> \(a\)<span class='cmti-12'>:</span> \(\bigl ( (\bigcap a)^{\mathsf {c}} = \bigcup \bigl \{ x^{\mathsf {c}}: x \in a \bigr \} \bigr )\)<span class='cmti-12'>.</span></dd></dl>
+ <span class='cmti-12'>xxx.</span> </dt><dd class='enumerate-enumitem'><a id='x7-603330'></a> <span class='cmti-12'>For any set</span> \(a\)<span class='cmti-12'>:</span> \(\bigl ( (\bigcap a)^{\mathsf {c}} = \bigcup \bigl \{ x^{\mathsf {c}}: x \in a \bigr \} \bigr )\)<span class='cmti-12'>.</span></dd></dl>
                                                                                                                                                                                                                                                                                                                                                                                                                         <span class='cmti-12'>///</span>
- </div>
-<!-- l. 299 --><p class='indent'>
+</div>
+<!-- l. 311 --><p class='noindent'>
 </p>
- <div class='proof'>
-<!-- l. 302 --><p class='indent'> <span class='head'>
-<span class='cmti-12'>Proof.</span> </span>Left as an exercise; prove them from <span class='cmti-12'>first principles </span>using the definitions in \eqref{eq:empty-set}-\eqref{eq:power-set}, the axioms listed so far, and the rules of logical manipulations listed in Proposition <a href='#x4-3028r1.1'>1.1<!-- tex4ht:ref: prop:standard-tautologies  --></a>.                                                                                                                                                                                                                                                                            □
-</p>
- </div>
- <div class='newtheorem'>
-<!-- l. 305 --><p class='noindent'><span class='head'>
-<a id='x7-6035r6'></a>
+<div class='proof'>
                                                                                                                                                                                                                                                                                                                                                                                                                            
                                                                                                                                                                                                                                                                                                                                                                                                                            
-<span class='cmbx-12'>Remark 1.6.</span>  </span>Proposition captures almost all the required calculus for sets, even for large sets. Some remarks are necessary to provide some <span class='cmti-12'>imagery </span>to the seemingly <span class='cmti-12'>abstract </span>results.
+<!-- l. 314 --><p class='noindent'><span class='head'>
+<span class='cmti-12'>Proof.</span> </span>Left as an exercise; prove them from <span class='cmti-12'>first principles </span>using the definitions in \eqref{eq:empty-set}-\eqref{eq:power-set}, the axioms listed so far, and the rules of logical manipulations listed in Proposition <a href='#x4-3029r1.1'>1.1<!-- tex4ht:ref: prop:standard-tautologies  --></a>.                                                                                                                                                                                                                                                                            □
+</p>
+</div>
+<div class='newtheorem'>
+<!-- l. 317 --><p class='noindent'><span class='head'>
+<a id='x7-6034r7'></a>
+<span class='cmbx-12'>Remark 1.7.</span>  </span>Proposition captures almost all the required calculus for sets, even for large sets. Some remarks are necessary to provide some <span class='cmti-12'>imagery </span>to the seemingly <span class='cmti-12'>abstract </span>results.
       </p><dl class='enumerate-enumitem'><dt class='enumerate-enumitem'>
-   i. </dt><dd class='enumerate-enumitem'><a href='#x7-60062'>ii.<!-- tex4ht:ref: item:empty-has-none-and-contained-in-all  --></a> states that the empty set contain no elements and is the smallest subset, while <a href='#x7-60073'>iii.<!-- tex4ht:ref: item:universe-has-all  --></a> ensures every small set is an element of <span class='cmss-12'>V</span>.
+   i. </dt><dd class='enumerate-enumitem'><a href='#x7-60052'>ii.<!-- tex4ht:ref: item:empty-has-none-and-contained-in-all  --></a> states that the empty set contain no elements and is the smallest subset, while <a href='#x7-60063'>iii.<!-- tex4ht:ref: item:universe-has-all  --></a> ensures every small set is an element of <span class='cmss-12'>V</span>.
       </dd><dt class='enumerate-enumitem'>
-   ii. </dt><dd class='enumerate-enumitem'><a href='#x7-60117'>vii.<!-- tex4ht:ref: item:no-repetition  --></a> shows while using the set-builder notation, there is no use in repeating the elements of a set, it is enough to say whether a set <span class='cmti-12'>is </span>or <span class='cmti-12'>is not </span>a member of a set. Similarly, <a href='#x7-60128'>viii.<!-- tex4ht:ref: item:no-order  --></a> ensures that in the process of listing the elements of a set there is no particular order in which the listing is made — this explains the name <span class='cmti-12'>unordered pair </span>in \eqref{eq:unordered-pair}. Observe, unlike the unordered pair, in <span class='cmti-12'>ordered pair</span>,
-      there is indeed a regard to the order of listing and <a href='#x7-601410'>x.<!-- tex4ht:ref: item:equality-of-ordered-pair  --></a> attests to this. Furthermore, <a href='#x7-602016'>xvi.<!-- tex4ht:ref: item:union-ordered-pair  --></a> and <a href='#x7-602117'>xvii.<!-- tex4ht:ref: item:intersection-ordered-pair  --></a> provides a tool to capture the elements. More precisely, given an ordered pair \(\left (a, b\right )\) of small sets \(a, b\), the intersection \(\bigcap \opair {a}{b}\) yields a singleton containing the <span class='cmti-12'>first coordinate </span>and \(\bigcup \opair {a}{b}\setminus \bigcap \opair {a}{b}\) yields a singleton containing the <span class='cmti-12'>second coordinate</span>.
+   ii. </dt><dd class='enumerate-enumitem'><a href='#x7-60107'>vii.<!-- tex4ht:ref: item:no-repetition  --></a> shows while using the set-builder notation, there is no use in repeating the elements of a set, it is enough to say whether a set <span class='cmti-12'>is </span>or <span class='cmti-12'>is not </span>a member of a set. Similarly, <a href='#x7-60118'>viii.<!-- tex4ht:ref: item:no-order  --></a> ensures that in the process of listing the elements of a set there is no particular order in which the listing is made — this explains the name <span class='cmti-12'>unordered pair </span>in \eqref{eq:unordered-pair}. Observe, unlike the unordered pair, in <span class='cmti-12'>ordered pair</span>,
+      there is indeed a regard to the order of listing and <a href='#x7-601310'>x.<!-- tex4ht:ref: item:equality-of-ordered-pair  --></a> attests to this. Furthermore, <a href='#x7-601916'>xvi.<!-- tex4ht:ref: item:union-ordered-pair  --></a> and <a href='#x7-602017'>xvii.<!-- tex4ht:ref: item:intersection-ordered-pair  --></a> provides a tool to capture the elements. More precisely, given an ordered pair \(\left (a, b\right )\) of small sets \(a, b\), the intersection \(\bigcap \opair {a}{b}\) yields a singleton containing the <span class='cmti-12'>first coordinate </span>and \(\bigcup \opair {a}{b}\setminus \bigcap \opair {a}{b}\) yields a singleton containing the <span class='cmti-12'>second coordinate</span>.
       </dd><dt class='enumerate-enumitem'>
-  iii. </dt><dd class='enumerate-enumitem'><a href='#x7-602218'>xviii.<!-- tex4ht:ref: item:equality-via-subsets  --></a> provides another description of equality of sets using the subset relation, while <a href='#x7-602420'>xx.<!-- tex4ht:ref: item:order-in-terms-of-union-intersection  --></a> describes the notion of a subset in terms of union and intersection. While, \(a \cup b\) is \(\bigcup \{a,b\}\) (<a href='#x7-601814'>xiv.<!-- tex4ht:ref: item:union-unordered-pair  --></a>), the equivalence: \begin {equation*}  x \in a\cup b \Leftrightarrow x \in a \LOR x \in b  \end {equation*} is immediate, and hence can be used to define the union of any two sets, even large ones. Similarly, the intersection \(a \cap b\) of any two sets, even large ones, can be defined by: \begin {equation*}  x \in a \cap b \Leftrightarrow x \in a \LAND x \in b.  \end {equation*} Thus, the statement in <a href='#x7-602420'>xx.<!-- tex4ht:ref: item:order-in-terms-of-union-intersection  --></a> is no more now restricted to small sets, and hence can be seen to
+  iii. </dt><dd class='enumerate-enumitem'><a href='#x7-602118'>xviii.<!-- tex4ht:ref: item:equality-via-subsets  --></a> provides another description of equality of sets using the subset relation, while <a href='#x7-602320'>xx.<!-- tex4ht:ref: item:order-in-terms-of-union-intersection  --></a> describes the notion of a subset in terms of union and intersection. While, \(a \cup b\) is \(\bigcup \{a,b\}\) (<a href='#x7-601714'>xiv.<!-- tex4ht:ref: item:union-unordered-pair  --></a>), the equivalence: \begin {equation*}  x \in a\cup b \Leftrightarrow x \in a \LOR x \in b  \end {equation*} is immediate, and hence can be used to define the union of any two sets, even large ones. Similarly, the intersection \(a \cap b\) of any two sets, even large ones, can be defined by: \begin {equation*}  x \in a \cap b \Leftrightarrow x \in a \LAND x \in b.  \end {equation*} Thus, the statement in <a href='#x7-602320'>xx.<!-- tex4ht:ref: item:order-in-terms-of-union-intersection  --></a> is no more now restricted to small sets, and hence can be seen to
       be valid for even large sets.
       </dd><dt class='enumerate-enumitem'>
-  iv. </dt><dd class='enumerate-enumitem'>The statement in <a href='#x7-602521'>xxi.<!-- tex4ht:ref: item:union-is-suprema  --></a> says: for any set \(a\), \(\bigcup {a}\) is the smallest set which collects the elements of the sets present in \(a\), while \(\bigcap {a}\) is the largest set which contain the elements of <span class='cmss-12'>all </span>the sets in \(a\). Seen in this way, the statements in <a href='#x7-602925'>xxv.<!-- tex4ht:ref: item:union-or-join-distributes  --></a> is immediate.
+  iv. </dt><dd class='enumerate-enumitem'>The statement in <a href='#x7-602421'>xxi.<!-- tex4ht:ref: item:union-is-suprema  --></a> says: for any set \(a\), \(\bigcup {a}\) is the smallest set which collects the elements of the sets present in \(a\), while \(\bigcap {a}\) is the largest set which contain the elements of <span class='cmss-12'>all </span>the sets in \(a\). Seen in this way, the statements in <a href='#x7-602825'>xxv.<!-- tex4ht:ref: item:union-or-join-distributes  --></a> is immediate.
       </dd><dt class='enumerate-enumitem'>
-   v. </dt><dd class='enumerate-enumitem'><a href='#x7-602824'>xxiv.<!-- tex4ht:ref: item:join-distributivity  --></a> and <a href='#x7-602723'>xxiii.<!-- tex4ht:ref: item:meet-distributivity  --></a> provide distributive laws for union and intersection.
+   v. </dt><dd class='enumerate-enumitem'><a href='#x7-602724'>xxiv.<!-- tex4ht:ref: item:join-distributivity  --></a> and <a href='#x7-602623'>xxiii.<!-- tex4ht:ref: item:meet-distributivity  --></a> provide distributive laws for union and intersection.
       </dd><dt class='enumerate-enumitem'>
-  vi. </dt><dd class='enumerate-enumitem'><a href='#x7-603026'>xxvi.<!-- tex4ht:ref: item:complement-is-complementary  --></a> state each small set is an element of a specified set \(a\) or is an element ofits complement, and hence as a continuation, yields <a href='#x7-603127'>xxvii.<!-- tex4ht:ref: item:complement-is-pseudocomplement  --></a>; however, it shall be shown later on, in many other instances <a href='#x7-603127'>xxvii.<!-- tex4ht:ref: item:complement-is-pseudocomplement  --></a> might hold good but <a href='#x7-603026'>xxvi.<!-- tex4ht:ref: item:complement-is-complementary  --></a> fail.
+  vi. </dt><dd class='enumerate-enumitem'><a href='#x7-602926'>xxvi.<!-- tex4ht:ref: item:complement-is-complementary  --></a> state each small set is an element of a specified set \(a\) or is an element ofits complement, and hence as a continuation, yields <a href='#x7-603027'>xxvii.<!-- tex4ht:ref: item:complement-is-pseudocomplement  --></a>; however, it shall be shown later on, in many other instances <a href='#x7-603027'>xxvii.<!-- tex4ht:ref: item:complement-is-pseudocomplement  --></a> might hold good but <a href='#x7-602926'>xxvi.<!-- tex4ht:ref: item:complement-is-complementary  --></a> fail.
       </dd><dt class='enumerate-enumitem'>
- vii. </dt><dd class='enumerate-enumitem'>Finally, the statements in <a href='#x7-603329'>xxix.<!-- tex4ht:ref: item:general-de-morgan-compl-of-union  --></a>, <a href='#x7-603430'>xxx.<!-- tex4ht:ref: item:general-de-morgan-compl-of-intersection  --></a> are known as <span class='cmti-12'>De Morgan’s laws</span>, after the British mathematician <a href='https://en.wikipedia.org/wiki/Augustus_De_Morgan'>Augustus de Morgan</a>.</dd></dl>
- </div>
-<!-- l. 330 --><p class='indent'>
+ vii. </dt><dd class='enumerate-enumitem'>Finally, the statements in <a href='#x7-603229'>xxix.<!-- tex4ht:ref: item:general-de-morgan-compl-of-union  --></a>, <a href='#x7-603330'>xxx.<!-- tex4ht:ref: item:general-de-morgan-compl-of-intersection  --></a> are known as <span class='cmti-12'>De Morgan’s laws</span>, after the British mathematician <a href='https://en.wikipedia.org/wiki/Augustus_De_Morgan'>Augustus de Morgan</a>.</dd></dl>
+</div>
+<!-- l. 342 --><p class='noindent'>
 </p>
- <figure class='figure'> 
+<figure class='figure'> 
 
                                                                                                                                                                                                                                                                                                                                                                                                                            
                                                                                                                                                                                                                                                                                                                                                                                                                            
                                                                                                                                                                                                                                                                                                                                                                                                                            
                                                                                                                                                                                                                                                                                                                                                                                                                            
-<!-- l. 334 --><p class='noindent' id='-httpsenwikipediaorgwikiaugustusdemorgan-augustus-de-morgan-to-'><img alt='PIC' height='777' src='images/demorgan.jpg' width='777' /> <a id='x7-6043r3'></a></p>
-<figcaption class='caption'><span class='id'>Figure 1.3: </span><span class='content'><a href='https://en.wikipedia.org/wiki/Augustus_De_Morgan'>Augustus de Morgan <br class='newline' /> (27-06-1806 to 18-03-1871)</a>                                                                                                                                                                                                                                                                                                                                                                                                 </span></figcaption><!-- tex4ht:label?: x7-6043r3  -->
+<!-- l. 346 --><p class='noindent' id='-httpsenwikipediaorgwikiaugustusdemorgan-augustus-de-morgan-to-'><img alt='PIC' height='959' src='images/demorgan.jpg' width='777' /> <a id='x7-6042r3'></a></p>
+<figcaption class='caption'><span class='id'>Figure 1.3: </span><span class='content'><a href='https://en.wikipedia.org/wiki/Augustus_De_Morgan'>Augustus de Morgan <br class='newline' /> (27-06-1806 to 18-03-1871)</a>                                                                                                                                                                                                                                                                                                                                                                                                 </span></figcaption><!-- tex4ht:label?: x7-6042r3  -->
                                                                                                                                                                                                                                                                                                                                                                                                                            
                                                                                                                                                                                                                                                                                                                                                                                                                            
- </figure>
+</figure>
                                                                                                                                                                                                                                                                                                                                                                                                                            
                                                                                                                                                                                                                                                                                                                                                                                                                            
- <!-- l. 2 --><div class='crosslinks'><p class='noindent'>[<a href='OERsu3.html'>next</a>] [<a href='OERsu1.html'>prev</a>] [<a href='OERsu1.html#tailOERsu1.html'>prev-tail</a>] [<a href='OERsu2.html'>front</a>] [<a href='OERse2.html#OERsu2.html'>up</a>] </p></div>
-<!-- l. 2 --><p class='indent'> <a id='tailOERsu2.html'></a> </p> 
+<!-- l. 2 --><div class='crosslinks'><p class='noindent'>[<a href='OERsu3.html'>next</a>] [<a href='OERsu1.html'>prev</a>] [<a href='OERsu1.html#tailOERsu1.html'>prev-tail</a>] [<a href='OERsu2.html'>front</a>] [<a href='OERse2.html#OERsu2.html'>up</a>] </p></div>
+<!-- l. 2 --><p class='noindent'><a id='tailOERsu2.html'></a> </p> 
 </body> 
 </html>

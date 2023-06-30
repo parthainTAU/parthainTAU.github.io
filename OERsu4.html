@@ -8,7 +8,7 @@
 <meta content='OER.tex' name='src' /> 
 <script>window.MathJax = { loader: { load: ['[tex]/color', '[tex]/ams', 'xypic'], source: { xypic: 'https://cdn.jsdelivr.net/gh/sonoisa/XyJax-v3/build/xypic.js' } }, chtml: { matchFontHeight: false }, tex: { tags: "ams", packages: ['base', 'newcommand', 'color', 'ams' , 'xypic', 'boldsymbol', 'verb'], } }</script> 
  <script async='async' id='MathJax-script' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js' type='text/javascript'></script>  
- <script> window.MathJax = { tex: { tags: "ams", processEscapes: true, processEnvironments: true, packages: [’base’, ’color’, ’ams’, ’boldsymbol’, ’newcommand’, ’verb’, 'xypic'], }, loader: { load: [’[tex]/color’, ’[tex]/ams’, ’[tex]/boldsymbol’, ’[tex]/newcommand’, ’[tex]/verb’] } }; </script> 
+ <script> window.MathJax = { tex: { tags: "ams", processEscapes: true, processEnvironments: true, packages: [’base’, ’color’, ’ams’, ’boldsymbol’, ’newcommand’, ’verb’, 'xypic'] }, loader: { load: [’[tex]/color’, ’[tex]/ams’, ’[tex]/boldsymbol’, ’[tex]/newcommand’, ’[tex]/verb’] } }; </script> 
 </head><body>
 <!-- l. 2 --><p class='noindent'>
   \(
@@ -822,8 +822,8 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\kanl}[2]{\mbox{$\left(\mathsf{lan}_{{#2}}{#1}\right)$}\xspace}
 \newcommand{\kanr}[2]{\mbox{$\left(\mathsf{ran}_{{#2}}{#1}\right)$}\xspace}
 \newcommand{\Ker}[1]{\mbox{$\mathtt{k}_{#1}$}}
-\newcommand{\Kero}[1]{\mbox{$\mathtt{ker}\,\/#1$}}
-\newcommand{\Kerp}[1]{\mbox{$\mathtt{kerp}\,\/#1$}\xspace}
+\newcommand{\Kero}[1]{\mbox{$\mathtt{ker}\,#1$}}
+\newcommand{\Kerp}[1]{\mbox{$\mathtt{k}_{#1}$}\xspace}
 \newcommand{\kx}[1]{\mbox{${\mathfrak K}({#1})$}}
 \newcommand{\kzx}[1]{\mbox{${\mathfrak K}_{0}({#1})$}}
 
@@ -832,9 +832,9 @@ l}}-$\mathtt{CRing}$}\xspace}
 \newcommand{\lact}[3]{\mbox{$\left[{#2} \triangleright_{#1} {#3}\right]$}\xspace}
 \newcommand{\LAND}{\texttt{ AND }}
 \newcommand{\LOR}{\texttt{ OR }}
-\newcommand{\lbds}[1]{\mbox{${#1}^{\text{\bsifamily l}}$}}
+\newcommand{\lbds}[1]{\mbox{${#1}^{\mathsf{l}}$}}
 \newcommand{\lgset}[1]{\mbox{$\mathsf{large}[#1]$}\xspace}
-\newcommand{\lubds}[1]{\mbox{${#1}^{\text{\bsifamily lu}}$}}
+\newcommand{\lubds}[1]{\mbox{${#1}^{\mathsf{lu}}$}}
 \newcommand{\lcm}{\mbox{$\mathrm{lcm}$}}
 \newcommand{\least}[1]{\mbox{$\uparrow_{\text{\hspace{-1.44ex}$\circ$}}#1$}\xspace}
 \newcommand{\Lem}{Lemma\,\,}
@@ -1141,8 +1141,8 @@ node[below] at (0,0.36) {${#1}$};}\xspace}
 
 %%%%%% UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU  %%%%%%%
 
-\newcommand{\ubds}[1]{\mbox{${#1}^{\text{\bsifamily u}}$}}
-\newcommand{\ulbds}[1]{\mbox{${#1}^{\text{\bsifamily ul}}$}}
+\newcommand{\ubds}[1]{\mbox{${#1}^{\mathsf{u}}$}}
+\newcommand{\ulbds}[1]{\mbox{${#1}^{\mathsf{ul}}$}}
 \newcommand{\um}[2]{the universal morphism from ${#1}$ to ${#2}$ exists}
 \newcommand{\umf}[4]{\mbox{$\xymatrix{ {#1} \ar[r]^-{#3} &amp; {#2(#4)}  }$}\xspace}
 \newcommand{\umo}[4]{\mbox{$\xymatrix{ {#2(#4)} \ar[r]^-{#3} &amp; {#1}  }$}\xspace}
@@ -1181,88 +1181,88 @@ node[below] at (0,0.36) {${#1}$};}\xspace}
 
 </p>
 <!-- l. 2 --><div class='crosslinks'><p class='noindent'>[<a href='OERsu5.html'>next</a>] [<a href='OERsu3.html'>prev</a>] [<a href='OERsu3.html#tailOERsu3.html'>prev-tail</a>] [<a href='#tailOERsu4.html'>tail</a>] [<a href='OERse2.html#OERsu4.html'>up</a>] </p></div>
- <h4 class='subsectionHead' id='subsets'><span class='titlemark'>1.2.4   </span> <a id='x9-80001.2.4'></a>Subsets</h4>
- <div class='newtheorem'>
+<h4 class='subsectionHead' id='subsets'><span class='titlemark'>1.2.4   </span> <a id='x9-80001.2.4'></a>Subsets</h4>
+<div class='newtheorem'>
 <!-- l. 5 --><p class='noindent'><span class='head'>
 <a id='x9-8001r4'></a>
-<span class='cmbx-12'>Axiom 4 </span>(Axiom of power sets)<span class='cmbx-12'>.</span>  </span><a id='eq:power-sets'></a> \begin {equation}  \label{eq:power-sets} \exists b\forall y \biggl ( \smset {a,b} \Rightarrow \bigl ( y \subseteq a \Rightarrow y \in b \bigr ) \biggr ).  \end {equation}<a id='x9-8002r5'></a>
+<span class='cmbx-12'>Axiom 4 </span>(Axiom of power sets)<span class='cmbx-12'>.</span>  </span> \begin {equation*}  \exists b\forall y \biggl ( \smset {a,b} \Rightarrow \bigl ( y \subseteq a \Rightarrow y \in b \bigr ) \biggr ).  \end {equation*}
 </p>
- </div>
-<!-- l. 17 --><p class='indent'>
+</div>
+<!-- l. 16 --><p class='noindent'>
 </p>
- <div class='newtheorem'>
-<!-- l. 19 --><p class='noindent'><span class='head'>
-<a id='x9-8003r8'></a>
-<span class='cmbx-12'>Remark 1.8.</span>  </span> Axiom <a href='#x9-8001r4'>4<!-- tex4ht:ref: axiom:power-sets  --></a> states: <span class='cmti-12'>given any small set</span> \(a\) <span class='cmti-12'>there exists a small set</span> \(b\) <span class='cmti-12'>which contain all the subsets of</span> \(a\).
+<div class='newtheorem'>
+<!-- l. 18 --><p class='noindent'><span class='head'>
+<a id='x9-8002r9'></a>
+<span class='cmbx-12'>Remark 1.9.</span>  </span> The statement in Axiom states: <span class='cmti-12'>given any small set</span> \(a\) <span class='cmti-12'>there exists a small set</span> \(b\) <span class='cmti-12'>which contain all the subsets of</span> \(a\).
 </p>
- </div>
-<!-- l. 22 --><p class='indent'>
+</div>
+<!-- l. 21 --><p class='noindent'>
 </p>
- <div class='newtheorem'>
-<!-- l. 24 --><p class='noindent'><span class='head'>
+<div class='newtheorem'>
+<!-- l. 23 --><p class='noindent'><span class='head'>
 <span class='cmbx-12'>Proposition.</span>  </span> <span class='cmti-12'>The following statements are true:</span>
       </p><dl class='enumerate-enumitem'><dt class='enumerate-enumitem'>
-   <span class='cmti-12'>i.</span> </dt><dd class='enumerate-enumitem'><a id='x9-80041'></a> <span class='cmti-12'>Every subset of a small set is a small set.</span>
+   <span class='cmti-12'>i.</span> </dt><dd class='enumerate-enumitem'><a id='x9-80031'></a> <span class='cmti-12'>Every subset of a small set is a small set.</span>
       </dd><dt class='enumerate-enumitem'>
-  <span class='cmti-12'>ii.</span> </dt><dd class='enumerate-enumitem'><a id='x9-80052'></a> <span class='cmti-12'>For small sets</span> \(a, b\)<span class='cmti-12'>,</span> \(\smset {\{a\},\{a,b\},\opair {a}{b}}\)<span class='cmti-12'>.</span>
+  <span class='cmti-12'>ii.</span> </dt><dd class='enumerate-enumitem'><a id='x9-80042'></a> <span class='cmti-12'>For small sets</span> \(a, b\)<span class='cmti-12'>,</span> \(\smset {\{a\},\{a,b\},\opair {a}{b}}\)<span class='cmti-12'>.</span>
       </dd><dt class='enumerate-enumitem'>
-  <span class='cmti-12'>iii.</span> </dt><dd class='enumerate-enumitem'><a id='x9-80063'></a> <span class='cmti-12'>For a small set</span> \(a\) <span class='cmti-12'>and any set</span> \(b\)<span class='cmti-12'>,</span> \(\mathtt {small}[a\setminus {b}]\)<span class='cmti-12'>.</span>
+  <span class='cmti-12'>iii.</span> </dt><dd class='enumerate-enumitem'><a id='x9-80053'></a> <span class='cmti-12'>For a small set</span> \(a\) <span class='cmti-12'>and any set</span> \(b\)<span class='cmti-12'>,</span> \(\mathtt {small}[a\setminus {b}]\)<span class='cmti-12'>.</span>
       </dd><dt class='enumerate-enumitem'>
-  <span class='cmti-12'>iv.</span> </dt><dd class='enumerate-enumitem'><a id='x9-80074'></a> <span class='cmti-12'>The power set of a small set is a small set.</span>
+  <span class='cmti-12'>iv.</span> </dt><dd class='enumerate-enumitem'><a id='x9-80064'></a> <span class='cmti-12'>The power set of a small set is a small set.</span>
       </dd><dt class='enumerate-enumitem'>
-   <span class='cmti-12'>v.</span> </dt><dd class='enumerate-enumitem'><a id='x9-80085'></a> <span class='cmti-12'>Every small set is a subset of a small set.</span>
+   <span class='cmti-12'>v.</span> </dt><dd class='enumerate-enumitem'><a id='x9-80075'></a> <span class='cmti-12'>Every small set is a subset of a small set.</span>
+      </dd><dt class='enumerate-enumitem'>
+  <span class='cmti-12'>vi.</span> </dt><dd class='enumerate-enumitem'><a id='x9-80086'></a> <span class='cmti-12'>If</span> \([a, b] = \bigl \{ \bigl \{ \emptyset , a \bigr \}, \bigl \{ \{\emptyset \}, b \bigr \} \bigr \}\) <span class='cmti-12'>and</span> \(\mathtt {small}[\emptyset ,a,b,c,d]\) <span class='cmti-12'>then</span> \([a, b] = [c, d] \Leftrightarrow a = c \LAND b = d\)<span class='cmti-12'>.</span>
                                                                                                                                                                                                                                                                                                                                                                                                                            
                                                                                                                                                                                                                                                                                                                                                                                                                            
       </dd><dt class='enumerate-enumitem'>
-  <span class='cmti-12'>vi.</span> </dt><dd class='enumerate-enumitem'><a id='x9-80096'></a> <span class='cmti-12'>If</span> \([a, b] = \bigl \{ \bigl \{ \emptyset , a \bigr \}, \bigl \{ \{\emptyset \}, b \bigr \} \bigr \}\) <span class='cmti-12'>and</span> \(\mathtt {small}[\emptyset ,a,b,c,d]\) <span class='cmti-12'>then</span> \([a, b] = [c, d] \Leftrightarrow a = c \LAND b = d\)<span class='cmti-12'>.</span>
-      </dd><dt class='enumerate-enumitem'>
- <span class='cmti-12'>vii.</span> </dt><dd class='enumerate-enumitem'><a id='x9-80107'></a> <span class='cmti-12'>For all small sets</span> \(a, b\)<span class='cmti-12'>,</span> \(a = b\) <span class='cmti-12'>if and only if for any set</span> \(x\)<span class='cmti-12'>,</span> \(a \in x \Leftrightarrow b \in x\)<span class='cmti-12'>.</span></dd></dl>
+ <span class='cmti-12'>vii.</span> </dt><dd class='enumerate-enumitem'><a id='x9-80097'></a> <span class='cmti-12'>For all small sets</span> \(a, b\)<span class='cmti-12'>,</span> \(a = b\) <span class='cmti-12'>if and only if for any set</span> \(x\)<span class='cmti-12'>,</span> \(a \in x \Leftrightarrow b \in x\)<span class='cmti-12'>.</span></dd></dl>
                                                                                                                                                                                                                                                                                                                                                                                                                         <span class='cmti-12'>///</span>
- </div>
-<!-- l. 57 --><p class='indent'>
+</div>
+<!-- l. 56 --><p class='noindent'>
 </p>
- <div class='proof'>
-<!-- l. 60 --><p class='indent'> <span class='head'>
-<span class='cmti-12'>Proof.</span> </span>Left as an exercise.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   □
+<div class='proof'>
+<!-- l. 59 --><p class='noindent'><span class='head'>
+<span class='cmti-12'>Proof.</span> </span><span id='textcolor2'>Left as an exercise</span>.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   □
 </p>
- </div>
- <div class='newtheorem'>
-<!-- l. 63 --><p class='noindent'><span class='head'>
-<a id='x9-8011r9'></a>
-<span class='cmbx-12'>Remark 1.9.</span>  </span> Axiom <a href='#x9-8001r4'>4<!-- tex4ht:ref: axiom:power-sets  --></a> ensure the smallness of the sets \(\{a\}, \{a,b\}, \mathcal {P}a\) and hence of \(\left (a, b\right )\), whenever \(a, b\) are small sets. Note: this does not yet ensure smallness of the sets \(a \times b\), even if \(a, b\) are small sets. However, if \(a\) is a large set, then \(\mathcal {P}a\) is the set of all small subsets of \(a\), and \(\mathcal {P}a\) is expected to be a large set — for any \(x \in a\), \(\{x\} \in \mathcal {P}a\), the assignment \(x \mapsto \{x\}\) is an injective function, \(a\) is in bijective correspondence with \( \bigl \{ \{x\}: x \in a \bigr \} \subseteq \mathcal {P}a\), should imply \(\mathcal {P}a\) is not a small set. However plausible this
-expectation could be, it still cannot be proved from the axioms established so far.
+</div>
+<div class='newtheorem'>
+<!-- l. 62 --><p class='noindent'><span class='head'>
+<a id='x9-8010r10'></a>
+<span class='cmbx-12'>Remark 1.10.</span>  </span> Axiom ensure the smallness of the sets \(\{a\}, \{a,b\}, \mathcal {P}a\) and hence of \(\left (a, b\right )\), whenever \(a, b\) are small sets. Note: this does not yet ensure smallness of the sets \(a \times b\), even if \(a, b\) are small sets. However, if \(a\) is a large set, then \(\mathcal {P}a\) is the set of all small subsets of \(a\), and \(\mathcal {P}a\) is expected to be a large set. To see this, let us argue <span class='cmti-12'>intuitively </span>as follows: for any \(x \in a\), \(\{x\} \in \mathcal {P}a\), the assignment \(x \mapsto \{x\}\) sets up a correspondence between the elements of \(a\) and certain elements of \(\mathcal {P}a\),
+and hence should imply \(\mathcal {P}a\) is not a small set. However plausible this expectation could be, it still cannot be proved from the axioms established so far.
 </p>
- </div>
-<!-- l. 69 --><p class='indent'>
+</div>
+<!-- l. 65 --><p class='noindent'>
 </p>
- <div class='newtheorem'>
-<!-- l. 71 --><p class='noindent'><span class='head'>
-<a id='x9-8012r10'></a>
-<span class='cmbx-12'>Remark 1.10.</span>  </span> <a href='#x9-80096'>vi.<!-- tex4ht:ref: item:alternate-ordered-pair  --></a> provides an alternative definition of an ordered pair. In fact, there are several definitions of an ordered pair — <a href='https://en.wikipedia.org/wiki/Ordered_pair#Defining_the_ordered_pair_using_set_theory'>see this page for an interesting read</a>. The defintiion of an ordered pair as in equation (<a href='#eq:ordered-pair'>1.2.7</a>) was given by Kuratowski, while the one in <a href='#x9-80096'>vi.<!-- tex4ht:ref: item:alternate-ordered-pair  --></a> is due to Hausdorff.
+<div class='newtheorem'>
+<!-- l. 67 --><p class='noindent'><span class='head'>
+<a id='x9-8011r11'></a>
+<span class='cmbx-12'>Remark 1.11.</span>  </span> <a href='#x9-80086'>vi.<!-- tex4ht:ref: item:alternate-ordered-pair  --></a> provides an alternative definition of an ordered pair. In fact, there are several definitions of an ordered pair — <a href='https://en.wikipedia.org/wiki/Ordered_pair#Defining_the_ordered_pair_using_set_theory'>see this page for an interesting read</a>. The defintiion of an ordered pair as \(\opair {a}{b} = \left \{\{a\}, \{a, b\}\right \}\) was given by Kuratowski, while the one in <a href='#x9-80086'>vi.<!-- tex4ht:ref: item:alternate-ordered-pair  --></a> is due to Hausdorff.
 </p>
- </div>
-<!-- l. 74 --><p class='indent'>
+</div>
+<!-- l. 70 --><p class='noindent'>
 </p>
- <figure class='figure' id='-two-more-towering-figures-of-mathematics-'> 
+<figure class='figure' id='-two-more-towering-figures-of-mathematics-'> 
 
                                                                                                                                                                                                                                                                                                                                                                                                                            
                                                                                                                                                                                                                                                                                                                                                                                                                            
                                                                                                                                                                                                                                                                                                                                                                                                                            
                                                                                                                                                                                                                                                                                                                                                                                                                            
 <div class='subfigure'>
-<!-- l. 78 --><p class='noindent'></p><!-- l. 80 --><p class='noindent'><img alt='PIC' height='141' src='images/hausdorff.jpg' width='140' /> <a id='x9-8013r1'></a></p>
+<!-- l. 74 --><p class='noindent'></p><!-- l. 76 --><p class='noindent'><img alt='PIC' height='87' src='images/hausdorff.jpg' width='140' /> <a id='x9-8012r1'></a></p>
 <div class='caption'><span class='id'><span class='cmr-10x-x-109'>(a) </span></span><span class='content'><a href='https://en.wikipedia.org/wiki/Felix_Hausdorff'><span class='cmr-10x-x-109'>Felix Hausdorff </span><br class='newline' /> <span class='cmr-10x-x-109'>(08-11-1868 to 26-01-1942)</span></a>                                                                                                                           </span></div></div><div class='subfigure'>
-<!-- l. 87 --><p class='noindent'></p><!-- l. 89 --><p class='noindent'><img alt='PIC' height='141' src='images/kuratowski.jpg' width='140' /> <a id='x9-8014r2'></a>
+<!-- l. 83 --><p class='noindent'></p><!-- l. 85 --><p class='noindent'><img alt='PIC' height='187' src='images/kuratowski.jpg' width='140' /> <a id='x9-8013r2'></a>
 </p>
-<div class='caption'><span class='id'><span class='cmr-10x-x-109'>(b) </span></span><span class='content'><a href='https://en.wikipedia.org/wiki/Kazimierz_Kuratowski'><span class='cmr-10x-x-109'>Kazimierz Kuratowski </span><br class='newline' /> <span class='cmr-10x-x-109'>(02-02-1896 to 18-06-1980) </span></a>                                                                                                                          </span></div></div><a id='x9-8015r4'></a>
+<div class='caption'><span class='id'><span class='cmr-10x-x-109'>(b) </span></span><span class='content'><a href='https://en.wikipedia.org/wiki/Kazimierz_Kuratowski'><span class='cmr-10x-x-109'>Kazimierz Kuratowski </span><br class='newline' /> <span class='cmr-10x-x-109'>(02-02-1896 to 18-06-1980) </span></a>                                                                                                                          </span></div></div><a id='x9-8014r4'></a>
 <div class='caption'><span class='id'>Figure 1.4: </span><span class='content'>Two more towering figures of mathematics
 </span></div>
                                                                                                                                                                                                                                                                                                                                                                                                                            
                                                                                                                                                                                                                                                                                                                                                                                                                            
- </figure>
+</figure>
                                                                                                                                                                                                                                                                                                                                                                                                                            
                                                                                                                                                                                                                                                                                                                                                                                                                            
- <!-- l. 2 --><div class='crosslinks'><p class='noindent'>[<a href='OERsu5.html'>next</a>] [<a href='OERsu3.html'>prev</a>] [<a href='OERsu3.html#tailOERsu3.html'>prev-tail</a>] [<a href='OERsu4.html'>front</a>] [<a href='OERse2.html#OERsu4.html'>up</a>] </p></div>
-<!-- l. 2 --><p class='indent'> <a id='tailOERsu4.html'></a> </p> 
+<!-- l. 2 --><div class='crosslinks'><p class='noindent'>[<a href='OERsu5.html'>next</a>] [<a href='OERsu3.html'>prev</a>] [<a href='OERsu3.html#tailOERsu3.html'>prev-tail</a>] [<a href='OERsu4.html'>front</a>] [<a href='OERse2.html#OERsu4.html'>up</a>] </p></div>
+<!-- l. 2 --><p class='noindent'><a id='tailOERsu4.html'></a> </p> 
 </body> 
 </html>
