@@ -2,6 +2,10 @@
 /* start css.sty */
 .cmr-10{font-size:83%;}
 .cmr-10x-x-109{font-size:90%;}
+.cmr-8{font-size:66%;}
+.cmmi-12{font-style: italic;}
+.cmmi-8{font-size:66%;font-style: italic;}
+.cmsy-8{font-size:66%;}
 .cmtt-12{font-family: monospace,monospace;}
 .cmtt-12{font-family: monospace,monospace;}
 .cmr-17x-x-120{font-size:170%;}
@@ -13,11 +17,17 @@
 .cmss-12{  font-family: sans-serif;}
 .cmbx-12{ font-weight: bold;}
 .cmbx-12{ font-weight: bold;}
+.cmbx-12{ font-weight: bold;}
 .cmti-10{font-size:83%; font-style: italic;}
+.cmbx-8{font-size:66%; font-weight: bold;}
+.cmbx-8{ font-weight: bold;}
+.cmbx-8{ font-weight: bold;}
 .cmbx-10{font-size:83%; font-weight: bold;}
+.cmbx-10{ font-weight: bold;}
 .cmbx-10{ font-weight: bold;}
 .cmssi-12{ font-family: sans-serif; font-style: oblique;}
 .cmssi-12{ font-family: sans-serif; font-style: oblique;}
+.tcrm-1000{font-size:83%;}
 .small-caps{font-variant: small-caps; }
 p.noindent { text-indent: 0em }
 td p.noindent { text-indent: 0em; margin-top:0em; }
@@ -239,27 +249,27 @@ pre.listings{font-family: monospace,monospace; white-space: pre-wrap; margin-top
 pre.lstlisting{font-family: monospace,monospace; white-space: pre-wrap; margin-top:0.5em; margin-bottom:0.5em; }
 pre.lstinputlisting{ font-family: monospace,monospace; white-space: pre-wrap; }
 .lstinputlisting .label{margin-right:0.5em;}
-body { margin:6% 12%; max-width:60em; font-size:large; padding:0 40px;}
+body { margin:6% 12%; max-width:60em; font-size:large; line-height:2.4em; padding:0 40px;}
 body{font-family: arial, 'Noto Sans Math', sans-serif;}
 p.indent {text-indent:1.5em;}
 .columns-3 p.indent {text-indent:0em;}
 p.bibitem-p { text-indent: 1.5em; margin-left: 2em; margin-top:0em; margin-bottom:0em; background:#F0F0F0; color:#000000;}
- #TBL-2-4- td{ background-color:#808080}
- #TBL-2-5- td{ background-color:#808080}
+ #TBL-3-4- td{ background-color:#808080}
+ #TBL-3-5- td{ background-color:#808080}
 span#textcolor1{color:#FF0000}
 span#textcolor2{color:#FF0000}
 span#textcolor3{color:#FF0000}
 span#textcolor4{color:#FF0000}
 span#textcolor5{color:#FF0000}
-#TBL-6-1{border-right:1px solid black;}
-#TBL-6-2{border-right:1px solid black;}
-#TBL-6-3{border-right:1px solid black;}
-#TBL-6-4{border-right:1px solid black;}
-#TBL-6-5{border-right:1px solid black;}
-#TBL-6-6{border-right:1px solid black;}
-#TBL-6-7{border-right:1px solid black;}
-#TBL-6-8{border-right:1px solid black;}
-#TBL-6-9{border-right:1px solid black;}
+#TBL-7-1{border-right:1px solid black;}
+#TBL-7-2{border-right:1px solid black;}
+#TBL-7-3{border-right:1px solid black;}
+#TBL-7-4{border-right:1px solid black;}
+#TBL-7-5{border-right:1px solid black;}
+#TBL-7-6{border-right:1px solid black;}
+#TBL-7-7{border-right:1px solid black;}
+#TBL-7-8{border-right:1px solid black;}
+#TBL-7-9{border-right:1px solid black;}
 span#textcolor6{color:#FF0000}
 span#textcolor7{color:#FF0000}
 span#textcolor8{color:#FF0000}
@@ -338,5 +348,51 @@ span#textcolor80{color:#FF0000}
 span#textcolor81{color:#FF0000}
 span#textcolor82{color:#FF0000}
 span#textcolor83{color:#FF0000}
+span#textcolor84{color:#FF0000}
+span#textcolor85{color:#FF0000}
+span#textcolor86{color:#FF0000}
+#TBL-14-1{border-right:1px solid black;}
+#TBL-14-2{border-right:1px solid black;}
+#TBL-14-3{border-right:1px solid black;}
+#TBL-14-4{border-right:1px solid black;}
+#TBL-14-5{border-right:1px solid black;}
+#TBL-14-6{border-right:1px solid black;}
+#TBL-14-7{border-right:1px solid black;}
+#TBL-14-8{border-right:1px solid black;}
+span#textcolor87{color:#0000FF}
+span#textcolor88{color:#0000FF}
+span#textcolor89{color:#FF8000}
+#TBL-15-1{border-right:1px solid black;}
+#TBL-15-2{border-right:1px solid black;}
+#TBL-15-3{border-right:1px solid black;}
+#TBL-15-4{border-right:1px solid black;}
+#TBL-15-5{border-right:1px solid black;}
+#TBL-15-6{border-right:1px solid black;}
+#TBL-15-7{border-right:1px solid black;}
+#TBL-15-8{border-right:1px solid black;}
+span#textcolor90{color:#FF0000}
+span#textcolor91{color:#FF0000}
+span#textcolor92{color:#FF0000}
+span#textcolor93{color:#FF0000}
+span#textcolor94{color:#FF0000}
+span#textcolor95{color:#FF0000}
+span#textcolor96{color:#FF0000}
+#TBL-17-1{border-right:1px solid black;}
+#TBL-17-5{border-right:1px solid black;}
+span#textcolor97{color:#FF0000}
+span#textcolor98{color:#FF0000}
+span#textcolor99{color:#FF0000}
+span#textcolor100{color:#0000FF}
+span#textcolor101{color:#FF0000}
+span#textcolor102{color:#FF0000}
+span#textcolor103{color:#FF0000}
+span#textcolor104{color:#FF0000}
+span#textcolor105{color:#FF0000}
+span#textcolor106{color:#FF0000}
+span#textcolor107{color:#FF0000}
+span#textcolor108{color:#FF0000}
+span#textcolor109{color:#FF0000}
+span#textcolor110{color:#FF0000}
+span#textcolor111{color:#FF0000}
 /* end css.sty */
 
